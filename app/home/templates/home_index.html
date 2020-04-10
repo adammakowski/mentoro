@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="bg-jumbo">
+
+
+    <div class="text-center jumbotron bg-jumbo shadow vh-100 rounded-0" style="padding-top: 10%;">
+        <h1 class="text-uppercase text-white font-weight-bold special-font">Study from the best mentors or become a mentor</h1>
+        <p class="lead text-white mb-0">Get knowledge from recognised mentors around the world.</p>
+        <p class="lead text-white">Porady oszczędnościowe i inwestycyjne, okazje cenowe, bony, promocje i wiele więcej.</p>
+        <hr class="my-4">
+        <p class="text-white">You can open an account for free, no hidden fees. Registering takes less than 30 seconds.</p>
+        <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Open account!</a>
+    </div>
+    </section>
+{% endblock content %}

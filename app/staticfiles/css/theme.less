@@ -1,0 +1,77 @@
+@import "background";
+@import "colors";
+
+body {
+  font-family: 'Nunito', sans-serif;
+  padding-top: 55px;
+}
+
+.special-font {
+  font-family: 'Audiowide', cursive;
+}
+
+.hr-style {
+  border: 2px solid rgba(0, 0, 0, .1);
+  border-radius: 3px;
+}
+
+.ssl-bar {
+  background: rgba(140, 144, 165, 0.1);
+  border-radius: 18px;
+  width: 15rem;
+}
+
+.bg-jumbo {
+  background-image: url("/staticfiles/img/bg/bg-jumbo.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: #007bff;
+}
+
+.bg-dashboard {
+  background-color: #edeef2;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+// navbar links colors
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  &:hover {
+    color: #007bff;
+  }
+  &:active {
+    color: #007bff;
+  }
+}
+
+// end navbar links colors
+// footer start
+.a-footer:hover {
+  color: white !important;
+}
+
+.dark-link {
+  color: black;
+  &:hover {
+    color: #007bff;
+  }
+}
+
+.system-link {
+  color: #6c757d;
+  &:hover {
+    color: @color-rich-black;
+  }
+}
+
+.link-left-menu {
+  color: black;
+  &:hover {
+    color: #007bff;
+    font-weight: 700;
+  }
+}
