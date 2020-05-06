@@ -5,7 +5,7 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfile.prod
-    command: gunicorn mentoro.wsgi:application --bind 0.0.0.0:8000
+    command: bash -c "python manage.py collectstatic --no-input && python manage.py makemigrations && python manage.py migrate && gunicorn mentoro.wsgi:application --workers 5 --bind 0.0.0.0:8000"
     volumes:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
@@ -15,13 +15,23 @@ services:
       - ./.env.prod
     depends_on:
       - db
+      - redis
   db:
     image: postgres:11
+    restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env.prod.db
+  redis:
+    image: redis:latest
+    restart: always
+    volumes:
+    - redis_data:/var/lib/redis/data/
+    expose:
+    - "6379"
   nginx:
+    restart: always
     build: ./nginx
     volumes:
       - static_volume:/home/app/web/staticfiles
@@ -30,8 +40,10 @@ services:
       - 1337:80
     depends_on:
       - web
+      - redis
 
 volumes:
   postgres_data:
+  redis_data:
   static_volume:
   media_volume:

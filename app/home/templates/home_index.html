@@ -2,15 +2,40 @@
 {% load static %}
 {% block content %}
     <section class="bg-jumbo">
+        <div class="text-center jumbotron bg-jumbo shadow vh-100 rounded-0" style="padding-top: 10%;">
+            <h1 class="text-uppercase text-white font-weight-bold special-font">Study from the best mentors or become a mentor</h1>
+            <p class="lead text-white mb-0">Get knowledge from recognised mentors around the world.</p>
+            <hr class="my-4">
+            <p class="text-white">You can open an account for free, no hidden fees. Registering takes less than 30 seconds.</p>
+            <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create account</a>
+        </div>
+    </section>
 
-
-    <div class="text-center jumbotron bg-jumbo shadow vh-100 rounded-0" style="padding-top: 10%;">
-        <h1 class="text-uppercase text-white font-weight-bold special-font">Study from the best mentors or become a mentor</h1>
-        <p class="lead text-white mb-0">Get knowledge from recognised mentors around the world.</p>
-        <p class="lead text-white">Porady oszczędnościowe i inwestycyjne, okazje cenowe, bony, promocje i wiele więcej.</p>
-        <hr class="my-4">
-        <p class="text-white">You can open an account for free, no hidden fees. Registering takes less than 30 seconds.</p>
-        <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Open account!</a>
-    </div>
+    <section class="">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-5">
+                <div class="card shadow rounded-0 border-0 text-center">
+                    <div class="card-body">
+                        <h5 class="font-weight-bold mb-0">Become an mentor</h5>
+                        <p class="text-muted text-uppercase">only 5% from the course or training sold</p>
+                        <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
+                        <button type="button" class="btn btn-outline-success shadow rounded-0 font-weight-bold">Apply for a mentor</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div class="card shadow rounded-0 border-0 text-center">
+                    <div class="card-body">
+                        <h5 class="font-weight-bold mb-0">Become an student</h5>
+                        <p class="text-muted text-uppercase">free forever</p>
+                        <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
+                        <button type="button" class="btn btn-outline-primary shadow rounded-0 font-weight-bold">Open an account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 {% endblock content %}

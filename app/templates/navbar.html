@@ -30,12 +30,22 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Look for a mentor or course" aria-label="Look for a mentor or course">
-                <a class="btn btn-success font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Become a mentor</a>
-                <a class="nav-link dark-link" href="{% url 'user_login' %}">Log In</a>
-                <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Sign Up</a>
-            </form>
+
+            {% if user.is_authenticated %}
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="{% url 'home_index' %}" class="text-decoration-none dark-link">Dashboard</a>
+                    <a href="{% url 'home_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
+                    <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'user_logout' %}" role="button">Logout</a>
+                </form>
+            {% else %}
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Look for a mentor or course" aria-label="Look for a mentor or course">
+                    <a class="btn btn-success font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Become a mentor</a>
+                    <a class="nav-link dark-link" href="{% url 'user_login' %}">Log In</a>
+                    <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Sign Up</a>
+                </form>
+            {% endif %}
+
         </div>
     </nav>
 </section>

@@ -20,7 +20,13 @@ from user import views as user_views
 from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 
+def trigger_error(request):
+    division_by_zero = 1 / 0
+
 urlpatterns = [
+    # sentry werify
+    path('sentry-debug/', trigger_error),
+    # admin path
     path('admin/', admin.site.urls),
     # sites path
     path('', include('home.urls')),

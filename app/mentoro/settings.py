@@ -11,6 +11,18 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+# SENTRY SDK - Django and Redis https://sentry.io
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="https://b5618401fa044fc1b952aa8677600a7a@o376411.ingest.sentry.io/5197194",
+    integrations=[DjangoIntegration()],
+
+    # If you wish to associate users to errors (assuming you are using
+    # django.contrib.auth) you may enable sending PII data.
+    send_default_pii=True
+)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -74,7 +86,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mentoro.wsgi.application'
 
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
+        }
+    }
+}
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -153,13 +177,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # URLS
-LOGIN_REDIRECT_URL = 'dashboard_index'
+LOGIN_REDIRECT_URL = 'home_index'
 LOGIN_URL = 'user_login'
 
 # reCaptcha config
 RECAPTCHA_PUBLIC_KEY = '6LdyRL0UAAAAABGafiNPBqn0a4JQYaCx-IeWh4Hw'
 RECAPTCHA_PRIVATE_KEY = '6LdyRL0UAAAAAICxOYMrUBiCzPbHOjN-koAJyegO'
-
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
