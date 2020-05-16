@@ -38,7 +38,7 @@ DEBUG = int(os.environ.get("DEBUG", default=0))
 
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+
 
 
 # Application definition
@@ -52,8 +52,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "crispy_forms", # crispy forms
     "captcha", #google recaptcha
-    'home.apps.HomeConfig',
-    'user',
+    'home.apps.HomeConfig', # home app
+    'user.apps.UserConfig', # user app
+    'dashboard.apps.DashboardConfig', # dashboard app
+    'courses.apps.CoursesConfig', # Mentoro|Courses app
 ]
 
 MIDDLEWARE = [
@@ -177,12 +179,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # URLS
-LOGIN_REDIRECT_URL = 'home_index'
+LOGIN_REDIRECT_URL = 'dashboard_index'
 LOGIN_URL = 'user_login'
 
 # reCaptcha config
 RECAPTCHA_PUBLIC_KEY = '6LdyRL0UAAAAABGafiNPBqn0a4JQYaCx-IeWh4Hw'
 RECAPTCHA_PRIVATE_KEY = '6LdyRL0UAAAAAICxOYMrUBiCzPbHOjN-koAJyegO'
 
+# Email config
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")

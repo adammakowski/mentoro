@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <h3>course detail</h3>
+            {% if course.published_date %}
+                <div class="date">
+                    {{ course.published_date }}
+                </div>
+            {% endif %}
+        <a class="btn btn-default" href="{% url 'course_edit' pk=course.pk %}">edit</a>
+            <h2>{{ course.title }}</h2>
+            <p>{{ course.text|linebreaksbr }}</p>
+        </div>
+    </section>
+{% endblock content %}

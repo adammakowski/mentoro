@@ -30,6 +30,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # sites path
     path('', include('home.urls')),
+    # dashboard path
+    path('dashboard/', include('dashboard.urls')),
+    # Mentoro|Courses path
+    path('courses/', include('courses.urls')),
     # users auth
     path('user/register/', user_views.register, name='user_register'),
     path('user/login/', auth_views.LoginView.as_view(template_name='user_login.html'), name='user_login'),

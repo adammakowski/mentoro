@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="card border-0 bg-gardient rounded-0 shadow">
+                <div class="card-body text-center p-5">
+                    <p class="mb-0 text-uppercase font-weight-bold">simple and transparent conditions</p>
+                    <h3 class="text-white text-uppercase font-weight-bold special-font">For everything 4 x 10%</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-theme-milky pt-5 pb-5">
+        <div class="container">
+            <p>We strive to keep our commissions to a minimum and provide us with opportunities for further development.</p>
+            <hr class="my-4">
+            <div class="media">
+                <h1 class="align-self-center mr-5 font-weight-bold special-font">10%</h1>
+                <div class="media-body">
+                    <h5 class="mt-0">Sale of video courses</h5>
+                    <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                    <p>We charge 10% for each course you sell</p></div>
+            </div>
+            <hr class="my-4">
+            <div class="media">
+                <h1 class="align-self-center mr-5 font-weight-bold special-font">10%</h1>
+                <div class="media-body">
+                    <h5 class="mt-0">For each mentoring session</h5>
+                    <img src="{% static 'img/logo/mentoro_mentors.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                    <p>We charge 10% for each course you sell</p></div>
+            </div>
+            <hr class="my-4">
+            <div class="media">
+                <h1 class="align-self-center mr-5 font-weight-bold special-font">10%</h1>
+                <div class="media-body">
+                    <h5 class="mt-0">Online training sales</h5>
+                    <img src="{% static 'img/logo/mentoro_experts.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                    <p>We charge 10% for each training you sell</p></div>
+            </div>
+            <hr class="my-4">
+            <div class="media">
+                <h1 class="align-self-center mr-5 font-weight-bold special-font">10%</h1>
+                <div class="media-body">
+                    <h5 class="mt-0">Sale of ebooks and guidebooks</h5>
+                    <img src="{% static 'img/logo/mentoro_library.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                    <p>We charge 10% for each ebook and guidebook you sell</p></div>
+            </div>
+            <hr class="my-4">
+        </div>
+    </section>
+
+{% endblock content %}

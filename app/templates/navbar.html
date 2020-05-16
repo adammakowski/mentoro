@@ -12,6 +12,17 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'courses_all' %}">Mentoro | Courses</a>
+                        <a class="dropdown-item" href="#">Mentoro | Mentors</a>
+                        <a class="dropdown-item" href="#">Mentoro | Experts</a>
+                        <a class="dropdown-item" href="#">Mentoro | Library</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Categories
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -33,15 +44,14 @@
 
             {% if user.is_authenticated %}
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="{% url 'home_index' %}" class="text-decoration-none dark-link">Dashboard</a>
+                    <a href="{% url 'dashboard_index' %}" class="text-decoration-none dark-link">Dashboard</a>
                     <a href="{% url 'home_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
                     <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'user_logout' %}" role="button">Logout</a>
                 </form>
             {% else %}
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Look for a mentor or course" aria-label="Look for a mentor or course">
-                    <a class="btn btn-success font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Become a mentor</a>
-                    <a class="nav-link dark-link" href="{% url 'user_login' %}">Log In</a>
+                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Search anything" aria-label="Look for a mentor or course">
+                    <a class="nav-link dark-link" href="{% url 'user_login' %}">Sign In</a>
                     <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Sign Up</a>
                 </form>
             {% endif %}

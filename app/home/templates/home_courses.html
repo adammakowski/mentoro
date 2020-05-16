@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="text-center pt-5 pb-5">
+        <div class="container">
+            <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+        </div>
+    </section>
+    <section class="bg-gardient pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <p class="mb-0 text-center text-uppercase font-weight-bold">Creators</p>
+                    <h3 class="text-center text-white">Create and sell courses</h3>
+                </div>
+                <div class="col text-center"><h3 class="font-weight-bold text-white">or</h3></div>
+                <div class="col-5">
+                    <p class="mb-0 text-center text-uppercase font-weight-bold">Students</p>
+                    <h3 class="text-center text-white">Buy and learn courses</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5">
+        <div class="container">
+            <div class="card border-0 bg-gardient rounded-0 shadow">
+                <div class="card-body text-center p-5">
+                    <h3 class="text-white pb-3">Create and sell courses or buy and learn courses</h3>
+                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
