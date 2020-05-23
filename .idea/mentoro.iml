@@ -23,6 +23,10 @@
       <list>
         <option value="$MODULE_DIR$/app/templates" />
         <option value="$MODULE_DIR$/app/home/templates" />
+        <option value="$MODULE_DIR$/app/dashboard/templates" />
+        <option value="$MODULE_DIR$/app/courses/templates" />
+        <option value="$MODULE_DIR$/app/user/templates" />
+        <option value="$MODULE_DIR$/app/library/templates" />
       </list>
     </option>
   </component>
