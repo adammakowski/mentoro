@@ -2,7 +2,7 @@
 <section class="fixed-top bg-white shadow">
     <nav class="navbar navbar-expand-lg navbar-light bg-white container">
         <a class="navbar-brand d-flex align-items-center" href="{% url 'home_index' %}">
-            <img src="{% static 'img/logo/logo-transparent-black.png' %}" style="height: 1.4rem;" alt="Mentoro">
+            <img src="{% static 'img/logo/mentoro-new-logo-black.png' %}" style="height: 1.4rem;" alt="Mentoro">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -18,32 +18,28 @@
                         <a class="dropdown-item" href="{% url 'courses_all' %}">Mentoro | Courses</a>
                         <a class="dropdown-item" href="#">Mentoro | Mentors</a>
                         <a class="dropdown-item" href="#">Mentoro | Experts</a>
-                        <a class="dropdown-item" href="#">Mentoro | Library</a>
+                        <a class="dropdown-item" href="{% url 'library_all' %}">Mentoro | Library</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categories
+                        Company
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Finance & Accounting</a>
-                        <a class="dropdown-item" href="#">Business</a>
-                        <a class="dropdown-item" href="#">Marketing & Social</a>
-                        <a class="dropdown-item" href="#">Personal Development</a>
-                        <a class="dropdown-item" href="#">Office</a>
-                        <a class="dropdown-item" href="#">IT & Development</a>
-                        <a class="dropdown-item" href="#">Design & Graphics</a>
-                        <a class="dropdown-item" href="#">Lifestyle</a>
-                        <a class="dropdown-item" href="#">Health & Fitness</a>
-                        <a class="dropdown-item" href="#">Music & Art</a>
-                        <a class="dropdown-item" href="#">Science & Teaching</a>
-                        <a class="dropdown-item" href="#">Other</a>
+                        <a class="dropdown-item" href="#">About us</a>
+                        <a class="dropdown-item" href="#">Cooperation</a>
+                        <a class="dropdown-item" href="#">Career</a>
+                        <a class="dropdown-item" href="#">Contact</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
                 </li>
             </ul>
 
             {% if user.is_authenticated %}
                 <form class="form-inline my-2 my-lg-0">
+                    <a href="" class="nav-link">Hi, {{ user.username }}</a>
                     <a href="{% url 'dashboard_index' %}" class="text-decoration-none dark-link">Dashboard</a>
                     <a href="{% url 'home_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
                     <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'user_logout' %}" role="button">Logout</a>
@@ -52,7 +48,7 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Search anything" aria-label="Look for a mentor or course">
                     <a class="nav-link dark-link" href="{% url 'user_login' %}">Sign In</a>
-                    <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Sign Up</a>
+                    <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Get started</a>
                 </form>
             {% endif %}
 

@@ -31,3 +31,5 @@ Uses gunicorn + nginx.
 
 ### Create superuser
 docker exec -it mentoro_web_1 python manage.py createsuperuser
+### make migrations
+docker exec -it mentoro_web_1 python manage.py makemigrations

@@ -23,9 +23,13 @@ from django.conf.urls.static import static
 def trigger_error(request):
     division_by_zero = 1 / 0
 
+if settings.DEBUG:
+    import debug_toolbar
 urlpatterns = [
     # sentry werify
     path('sentry-debug/', trigger_error),
+    # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
+    path('__debug__/', include(debug_toolbar.urls)),
     # admin path
     path('admin/', admin.site.urls),
     # sites path
@@ -34,6 +38,8 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     # Mentoro|Courses path
     path('courses/', include('courses.urls')),
+    # Mentoro|Library path
+    path('library/', include('library.urls')),
     # users auth
     path('user/register/', user_views.register, name='user_register'),
     path('user/login/', auth_views.LoginView.as_view(template_name='user_login.html'), name='user_login'),

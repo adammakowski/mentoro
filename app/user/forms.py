@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField(required=True)
-    captcha = ReCaptchaField(widget=ReCaptchaV2Checkbox, required=True)
+    captcha = ReCaptchaField(required=True, widget=ReCaptchaV2Checkbox)
 
     class Meta:
         model = User

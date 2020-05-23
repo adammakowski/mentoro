@@ -1,18 +1,21 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.views.decorators.cache import cache_page
 from django.utils import timezone
 from .models import Course
 from .forms import CourseForm
 # Create your views here.
 
-# @cache_page(60 * 1) # Cache time to live is 1 minutes.
+#@cache_page(60 * 15) # Cache time to live is 15 minutes.
 def courses_all(request):
     courses = Course.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'courses_all.html', {'courses': courses})
-# @cache_page(60 * 1) # Cache time to live is 1 minutes.
+
+#@cache_page(60 * 15) # Cache time to live is 15 minutes.
 def course_detail(request, pk):
     course = get_object_or_404(Course, pk=pk)
     return render(request, 'course_detail.html', {'course': course})
-# @cache_page(60 * 1) # Cache time to live is 1 minutes.
+
+#@cache_page(60 * 15) # Cache time to live is 15 minutes.
 def course_new(request):
     if request.method == "POST":
         form = CourseForm(request.POST)
@@ -25,7 +28,8 @@ def course_new(request):
     else:
         form = CourseForm()
     return render(request, 'course_edit.html', {'form': form})
-# @cache_page(60 * 1) # Cache time to live is 1 minutes.
+
+#@cache_page(60 * 15) # Cache time to live is 1 minutes.
 def course_edit(request, pk):
     post = get_object_or_404(Course, pk=pk)
     if request.method == "POST":

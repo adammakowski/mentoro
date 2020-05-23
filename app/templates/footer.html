@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img src="{% static 'img/logo/logo-transparent-black.png' %}" style="height: 1.5rem;" class="img-fluid" alt="Logo">
+                <img src="{% static 'img/logo/mentoro-new-logo-black.png' %}" style="height: 1.5rem;" class="img-fluid" alt="Logo">
                 <div class="pt-3">
                     <a href="#" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-3" style="height: 2rem;"></a>
                     <a href="#" target="_blank"><img src="{% static 'img/social/instagram.svg' %}" class="img-fluid mr-lg-3" style="height: 2rem;"></a>
@@ -18,18 +18,18 @@
             </div>
             <div class="col-lg-2 col-md-6 col-sm-12">
                 <ul class="list-unstyled">
-                    <p class="text-primary font-weight-bold text-uppercase">products</p>
-                    <li><a href="{% url 'home_courses' %}" class="text-muted text-decoration-none a-footer">Mentoro | Courses</a></li>
+                    <p class="text-primary text-uppercase">products</p>
+                    <li><a href="{% url 'courses_all' %}" class="text-muted text-decoration-none a-footer">Mentoro | Courses</a></li>
                     <li><a href="#" class="text-muted text-decoration-none a-footer">Mentoro | Mentors</a></li>
                     <li><a href="#" class="text-muted text-decoration-none a-footer">Mentoro | Experts</a></li>
-                    <li><a href="#" class="text-muted text-decoration-none a-footer">Mentoro | Library</a></li>
-                    <li><a href="#" class="text-muted text-decoration-none a-footer">Affiliate program</a></li>
+                    <li><a href="{% url 'library_all' %}" class="text-muted text-decoration-none a-footer">Mentoro | Library</a></li>
+                    <li><a href="{% url 'home_affiliate' %}" class="text-muted text-decoration-none a-footer">Affiliate program</a></li>
                     <li><a href="{% url 'home_salescharges' %}" class="text-muted text-decoration-none a-footer">Sales charges</a></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-6 col-sm-12">
                 <ul class="list-unstyled">
-                    <p class="text-primary font-weight-bold text-uppercase">company</p>
+                    <p class="text-primary text-uppercase">company</p>
                     <li><a href="{% url 'home_index' %}" class="text-muted text-decoration-none a-footer">About us</a></li>
                     <li><a href="{% url 'home_index' %}" class="text-muted text-decoration-none a-footer">Cooperation</a></li>
                     <li><a href="{% url 'home_index' %}" class="text-muted text-decoration-none a-footer">Career</a></li>
@@ -39,7 +39,7 @@
             </div>
             <div class="col-lg-2 col-md-6 col-sm-12">
                 <ul class="list-unstyled">
-                    <p class="text-primary font-weight-bold text-uppercase">support</p>
+                    <p class="text-primary text-uppercase">support</p>
                     <li><a href="" class="text-muted text-decoration-none a-footer">Customer service</a></li>
                     <li><a href="" class="text-muted text-decoration-none a-footer">Knowledge base</a></li>
                 </ul>

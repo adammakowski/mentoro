@@ -1,177 +1,186 @@
 {% extends 'base.html' %}
+{% load cache %}
 {% load static %}
-{% block content %}
-    <section class="bg-jumbo color-gunmetal">
-        <div class="text-center jumbotron bg-jumbo shadow vh-100 rounded-0" style="padding-top: 10%;">
-            <h1 class="text-uppercase font-weight-bold special-font bg-theme-milky container">e-learning platform at a new level</h1>
-            <p class="lead text-white mb-0">Study from the best mentors or become a mentor. Get knowledge from recognized mentors from around the world or pass it on to others.</p>
-            <hr class="my-4 container">
-            <p class="text-white">You can open an account for free, no hidden fees. Registering takes less than 30 seconds.</p>
-            <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
-        </div>
-    </section>
+{% cache 3600 home_page_cache %}
+    {% block content %}
 
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <h3 class="font-weight-bold color-carolina-blue text-center special-font">Who is Mentoro for?</h3>
-            <p class="text-center">For anyone who wants to learn or teach others</p>
-            <div class="row pt-5 text-center">
-                <div class="col">
-                    <h5 class="font-weight-bold special-font">For students</h5>
-                    <img src="{% static '/img/icons/student.svg' %}" class="p-3" style="height: 12rem;" alt="">
-                    <p class="text-justify text-center">Do you want to expand your knowledge? Mentoro is the right place. Here you will find educational courses in many fields, ebooks, experts in given fields and many mentors who want to teach.</p>
-                    <a href="" class="nav-link">Find out more</a>
-                </div>
-                <div class="col">
-                    <h5 class="font-weight-bold special-font">For teachers</h5>
-                    <img src="{% static '/img/icons/mentor.svg' %}" class="p-3" style="height: 12rem;" alt="">
-                    <p class="text-justify text-center">Do you want to expand your knowledge? Mentor is the right place. Here you will find educational courses in many fields, ebooks, experts in given fields and many mentors who want to teach.</p>
-                    <a href="" class="nav-link">Find out more</a>
-                </div>
+        <section class="bg-jumbo color-gunmetal">
+            <div class="text-center jumbotron bg-jumbo shadow vh-100 rounded-0" style="padding-top: 10%;">
+                <h1 class="text-uppercase font-weight-bold font-special-black bg-theme-milky container">e-learning platform at a new level</h1>
+                <p class="lead text-white mb-0">Study from the best mentors or become a mentor. Get knowledge from recognized mentors from around the world or pass it on to others.</p>
+                <hr class="my-4 container">
+                <p class="text-white">You can open an account for free, no hidden fees. Registering takes less than 30 seconds.</p>
+                {% if user.is_authenticated %}
+                    <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'dashboard_index' %}" role="button">Go to dashboard</a>
+                {% else %}
+                    <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
+                {% endif %}
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="pt-5 pb-5 bg-theme-prussian-blue">
-        <div class="container">
-            <h3 class="font-weight-bold color-carolina-blue text-center special-font">Why Mentoro?</h3>
-            <h5 class="text-center text-white">Learn about our advantages</h5>
-            <div class="row pt-5 text-center">
-                <div class="col">
-                    <h5 class="font-weight-bold special-font text-white">Why for students</h5>
-                    <h5 class="">Learn what you want online anywhere in the world</h5>
-                    <h5>Uzyskuj wiedzę od najlepszych ekspertów w branży</h5>
-                    <h5>Znajdz swojego mentora który będzie Cię prowadził w Twojej edukacji</h5>
-                    <h5>Kupuj wyjątkowe ebooki tworzone przez pasjonatów</h5>
-                </div>
-                <div class="col">
-                    <h5 class="font-weight-bold special-font text-white">Why for teachers</h5>
-                    <h5></h5>
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <h3 class="text-center font-special-bold">Who is Mentoro for?</h3>
+                <p class="text-center">For anyone who wants to learn or teach others</p>
+                <div class="row pt-5 text-center">
+                    <div class="col">
+                        <h5 class="font-weight-bold special-font">For students</h5>
+                        <img src="{% static '/img/icons/student.svg' %}" class="p-3" style="height: 12rem;" alt="">
+                        <p class="text-justify text-center">Do you want to expand your knowledge? Mentoro is the right place. Here you will find educational courses in many fields, ebooks, experts in given fields and many mentors who want to teach.</p>
+                        <a href="" class="nav-link">Find out more</a>
+                    </div>
+                    <div class="col">
+                        <h5 class="font-weight-bold special-font">For teachers</h5>
+                        <img src="{% static '/img/icons/mentor.svg' %}" class="p-3" style="height: 12rem;" alt="">
+                        <p class="text-justify text-center">Do you want to expand your knowledge? Mentor is the right place. Here you will find educational courses in many fields, ebooks, experts in given fields and many mentors who want to teach.</p>
+                        <a href="" class="nav-link">Find out more</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="pt-5 pb-5">
-        <div class="container-fluid">
-            <h3 class="color-carolina-blue text-center special-font">Our products</h3>
-            <h5 class="text-center">Learn about our advantages</h5>
-            <div class="row pt-5">
-                <div class="col">
-                    <div class="card shadow rounded-0">
-                <div class="card-body text-center pt-5">
-                    <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
-                    <div class="row pt-5 pb-5">
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For students</h5>
-                            <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For teachers</h5>
-                            <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
-                        </div>
+        <section class="pt-5 pb-5 bg-student">
+            <div class="container">
+                <h3 class="text-white text-center font-special-bold">Why Mentoro?</h3>
+                <h5 class="text-center text-white">Learn about our advantages</h5>
+                <div class="row pt-5 text-center">
+                    <div class="col">
+                        <h5 class="font-weight-bold special-font text-white">Why for students</h5>
+                        <h5 class="">Learn what you want online anywhere in the world</h5>
+                        <h5>Uzyskuj wiedzę od najlepszych ekspertów w branży</h5>
+                        <h5>Znajdz swojego mentora który będzie Cię prowadził w Twojej edukacji</h5>
+                        <h5>Kupuj wyjątkowe ebooki tworzone przez pasjonatów</h5>
                     </div>
-                    <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
-                </div>
-            </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow rounded-0">
-                <div class="card-body text-center pt-5">
-                    <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
-                    <div class="row pt-5 pb-5">
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For students</h5>
-                            <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For teachers</h5>
-                            <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
-                        </div>
+                    <div class="col">
+                        <h5 class="font-weight-bold special-font text-white">Why for teachers</h5>
+                        <h5></h5>
                     </div>
-                    <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
                 </div>
             </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow rounded-0">
-                <div class="card-body text-center pt-5 pb-5">
-                    <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
-                    <div class="row pt-5 pb-5">
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For students</h5>
-                            <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For teachers</h5>
-                            <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
-                </div>
-            </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow rounded-0">
-                <div class="card-body text-center pt-5 pb-5">
-                    <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
-                    <div class="row pt-5 pb-5">
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For students</h5>
-                            <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
-                        </div>
-                        <div class="col-6">
-                            <h5 class="font-weight-bold special-font">For teachers</h5>
-                            <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
-                </div>
-            </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-5">
-                    <div class="card shadow rounded-0 border-0 text-center">
-                        <div class="card-body">
-                            <h5 class="font-weight-bold mb-0">Become an mentor</h5>
-                            <p class="text-muted text-uppercase">only 5% from the course or training sold</p>
-                            <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
-                            <button type="button" class="btn btn-outline-success shadow rounded-0 font-weight-bold">Apply for a mentor</button>
+
+        <section class="pt-5 pb-5">
+            <div class="container-fluid">
+                <h3 class="color-carolina-blue text-center special-font">Our products</h3>
+                <h5 class="text-center">Learn about our advantages</h5>
+                <div class="row pt-5">
+                    <div class="col">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body text-center pt-5">
+                                <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                                <div class="row pt-5 pb-5">
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For students</h5>
+                                        <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For teachers</h5>
+                                        <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5">
-                    <div class="card shadow rounded-0 border-0 text-center">
-                        <div class="card-body">
-                            <h5 class="font-weight-bold mb-0">Become an student</h5>
-                            <p class="text-muted text-uppercase">free forever</p>
-                            <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
-                            <button type="button" class="btn btn-outline-primary shadow rounded-0 font-weight-bold">Open an account</button>
+                    <div class="col">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body text-center pt-5">
+                                <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                                <div class="row pt-5 pb-5">
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For students</h5>
+                                        <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For teachers</h5>
+                                        <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body text-center pt-5 pb-5">
+                                <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                                <div class="row pt-5 pb-5">
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For students</h5>
+                                        <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For teachers</h5>
+                                        <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body text-center pt-5 pb-5">
+                                <img src="{% static 'img/logo/mentoro_courses.png' %}" class="img-fluid" style="height: 3rem;" alt="Logo Mentoro Courses">
+                                <div class="row pt-5 pb-5">
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For students</h5>
+                                        <p class="mb-0">Kupuj, oglądaj i ucz się z wideo kursów</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="font-weight-bold special-font">For teachers</h5>
+                                        <p class="mb-0">Twórz wideo kursy i sprzedawaj</p>
+                                    </div>
+                                </div>
+                                <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
-                <div class="card-body text-center p-5">
-                    <h3 class="text-white">Get knowledge from recognised mentors around the world.</h3>
-                    <h5 class="text-primary pb-3">Lorem ipsum more teach</h5>
-                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="card shadow rounded-0 border-0 text-center">
+                            <div class="card-body">
+                                <h5 class="font-weight-bold mb-0">Become an mentor</h5>
+                                <p class="text-muted text-uppercase">only 5% from the course or training sold</p>
+                                <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
+                                <button type="button" class="btn btn-outline-success shadow rounded-0 font-weight-bold">Apply for a mentor</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-5">
+                        <div class="card shadow rounded-0 border-0 text-center">
+                            <div class="card-body">
+                                <h5 class="font-weight-bold mb-0">Become an student</h5>
+                                <p class="text-muted text-uppercase">free forever</p>
+                                <p>The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
+                                <button type="button" class="btn btn-outline-primary shadow rounded-0 font-weight-bold">Open an account</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
+                    <div class="card-body text-center p-5">
+                        <h3 class="text-white">Get knowledge from recognised mentors around the world.</h3>
+                        <h5 class="text-primary pb-3">Lorem ipsum more teach</h5>
+                        <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-{% endblock content %}
+    {% endblock content %}
+{% endcache %}

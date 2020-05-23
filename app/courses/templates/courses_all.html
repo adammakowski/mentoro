@@ -1,23 +1,61 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
     <section class="pt-5 pb-5">
         <div class="container">
-
             {% if user.is_authenticated %}
-                <a href="{% url 'course_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span>new</a>
+                <a class="btn btn-primary shadow rounded-0 float-right" href="{% url 'course_new' %}" role="button">Add new course</a>
             {% else %}
                 <p>Create an account to add your own course</p>
             {% endif %}
+        </div>
+    </section>
 
-            <h3>All available courses</h3>
+    <section class="pb-5">
+        <div class="container">
+
             {% for course in courses %}
-                <div class="card shadow rounded-0">
+                <div class="pt-4">
+                <div class="card rounded-0">
+
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            <a href="{% url 'course_detail' pk=course.pk %}" class="font-weight-bold nav-link">{{ course.title }}</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card-body">
-                    <p>published: {{ course.published_date }}</p>
-                    <p>Author: {{ course.author }}</p>
-                    <h1><a href="{% url 'course_detail' pk=course.pk %}">{{ course.title }}</a></h1>
-                    <p>{{ course.text|linebreaksbr }}</p>
+                    <div class="row">
+                        <div class="col-lg-5 col-sm-12">
+                            <img src="{{ course.image_preview.url }}" height="300" width="400" class="img-fluid shadow rounded-0" alt="">
+                        </div>
+                        <div class="col-lg-7 col-sm-12">
+                            <h3>{{ course.title }}</h3>
+                            <p>{{ course.short_description|linebreaksbr }}</p>
+                            <p>Price ${{ course.price }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="pb-3">
+                        <div class="progress rounded-0">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 84%" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">84% - 547</div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">16% - 16</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="{% url 'course_detail' pk=course.pk %}" class="btn btn-dark btn-block font-weight-bold shadow rounded-0"><i class="fas fa-info-circle"></i> Check details</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn-success btn-block font-weight-bold shadow rounded-0"><i class="fas fa-shopping-cart"></i> Buy now</a>
+                        </div>
+                    </div>
+                </div>
                 </div>
             {% endfor %}
             </div>
