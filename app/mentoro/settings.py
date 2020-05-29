@@ -56,14 +56,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "optimized_image", # TinyPNG optimize images
-    "captcha", #google recaptcha
-    "debug_toolbar", # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    'home.apps.HomeConfig', # home app
-    'user.apps.UserConfig', # user app
-    'dashboard.apps.DashboardConfig', # dashboard app
-    'courses.apps.CoursesConfig', # Mentoro|Courses app
-    'library.apps.LibraryConfig', # Mentoro|Library app
+    'django_registration',
+    'optimized_image', # TinyPNG optimize images
+    'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
+    'simple_history', # https://django-simple-history.readthedocs.io
+    'home', # home app
+    'user', # user app
+    'dashboard', # dashboard app
+    'courses', # Mentoro|Courses app
+    'library', # Mentoro|Library app
 ]
 
 MIDDLEWARE = [
@@ -75,6 +76,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
+    'simple_history.middleware.HistoryRequestMiddleware', # https://django-simple-history.readthedocs.io
 ]
 
 ROOT_URLCONF = 'mentoro.urls'
@@ -103,7 +105,7 @@ SESSION_CACHE_ALIAS = "default"
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/0",
+        "LOCATION": "redis://redis:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
             "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
@@ -174,6 +176,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
 
+
 STATICFILES_FINDERS = (
   'django.contrib.staticfiles.finders.FileSystemFinder',
   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
@@ -182,16 +185,9 @@ STATICFILES_FINDERS = (
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
-# Crispy forms
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
 # URLS
 LOGIN_REDIRECT_URL = 'dashboard_index'
 LOGIN_URL = 'user_login'
-
-# reCaptcha config
-RECAPTCHA_PUBLIC_KEY = '6LfoQ_kUAAAAAB09pay2zpqx9WPy9nUx6Mn1mL-E'
-RECAPTCHA_PRIVATE_KEY = '6LfoQ_kUAAAAAGY37xg9zkE_njVc0lUKAnp9HzB9'
 
 # Email config
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"

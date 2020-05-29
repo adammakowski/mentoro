@@ -41,6 +41,8 @@ urlpatterns = [
     # Mentoro|Library path
     path('library/', include('library.urls')),
     # users auth
+    path('accounts/', include('django_registration.backends.activation.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('user/register/', user_views.register, name='user_register'),
     path('user/login/', auth_views.LoginView.as_view(template_name='user_login.html'), name='user_login'),
     path('user/logout/', auth_views.LogoutView.as_view(template_name='user_logout.html'), name='user_logout'),

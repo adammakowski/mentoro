@@ -1,8 +1,8 @@
 from django import forms
-from .models import Library
+from .models import LibraryFile
 
 class LibraryForm(forms.ModelForm):
 
     class Meta:
-        model = Library
+        model = LibraryFile
         fields = ('title', 'price', 'image_preview', 'image_preview', 'short_description', 'description',)

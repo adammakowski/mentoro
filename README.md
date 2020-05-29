@@ -33,3 +33,6 @@ Uses gunicorn + nginx.
 docker exec -it mentoro_web_1 python manage.py createsuperuser
 ### make migrations
 docker exec -it mentoro_web_1 python manage.py makemigrations
+
+### delete data container
+docker rmi -f postgres

@@ -2,60 +2,817 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a622681-0917-4547-93d8-5acaf725248f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/templates/library_all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/templates/library_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/templates/library_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/templates/library_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mentoro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mentoro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/elements/hotjar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/elements/smartsupp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/templates/course_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/course_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/courses/templates/course_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/course_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/templates/course_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/course_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/templates/courses_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/courses_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/templates/library_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/templates/library_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_courses.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_courses.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/autocomplete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive_rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-viewlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/dsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/background.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/colors.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/file_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/css/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/back_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/close_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/djdt_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/img/indicator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/js/redirect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/js/toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/debug_toolbar/js/toolbar.timer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/django_tinymce/init_tinymce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/django_tinymce/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/file_form/file_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/file_form/file_form.debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/file_form/file_form.debug.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/file_form/file_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/file_form/file_form.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/font/Jost-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/avatar/user_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/student.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/teacher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/favicon/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/001-mauritius.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/003-austria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/004-oman.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/005-ethiopia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/006-tanzania.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/007-nicaragua.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/008-estonia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/009-uganda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/010-slovenia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/011-zimbabwe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/012-sao-tome-and-prince.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/013-italy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/014-wales.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/015-el-salvador.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/016-nepal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/017-christmas-island.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/018-lebanon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/019-ceuta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/020-iraq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/021-cook-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/022-syria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/023-cocos-island.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/024-honduras.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/025-anguilla.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/026-qatar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/027-american-samoa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/028-puerto-rico.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/029-comoros.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/030-north-korea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/031-corsica.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/032-zambia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/033-saint-kitts-and-nevis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/034-china.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/035-luxembourg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/036-central-african-republic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/037-jamaica.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/038-cape-verde.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/039-monaco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/040-bhutan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/041-paraguay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/042-aruba.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/043-montserrat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/044-latvia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/045-andorra.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/046-micronesia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/047-dominican-republic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/048-abkhazia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/049-tunisia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/050-mauritania.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/051-cayman-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/052-kosovo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/053-ghana.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/054-canary-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/055-scotland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/056-guinea-bissau.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/057-burundi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/058-myanmar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/059-gabon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/060-benin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/061-saba-island.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/062-namibia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/063-japan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/064-lithuania.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/065-eritrea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/066-chad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/067-kenya.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/068-djibouti.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/069-british-indian-ocean-territory.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/070-tuvalu-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/071-serbia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/072-bonaire.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/073-togo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/074-kazakhstan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/075-antigua-and-barbuda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/076-suriname.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/077-jordan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/078-belize.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/079-st-barts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/080-iceland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/081-bermuda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/082-united-nations.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/083-somalia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/084-barbados.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/085-solomon-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/086-nigeria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/087-aland-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/088-uruguay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/089-sint-maarten.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/090-burkina-faso.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/091-slovakia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/092-sierra-leone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/093-basque-country.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/094-south-korea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/095-pitcairn-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/096-mozambique.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/097-san-marino.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/098-guatemala.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/099-albania.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/100-pakistan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/101-northern-cyprus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/102-balearic-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/103-marshall-island.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/104-ecuador.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/105-cameroon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/106-panama.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/107-kwait.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/108-armenia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/109-romania.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/110-guinea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/111-afghanistan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/112-laos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/113-greenland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/114-british-virgin-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/115-hungary.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/116-curacao.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/117-angola.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/118-malasya.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/119-brunei.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/120-bahamas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/121-new-zealand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/123-british-columbia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/124-vatican-city.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/125-finland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/126-botswana.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/127-sri-lanka.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/128-spain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/129-ossetia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/130-sicily.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/131-chile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/132-bosnia-and-herzegovina.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/133-saudi-arabia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/134-liechtenstein.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/135-belarus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/136-iran.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/137-fiji.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/138-bahrain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/139-venezuela.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/140-east-timor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/141-azerbaijan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/142-tibet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/143-norway.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/144-algeria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/145-ukraine.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/146-gambia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/147-bangladesh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/148-madeira.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/149-czech-republic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/150-bolivia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/151-united-arab-emirates.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/152-kyrgyzstan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/153-cuba.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/154-swaziland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/155-israel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/156-costa-rica.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/157-republic-of-the-congo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/158-egypt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/159-cambodia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/160-northern-marianas-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/161-ivory-coast.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/162-germany.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/163-papua-new-guinea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/164-croatia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/165-belgium.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/166-morocco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/167-macao.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/168-bulgaria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/169-liberia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/170-greece.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/171-galapagos-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/172-st-lucia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/173-mali.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/174-denmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/175-rapa-nui.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/176-lesotho.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/177-colombia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/178-palau.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/179-ireland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/180-french-polynesia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/181-trinidad-and-tobago.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/182-niue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/183-hong-kong.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/184-sweden.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/185-haiti.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/186-dominica.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/187-vanuatu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/188-peru.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/189-equatorial-guinea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/190-uzbekistn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/191-tonga.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/192-philippines.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/193-norfolk-island.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/194-malta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/195-france.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/196-tajikistan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/197-melilla.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/198-argentina.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/199-sudan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/200-south-africa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/201-martinique.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/202-taiwan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/203-sahrawi-arab-democratic-republic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/204-guernsey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/205-switzerland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/206-rwanda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/207-guam.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/208-palestine.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/209-indonesia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/210-grenada.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/211-poland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/212-moldova.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/213-gibraltar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/214-malawi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/215-falkland-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/216-england.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/217-virgin-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/218-turkey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/219-isle-of-man.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/220-vietnam.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/221-tuvalu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/222-niger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/223-turks-and-caicos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/224-portugal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/225-maldives.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/226-united-states.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/227-senegal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/228-nauru.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/229-turkmenistan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/230-singapore.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/231-libya.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/232-yemen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/233-transnistria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/234-australia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/235-tokelau.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/236-republic-of-macedonia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/237-netherlands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/238-thailand.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/239-montenegro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/240-azores-islands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/241-st-vincent-and-the-grenadines.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/242-madagascar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/243-canada.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/244-south-sudan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/245-jersey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/246-india.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/247-somaliland.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/248-russia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/249-democratic-republic-of-congo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/250-sint-eustatius.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/251-samoa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/252-mexico.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/253-seychelles.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/254-nato.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/255-brazil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/256-georgia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/257-sardinia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/258-mongolia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/259-european-union.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/260-united-kingdom.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/261-kiribati.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/flags/262-hawaii.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/funds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/mentor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/money-bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/sad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/student.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/student1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/trophy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-transparent-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro-new-logo-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro-new-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_courses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_experts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/mentoro_mentors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/HitBTC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/binance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/bitfinex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/coinbase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/cointiger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/gdax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/huobi-logo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/okex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/partners/zbcom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/001-sia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/002-bitcoin-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/003-american-express.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/004-epherium.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/005-walmart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/006-stratis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/007-magento.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/008-dash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/009-prestashop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/010-etherum.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/011-zcash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/012-volusion.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/013-instadebit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/014-quickpay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/015-auctioncom.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/016-shopate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/017-payza.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/018-spree.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/019-direct-debit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/020-web-money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/021-shopware.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/022-payu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/023-woocommerce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/024-wallet-one.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/025-oberlo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/026-boohoo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/027-better-business-bureau.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/028-wepay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/029-etsy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/030-pay-point.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/031-ark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/032-visa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/033-ripple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/034-tether.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/035-bluepay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/036-postepay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/037-iconomi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/038-omisego.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/039-moneygram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/040-standard-chartered.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/041-neocoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/042-shopify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/043-ardor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/044-nxt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/045-hsbc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/046-primecoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/047-asos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/048-monacoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/049-cirrus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/050-citi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/051-blackcoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/052-ideal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/053-arch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/054-paypal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/055-monero.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/056-jcb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/057-emercoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/058-unionpay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/059-namecoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/060-western-union.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/061-qora.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/062-peercoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/063-eway.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/064-maidsafe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/065-klarna.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/066-worldpay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/067-syscoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/068-bitcoindark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/069-2checkout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/070-sage.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/071-reddcoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/072-supernet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/073-society6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/074-bitshares.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/075-mastercard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/076-bitcoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/077-maestro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/078-litecoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/079-stellar-coin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/080-ebay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/081-myriad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/082-blockchain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/083-blackberry-pay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/084-android-pay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/085-opencart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/086-apple-pay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/087-paytm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/088-dinners-club.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/089-viacoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/090-okpay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/091-groupon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/092-gratipay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/093-discover.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/094-stripe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/095-google-wallet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/payments/096-dogecoin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/addthis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/amazon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/bebo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/behance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/bing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/blogger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/delicious.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/deviantart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/digg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/dribbble.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/dropbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/ebay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/evernote.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/flickr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/forrst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/foursquare-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/foursquare.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/google-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/grooveshark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/html.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/kickstarter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/lastfm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/livejournal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/myspace.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/opera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/paypal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/picasa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/pinterest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/sharethis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/skype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/soundcloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/stumbleupon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/technorati.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/telegram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/tumblr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/viber.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/vimeo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/wikipedia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/wordpress.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/xing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/yahoo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/yandex.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/social/zerply.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/dropzone-amd-module.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/dropzone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/js/file_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/jquery.tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/bg_BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/es_ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/es_MX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/fa_IR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/fr_FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/he_IL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/hu_HU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/it_IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/kk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ko_KR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/nb_NO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/pt_BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/pt_PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ro_RO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/sl_SI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/sv_SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/ta_IN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/th_TH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/tr_TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/langs/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/advlist/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/anchor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/autolink/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/autoresize/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/autosave/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/bbcode/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/charmap/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/code/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/codesample/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/colorpicker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/contextmenu/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/directionality/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/emoticons/js/emojis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/emoticons/js/emojis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/emoticons/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/fullpage/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/fullscreen/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/help/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/hr/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/image/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/imagetools/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/importcss/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/link/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/lists/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/media/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/noneditable/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/pagebreak/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/paste/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/preview/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/print/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/quickbars/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/save/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/searchreplace/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/spellchecker/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/table/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/template/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/textpattern/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/toc/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/visualblocks/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/visualchars/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/plugins/wordcount/plugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/content/default/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/content/document/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/content/writer/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/content.inline.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/content.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/skin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide-dark/skin.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/content.inline.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/content.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/content.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/skin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/skins/ui/oxide/skin.mobile.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/themes/mobile/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/themes/silver/theme.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/tinymce/tinymce.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/colors.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/colors.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_courses.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_courses.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/student.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/teacher.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/favicon/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/logo-transparent-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro-new-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/HitBTC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/binance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/bitfinex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/coinbase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/cointiger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/gdax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/huobi-logo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/okex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/partners/zbcom.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/templates/user_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/templates/user_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/templates/user_logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/templates/user_logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/templates/user_password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/templates/user_password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/user/templates/user_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/templates/user_register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,11 +833,11 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="5" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="2" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -88,56 +845,56 @@
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="16" />
+          <entry key="Dockerfile" value="21" />
           <entry key="LICENSE" value="1" />
-          <entry key="conf" value="4" />
-          <entry key="db" value="3" />
+          <entry key="conf" value="9" />
+          <entry key="db" value="4" />
           <entry key="db-sample" value="1" />
-          <entry key="dev" value="5" />
+          <entry key="dev" value="6" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="147" />
+          <entry key="html" value="168" />
           <entry key="less" value="26" />
-          <entry key="md" value="31" />
-          <entry key="prod" value="12" />
+          <entry key="md" value="35" />
+          <entry key="prod" value="15" />
           <entry key="prod-sample" value="2" />
-          <entry key="py" value="172" />
+          <entry key="py" value="226" />
           <entry key="redis" value="1" />
           <entry key="sh" value="1" />
-          <entry key="txt" value="13" />
-          <entry key="yml" value="24" />
+          <entry key="txt" value="18" />
+          <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="Dockerfile" value="16" />
-          <entry key="Env File" value="15" />
-          <entry key="HTML" value="147" />
+          <entry key="Dockerfile" value="21" />
+          <entry key="Env File" value="18" />
+          <entry key="HTML" value="168" />
           <entry key="Less" value="26" />
-          <entry key="Logstash" value="4" />
-          <entry key="Markdown" value="31" />
-          <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Python" value="172" />
-          <entry key="YAML" value="24" />
+          <entry key="Logstash" value="9" />
+          <entry key="Markdown" value="35" />
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="Python" value="226" />
+          <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="85" />
-          <entry key="conf" value="53" />
+          <entry key="conf" value="154" />
           <entry key="dev" value="14" />
-          <entry key="html" value="8612" />
+          <entry key="html" value="9607" />
           <entry key="less" value="1228" />
-          <entry key="md" value="94" />
+          <entry key="md" value="147" />
           <entry key="prod" value="19" />
-          <entry key="py" value="2081" />
-          <entry key="txt" value="201" />
-          <entry key="yml" value="186" />
+          <entry key="py" value="2821" />
+          <entry key="txt" value="263" />
+          <entry key="yml" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -145,13 +902,13 @@
           <entry key="DjangoUrlPath" value="1" />
           <entry key="Dockerfile" value="85" />
           <entry key="Env File" value="14" />
-          <entry key="HTML" value="8612" />
+          <entry key="HTML" value="9607" />
           <entry key="Less" value="1228" />
-          <entry key="Logstash" value="53" />
-          <entry key="Markdown" value="94" />
-          <entry key="PLAIN_TEXT" value="220" />
-          <entry key="Python" value="2080" />
-          <entry key="YAML" value="186" />
+          <entry key="Logstash" value="154" />
+          <entry key="Markdown" value="147" />
+          <entry key="PLAIN_TEXT" value="282" />
+          <entry key="Python" value="2820" />
+          <entry key="YAML" value="202" />
         </counts>
       </usages-collector>
     </session>
@@ -162,76 +919,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/templates/library_all.html">
+        <entry file="file://$PROJECT_DIR$/app/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="80" column="89" selection-start-line="80" selection-start-column="89" selection-end-line="80" selection-end-column="89" />
+            <state relative-caret-position="425">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/models.py">
+        <entry file="file://$PROJECT_DIR$/app/mentoro/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="1027">
+              <caret line="57" column="18" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="57" selection-end-column="18" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#631#663#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/app/templates/django_registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="25">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/admin.py">
+        <entry file="file://$PROJECT_DIR$/app/mentoro/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="600">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#308#317#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="62" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/templates/library_detail.html">
+        <entry file="file://$PROJECT_DIR$/app/templates/django_registration/registration_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1001">
-              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-              <folding>
-                <element signature="e#2557#2579#0#HTML" expanded="true" />
-              </folding>
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -252,57 +985,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
-        <option value="$PROJECT_DIR$/app/home/templates/mentors.html" />
-        <option value="$PROJECT_DIR$/app/home/templates/experts.html" />
-        <option value="$PROJECT_DIR$/app/home/templates/home_courses.html" />
-        <option value="$PROJECT_DIR$/app/home/templates/home_fees.html" />
-        <option value="$PROJECT_DIR$/app/dashboard/urls.py" />
-        <option value="$PROJECT_DIR$/app/dashboard/views.py" />
-        <option value="$PROJECT_DIR$/app/courses/templates/courses_index.html" />
         <option value="$PROJECT_DIR$/app/courses/admin.py" />
         <option value="$PROJECT_DIR$/app/dashboard/templates/dashboard_index.html" />
         <option value="$PROJECT_DIR$/app/courses/urls.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/courses/templates/course_new.html" />
         <option value="$PROJECT_DIR$/app/courses/templates/courses_all.html" />
         <option value="$PROJECT_DIR$/app/Dockerfile" />
         <option value="$PROJECT_DIR$/app/courses/views.py" />
         <option value="$PROJECT_DIR$/app/staticfiles/css/background.less" />
-        <option value="$PROJECT_DIR$/app/courses/templates/course_detail.html" />
         <option value="$PROJECT_DIR$/app/staticfiles/css/colors.less" />
-        <option value="$PROJECT_DIR$/app/courses/templates/course_edit.html" />
-        <option value="$PROJECT_DIR$/app/courses/models.py" />
-        <option value="$PROJECT_DIR$/app/user/views.py" />
         <option value="$PROJECT_DIR$/app/user/templates/user_logout.html" />
         <option value="$PROJECT_DIR$/app/user/templates/user_password_reset.html" />
-        <option value="$PROJECT_DIR$/app/user/forms.py" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/user/templates/user_register.html" />
         <option value="$PROJECT_DIR$/app/user/templates/user_login.html" />
         <option value="$PROJECT_DIR$/.env.dev" />
         <option value="$PROJECT_DIR$/app/library/urls.py" />
         <option value="$PROJECT_DIR$/app/library/templates/library_edit.html" />
         <option value="$PROJECT_DIR$/app/library/templates/library_new.html" />
-        <option value="$PROJECT_DIR$/app/library/forms.py" />
-        <option value="$PROJECT_DIR$/app/courses/forms.py" />
-        <option value="$PROJECT_DIR$/app/mentoro/settings.py" />
-        <option value="$PROJECT_DIR$/app/mentoro/urls.py" />
-        <option value="$PROJECT_DIR$/app/home/templates/home_index.html" />
         <option value="$PROJECT_DIR$/app/staticfiles/css/theme.less" />
         <option value="$PROJECT_DIR$/app/home/templates/home_salescharges.html" />
-        <option value="$PROJECT_DIR$/app/home/views.py" />
         <option value="$PROJECT_DIR$/app/home/urls.py" />
         <option value="$PROJECT_DIR$/app/home/templates/home_affiliate.html" />
-        <option value="$PROJECT_DIR$/app/library/templates/library_detail.html" />
-        <option value="$PROJECT_DIR$/app/library/views.py" />
         <option value="$PROJECT_DIR$/app/templates/footer.html" />
-        <option value="$PROJECT_DIR$/app/library/templates/library_all.html" />
         <option value="$PROJECT_DIR$/app/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/app/user/forms.py" />
+        <option value="$PROJECT_DIR$/app/library/forms.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/templates/elements/hotjar.html" />
+        <option value="$PROJECT_DIR$/app/library/templates/library_all.html" />
+        <option value="$PROJECT_DIR$/app/templates/elements/smartsupp.html" />
         <option value="$PROJECT_DIR$/app/library/admin.py" />
-        <option value="$PROJECT_DIR$/app/library/models.py" />
+        <option value="$PROJECT_DIR$/app/courses/templates/course_detail.html" />
+        <option value="$PROJECT_DIR$/app/library/templates/library_detail.html" />
+        <option value="$PROJECT_DIR$/.env.prod.db" />
+        <option value="$PROJECT_DIR$/.env.prod" />
+        <option value="$PROJECT_DIR$/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/app/home/templates/home_index.html" />
+        <option value="$PROJECT_DIR$/app/user/views.py" />
+        <option value="$PROJECT_DIR$/app/library/models.py" />
+        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/library/views.py" />
+        <option value="$PROJECT_DIR$/app/home/views.py" />
+        <option value="$PROJECT_DIR$/app/courses/templates/course_edit.html" />
+        <option value="$PROJECT_DIR$/app/courses/forms.py" />
+        <option value="$PROJECT_DIR$/app/courses/models.py" />
         <option value="$PROJECT_DIR$/app/requirements.txt" />
+        <option value="$PROJECT_DIR$/app/mentoro/urls.py" />
+        <option value="$PROJECT_DIR$/app/mentoro/settings.py" />
+        <option value="$PROJECT_DIR$/app/django_registration/registration_form.html" />
+        <option value="$PROJECT_DIR$/app/templates/django_registration/login.html" />
       </list>
     </option>
   </component>
@@ -341,14 +1074,14 @@
               <item name="mentoro" type="b2602c69:ProjectViewProjectNode" />
               <item name="mentoro" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mentoro" type="b2602c69:ProjectViewProjectNode" />
               <item name="mentoro" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="django_registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -362,6 +1095,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\narzu\Desktop\PROJEKTY\mentoro\app\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -426,13 +1164,37 @@
       <option name="project" value="LOCAL" />
       <updated>1589628605522</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add new app">
+      <created>1590243907178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590243907178</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add new app">
+      <created>1590243960684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590243960684</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892932" visible="true" weight="0.15222576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892932" visible="true" weight="0.21224165" />
       <window_info id="Structure" order="1" sideWeight="0.5010707" side_tool="true" weight="0.17607313" />
       <window_info id="Favorites" order="2" sideWeight="0.5010707" side_tool="true" weight="0.17607313" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,12 +1203,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.4934924" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.7093276" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29284164" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -455,21 +1217,21 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892932" visible="true" weight="0.1772655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892932" visible="true" weight="0.21224165" />
       <window_info id="Structure" order="1" sideWeight="0.5010707" side_tool="true" weight="0.17607313" />
       <window_info id="Favorites" order="2" sideWeight="0.5010707" side_tool="true" weight="0.17607313" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.4934924" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28741866" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29284164" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -490,120 +1252,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add new app" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/courses/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/staticfiles/css/background.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/templates/course_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/templates/user_password_reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/templates/user_logout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/templates/course_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/templates/user_register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/templates/user_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mentoro/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.dev">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/library/templates/library_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -615,34 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mentoro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mentoro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -681,24 +1301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/home/templates/home_affiliate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -709,34 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/courses/templates/course_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="53" column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/courses/templates/courses_all.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/templates/library_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1001">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-          <folding>
-            <element signature="e#2557#2579#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/templates/home_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="124" column="42" lean-forward="true" selection-start-line="124" selection-start-column="42" selection-end-line="124" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -754,80 +1336,281 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/migrations/0002_auto_20200523_1248.py" />
+    <entry file="file://$PROJECT_DIR$/app/courses/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/library/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/elements/hotjar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/elements/smartsupp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1590585216457" expanded="true" signature="224:496" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/admin.py">
+    <entry file="file://$PROJECT_DIR$/app/courses/templates/course_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="e#2557#2579#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.prod.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/templates/library_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="925">
+            <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Dockerfile.prod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/templates/home_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="33" selection-start-line="33" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1590671985237" expanded="true" signature="411:579" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/library/templates/library_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/library/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="175">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/migrations/0002_auto_20200523_1248.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="32" selection-start-line="32" selection-end-line="32" selection-end-column="62" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/app/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/templates/library_all.html">
+    <entry file="file://$PROJECT_DIR$/app/courses/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="80" column="89" selection-start-line="80" selection-start-column="89" selection-end-line="80" selection-end-column="89" />
+        <state relative-caret-position="25">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/models.py">
+    <entry file="file://$PROJECT_DIR$/app/courses/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="50">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/app/courses/templates/course_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="250">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="425">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/django_registration/registration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mentoro/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mentoro/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/django_registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
