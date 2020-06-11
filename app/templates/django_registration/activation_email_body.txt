@@ -1,0 +1,3 @@
+Hi {{user}}
+
+{{scheme}}://{{site}}/accounts/activate/{{activation_key}}

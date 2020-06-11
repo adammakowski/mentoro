@@ -5,4 +5,4 @@ class LibraryForm(forms.ModelForm):
 
     class Meta:
         model = LibraryFile
-        fields = ('title', 'price', 'image_preview', 'image_preview', 'short_description', 'description',)
+        fields = ('title', 'category', 'language', 'price', 'short_description', 'description', 'image_preview', 'video_preview', 'file_download',)

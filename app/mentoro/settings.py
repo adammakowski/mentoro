@@ -36,6 +36,7 @@ DEBUG = int(os.environ.get("DEBUG", default=0))
 
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 # For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
 INTERNAL_IPS = [
@@ -57,11 +58,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_registration',
+    'crispy_forms', # https://django-crispy-forms.readthedocs.io
     'optimized_image', # TinyPNG optimize images
     'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
     'simple_history', # https://django-simple-history.readthedocs.io
     'home', # home app
-    'user', # user app
+    'accounts', # accounts app
     'dashboard', # dashboard app
     'courses', # Mentoro|Courses app
     'library', # Mentoro|Library app
@@ -98,20 +100,24 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mentoro.wsgi.application'
+ASGI_APPLICATION = 'mentoro.asgi.application'
+
+# Caches
+
+CACHES = {
+    "default": {
+        "BACKEND": os.environ.get("REDIS_BACKEND"),
+        "LOCATION": os.environ.get("REDIS_LOCATION"),
+        "OPTIONS": {
+            "CLIENT_CLASS": os.environ.get("REDIS_CLIENT_CLASS"),
+            "COMPRESSOR": os.environ.get("REDIS_COMPRESSOR"),
+        }
+    }
+}
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
-        }
-    }
-}
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -170,30 +176,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/staticfiles/'
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
-
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
-
-
-STATICFILES_FINDERS = (
-  'django.contrib.staticfiles.finders.FileSystemFinder',
-  'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-)
-
+STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder',)
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
+# Registration settings
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
+REGISTRATION_OPEN = True
+
 # URLS
 LOGIN_REDIRECT_URL = 'dashboard_index'
-LOGIN_URL = 'user_login'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'home_index'
 
 # Email config
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
-# STORAGE DIGITALOCEAN SPACES
+# STORAGE DIGITALOCEAN SPACES - files and staticfiles
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = 'E7YBKQOQDTPZKTPLZ5HL'
 AWS_SECRET_ACCESS_KEY = '/OY252g/wraA3JOZQnlnxj3VZ9GbCN8VlAFjp67xADI'
@@ -205,3 +208,6 @@ AWS_DEFAULT_ACL = None
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
 TINYPNG_KEY = "2XMGQK2J0c6vF84Z6r8Sggfrk283b0qs"
+
+# Django Crispy Forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

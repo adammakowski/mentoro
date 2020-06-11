@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="pb-5">
+    <section class="pb-5 bg-theme-milky">
         <div class="container pt-4">
             <form>
                 <div class="form-row">
@@ -24,14 +24,17 @@
             </form>
             <div class="row">
                 <div class="col-lg-3">
+                    <div class="pb-3">
+                        <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'library_new' %}" role="button"><i class="fas fa-plus"></i> Add your files</a>
+                    </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
                             <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'library_all' %}">All categories</a>
                         </li>
                         {% for library_file in library_file %}
-                        <li class="nav-item">
-                            <a class="nav-link dark-link" href="{% url 'library_all' %}">{{ library_file.category }}</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link dark-link" href="{% url 'library_all' %}">{{ library_file.category }}</a>
+                            </li>
                         {% endfor %}
                     </ul>
                 </div>

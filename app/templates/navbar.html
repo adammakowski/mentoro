@@ -41,14 +41,14 @@
                 <form class="form-inline my-2 my-lg-0">
                     <a href="" class="nav-link">Hi, {{ user.username }}</a>
                     <a href="{% url 'dashboard_index' %}" class="text-decoration-none dark-link">Dashboard</a>
-                    <a href="{% url 'home_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
-                    <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'user_logout' %}" role="button">Logout</a>
+                    <a href="{% url 'accounts_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
+                    <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="" role="button">Logout</a>
                 </form>
             {% else %}
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Search anything" aria-label="Look for a mentor or course">
-                    <a class="nav-link dark-link" href="{% url 'user_login' %}">Sign In</a>
-                    <a class="btn btn-primary font-weight-bold shadow rounded-0" href="{% url 'user_register' %}" role="button">Get started</a>
+                    <a class="nav-link dark-link font-special-bold" href="{% url 'login' %}">Sign In</a>
+                    <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Get started</a>
                 </form>
             {% endif %}
 
