@@ -19,8 +19,63 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="">
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="ngnix domain add">
+      <change afterPath="$PROJECT_DIR$/app/gunicorn.conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/library/migrations/0005_auto_20200616_0830.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/four.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/one.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/three.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/icons/two.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-courses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-experts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-mentors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/four.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/one.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/three.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/two.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo-courses.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo-experts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo-library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo-mentors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/conf/mentoro.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/accounts_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/accounts_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/templates/library_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/templates/library_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/templates/library_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-courses.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-experts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-jumbo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-library.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-library.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-mentors.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro-new-logo-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_courses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_experts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/mentoro_mentors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,9 +117,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\tests" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -113,8 +170,30 @@
       <workItem from="1591810763898" duration="1570000" />
       <workItem from="1591874821616" duration="5321000" />
       <workItem from="1591887053740" duration="1877000" />
-      <workItem from="1591958182617" duration="959000" />
+      <workItem from="1591958182617" duration="12083000" />
+      <workItem from="1592044228061" duration="13695000" />
+      <workItem from="1592140272562" duration="20103000" />
+      <workItem from="1592294868237" duration="7323000" />
+      <workItem from="1592342399259" duration="4803000" />
+      <workItem from="1592375544378" duration="89000" />
+      <workItem from="1592375678693" duration="7491000" />
+      <workItem from="1592667464471" duration="1765000" />
     </task>
+    <task id="LOCAL-00001" summary="ngnix domain add">
+      <created>1591959289518</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591959289518</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ngnix domain add">
+      <created>1591959387646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591959387646</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,16 +213,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ngnix domain add" />
+    <option name="LAST_COMMIT_MESSAGE" value="ngnix domain add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591194406512">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1591194406512" />
-    <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591174870345">
+    <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591985909854">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1591174870345" />
+    <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1591985909854" />
     <state x="1010" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591619795444">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -168,10 +249,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1591194374829" />
-    <state x="1218" y="147" key="SettingsEditor" timestamp="1591875020760">
+    <state x="1218" y="147" key="SettingsEditor" timestamp="1592342740865">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1218" y="147" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1591875020760" />
+    <state x="1218" y="147" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1592342740865" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591959291851">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1591959291851" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mentoro$Scripts.coverage" NAME="Scripts Coverage Results" MODIFIED="1591194300884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../venv/mentoro" />

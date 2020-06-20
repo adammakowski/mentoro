@@ -1,36 +1,42 @@
 version: '3.7'
 
 services:
-  web:
+  web-prod:
     build:
       context: ./app
       dockerfile: Dockerfile.prod
-    command: gunicorn -k uvicorn.workers.UvicornWorker mentoro.asgi:application -w 4 -b 0.0.0.0:8000
+    command: gunicorn mentoro.asgi:application -k uvicorn.workers.UvicornWorker -c gunicorn.conf.py
     volumes:
       - static_volume:/usr/src/app/mentoro/staticfiles
       - media_volume:/usr/src/app/mediafiles
     expose:
-      - 8000
+      - "8000"
     env_file:
       - ./.env.prod
     depends_on:
-      - db
-      - redis
-  db:
+      - db-prod
+      - redis-prod
+    networks:
+      - mentoro-network
+  db-prod:
     image: postgres:11
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env.prod.db
-  redis:
+    networks:
+      - mentoro-network
+  redis-prod:
     image: redis:6-buster
     restart: always
     volumes:
-    - redis_data:/var/lib/redis/data/
+      - redis_data:/var/lib/redis/data/
     expose:
-    - "6379"
-  nginx:
+      - "6379"
+    networks:
+      - mentoro-network
+  nginx-prod:
     restart: always
     build: ./nginx
     volumes:
@@ -39,11 +45,15 @@ services:
     ports:
       - 1337:80
     depends_on:
-      - web
-      - redis
+      - web-prod
+      - redis-prod
+    networks:
+      - mentoro-network
 
 volumes:
   postgres_data:
   redis_data:
   static_volume:
   media_volume:
+networks:
+  mentoro-network:

@@ -13,6 +13,8 @@ services:
     depends_on:
       - db
       - redis
+    networks:
+      - mentoro-network
   db:
     image: postgres:11
     restart: always
@@ -24,6 +26,8 @@ services:
       - POSTGRES_DB=mentoro_dev
     depends_on:
       - redis
+    networks:
+      - mentoro-network
   redis:
     image: redis:6-buster
     restart: always
@@ -33,8 +37,12 @@ services:
       - "6379"
     env_file:
       - ./.env.dev
+    networks:
+      - mentoro-network
 
 volumes:
   postgres_data:
   redis_data:
+networks:
+  mentoro-network:
 

@@ -35,10 +35,12 @@
                     <div class="card-body">
                         <a href="{% url 'library_detail' pk=library_file.pk %}" class="h5 text-decoration-none">{{ library_file.title }}</a>
                         <p>Published {{ library_file.published_date }}</p>
+                        <p class="mb-0 font-special-bold">Short description</p>
                         <p>{{ library_file.short_description }}</p>
-                    </div>
-                    <div class="card-footer">
+                        <p class="mb-0 font-special-bold">Detailed description</p>
                         <p>{{ library_file.description }}</p>
+                        <p class="mb-0 font-special-bold">Contents</p>
+                        <p>{{ library_file.contests }}</p>
                     </div>
                 </div>
             </div>
@@ -54,6 +56,7 @@
                         <p><img src="{% static 'img/avatar/user_avatar.png' %}" class="img-fluid rounded-circle" style="height: 10rem;" alt=""></p>
                         <a href="" class="text-decoration-none">{{ library_file.author }}</a>
                         <hr>
+                        <p>Sold in quantities <span class="font-special-bold">435</span> pieces</p>
                         <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">${{ library_file.price }}</h4>
                         <hr>
                         <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-shopping-cart"></i> Buy now</a>

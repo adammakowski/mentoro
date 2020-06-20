@@ -2,18 +2,19 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
+import debug_toolbar
 
+# Sentry SDK
 def trigger_error(request):
     division_by_zero = 1 / 0
-
-# if bool(settings.DEBUG):
-#     import debug_toolbar
+# Django Debug Toolbar
+if bool(settings.DEBUG):
+    import debug_toolbar
 
 urlpatterns = [
     # sentry werify
-    path('sentry-debug/', trigger_error),
-    # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    # path('__debug__/', include(debug_toolbar.urls)),
+    path('sentry-debug/', trigger_error), # Sentry SDK
+    path('__debug__/', include(debug_toolbar.urls)), # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
     # admin path
     path('admin/', admin.site.urls),
     # sites path

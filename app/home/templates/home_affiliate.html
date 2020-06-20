@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="pt-5 pb-5">
+    <section class="pt-5 pb-5 bg-theme-milky">
         <div class="container">
             <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
                 <div class="card-body text-center p-5">
-                    <h3 class="text-white">Attractive affiliate program</h3>
+                    <h3 class="text-white font-special-bold">Attractive affiliate program</h3>
                     <h5 class="text-primary pb-3">We give 5% of our profits</h5>
-                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-weight-bold" href="{% url 'user_register' %}" role="button">Create free account</a>
+                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-special-bold" href="{% url 'django_registration_register' %}" role="button">Create free account</a>
                 </div>
             </div>
         </div>

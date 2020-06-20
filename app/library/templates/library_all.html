@@ -40,28 +40,31 @@
                 </div>
                 <div class="col-lg-9">
                     {% for library_file in library_file %}
-                        <div class="card rounded-0 shadow">
-                            <img src="{{ library_file.image_preview.url }}" class="img-fluid rounded-0" alt="">
-                            <div class="card-body">
-                                <h4 class="float-right text-white font-special-bold bg-theme-gunmetal p-2">${{ library_file.price }}</h4>
-                                <p class="font-special-bold">{{ library_file.language }}</p>
-                                <p>{{ library_file.category }}</p>
-                                <a href="{% url 'library_detail' pk=library_file.pk %}" class="h5 text-decoration-none">{{ library_file.title }}</a>
-                                <p>{{ library_file.short_description|linebreaksbr }}</p>
-                                <p class="mb-0">Published {{ library_file.published_date }} by <a href="" class="text-decoration-none">{{ library_file.author }}</a></p>
-                                <p class="mb-0">Positive <span class="text-success font-special-bold">422</span> and negative <span class="text-danger font-special-bold">13</span> <a href="" class="text-decoration-none">reviews</a></p>
-                                <p>Sold in quantities <span class="font-special-bold">435</span> pieces</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="{% url 'library_detail' pk=library_file.pk %}" class="btn btn-dark btn-block font-weight-bold shadow rounded-0"><i class="fas fa-info-circle"></i> Check details</a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block font-weight-bold shadow rounded-0"><i class="fas fa-shopping-cart"></i> Buy now</a>
+                        <div class="pb-3">
+                            <div class="card rounded-0 shadow">
+                                <img src="{{ library_file.image_preview.url }}" class="img-fluid rounded-0" alt="">
+                                <div class="card-body">
+                                    <h4 class="float-right text-white font-special-bold bg-theme-gunmetal p-2">${{ library_file.price }}</h4>
+                                    <p class="font-special-bold">{{ library_file.language }}</p>
+                                    <p>{{ library_file.category }}</p>
+                                    <a href="{% url 'library_detail' pk=library_file.pk %}" class="h5 text-decoration-none">{{ library_file.title }}</a>
+                                    <p>{{ library_file.short_description|linebreaksbr }}</p>
+                                    <p class="mb-0">Published {{ library_file.published_date }} by <a href="" class="text-decoration-none">{{ library_file.author }}</a></p>
+                                    <p class="mb-0">Positive <span class="text-success font-special-bold">422</span> and negative <span class="text-danger font-special-bold">13</span> <a href="" class="text-decoration-none">reviews</a></p>
+                                    <p>Sold in quantities <span class="font-special-bold">435</span> pieces</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="{% url 'library_detail' pk=library_file.pk %}" class="btn btn-dark btn-block font-weight-bold shadow rounded-0"><i class="fas fa-info-circle"></i> Check details</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="#" class="btn btn-success btn-block font-weight-bold shadow rounded-0"><i class="fas fa-shopping-cart"></i> Buy now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     {% endfor %}
+
                     <div class="pt-3">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">

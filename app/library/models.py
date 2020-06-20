@@ -25,6 +25,7 @@ class LibraryFile(models.Model):
     price = models.DecimalField(null=False, blank=False, max_digits=7, decimal_places=2, default='9.99')
     short_description = models.TextField(blank=False, null=False, max_length=500, default='')
     description = models.TextField(blank=False, null=False, default='')
+    contests = models.TextField(blank=False, null=False, default='')
     image_preview = OptimizedImageField(upload_to='library/image_library_preview/%Y/%m/%d/', blank=False, null=False, default='')
     video_preview = models.FileField(upload_to='library/video_library_preview/%Y/%m/%d/', blank=True, null=True, default='')
     file_download = models.FileField(upload_to='library/files_library/%Y/%m/%d/', blank=False, null=False, default='')
