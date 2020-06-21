@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.decorators.cache import cache_page
 # Create your views here.
 
-@cache_page(60 * 60) # Cache time to live is 60 minutes.
+#@cache_page(60 * 60) # Cache time to live is 60 minutes.
 def home_index(request):
     return render(request, 'home_index.html', {})
 # @cache_page(60 * 15) # Cache time to live is 15 minutes.
