@@ -5,6 +5,7 @@
   </component>
   <component name="ProjectPlainTextFileTypeManager">
     <file url="file://$PROJECT_DIR$/.env.prod" />
+    <file url="file://$PROJECT_DIR$/README.md" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (mentoro)" project-jdk-type="Python SDK" />
 </project>

@@ -43,7 +43,8 @@ services:
       - static_volume:/usr/src/app/mentoro/staticfiles
       - media_volume:/usr/src/app/mediafiles
     ports:
-      - 1337:80
+      - 80:80
+      - 447:447
     depends_on:
       - web-prod
       - redis-prod

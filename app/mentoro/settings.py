@@ -164,13 +164,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
-STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder',)
-MEDIA_URL = "/mediafiles/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+# #STATIC_URL = '/staticfiles/'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
+# PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+# #STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
+# STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder',)
+# MEDIA_URL = "/mediafiles/"
+# MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
 # Registration settings
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
@@ -196,6 +196,14 @@ AWS_STORAGE_BUCKET_NAME = 'mentoro.online'
 AWS_S3_REGION_NAME = 'fra1'
 AWS_S3_ENDPOINT_URL = 'https://fra1.digitaloceanspaces.com'
 AWS_DEFAULT_ACL = None
+# collect static
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'staticfiles'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATIC_URL = '{}/{}/'.format(AWS_S3_ENDPOINT_URL, AWS_LOCATION)
+STATIC_ROOT = '/staticfiles/'
 
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
