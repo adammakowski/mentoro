@@ -20,7 +20,7 @@ def library_detail(request, pk):
 @login_required
 def library_new(request):
     if request.method == "POST":
-        form = LibraryForm(request.POST)
+        form = LibraryForm(request.POST, request.FILES)
         if form.is_valid():
             library_file = form.save(commit=False)
             library_file.author = request.user

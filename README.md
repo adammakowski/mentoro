@@ -32,7 +32,7 @@ Uses gunicorn + nginx.
 ### Create superuser
 docker exec -it mentoro_web-prod_1 python manage.py createsuperuser
 ### make migrations
-docker exec -it mentoro_web-prod_1 python manage.py makemigrations
+docker exec -it mentoro_web_1 python manage.py makemigrations
 ### make migrate
 docker exec -it mentoro_web-prod_1 python manage.py migrate
 ### collectstatic files

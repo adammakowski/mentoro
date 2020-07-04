@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.cache import cache_page
+from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from .models import Course
 from .forms import CourseForm
@@ -16,9 +17,10 @@ def course_detail(request, pk):
     return render(request, 'course_detail.html', {'course': course})
 
 #@cache_page(60 * 15) # Cache time to live is 15 minutes.
+@login_required
 def course_new(request):
     if request.method == "POST":
-        form = CourseForm(request.POST)
+        form = CourseForm(request.POST, request.FILES)
         if form.is_valid():
             course = form.save(commit=False)
             course.author = request.user
@@ -30,6 +32,7 @@ def course_new(request):
     return render(request, 'course_edit.html', {'form': form})
 
 #@cache_page(60 * 15) # Cache time to live is 1 minutes.
+@login_required
 def course_edit(request, pk):
     post = get_object_or_404(Course, pk=pk)
     if request.method == "POST":

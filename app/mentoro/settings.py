@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_registration',
+    'ckeditor', # https://github.com/django-ckeditor/django-ckeditor
+    'django_extensions', # https://github.com/django-extensions/django-extensions
     'crispy_forms', # https://django-crispy-forms.readthedocs.io
     'optimized_image', # TinyPNG optimize images
     'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
@@ -55,6 +56,8 @@ INSTALLED_APPS = [
     'dashboard', # dashboard app
     'courses', # Mentoro|Courses app
     'library', # Mentoro|Library app
+    'mentors', # Mentoro|Mentors app
+    'experts', # Mentoro|Experts app
 ]
 
 MIDDLEWARE = [
@@ -178,8 +181,7 @@ REGISTRATION_OPEN = True
 
 # URLS
 LOGIN_REDIRECT_URL = 'dashboard_index'
-LOGIN_URL = 'login'
-LOGOUT_URL = 'home_index'
+LOGIN_URL = 'account_login'
 
 # Email config Sendgrid SMTP
 EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
@@ -192,10 +194,11 @@ EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-AWS_STORAGE_BUCKET_NAME = 'mentoro.online'
-AWS_S3_REGION_NAME = 'fra1'
-AWS_S3_ENDPOINT_URL = 'https://fra1.digitaloceanspaces.com'
+AWS_STORAGE_BUCKET_NAME = 'mentoro-space'
+AWS_S3_REGION_NAME = 'sfo2'
+AWS_S3_ENDPOINT_URL = 'https://sfo2.digitaloceanspaces.com'
 AWS_DEFAULT_ACL = None
+
 
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
