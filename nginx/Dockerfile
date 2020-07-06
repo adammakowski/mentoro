@@ -1,4 +1,4 @@
 FROM nginx:stable
 
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx.conf /etc/nginx/conf.d
+ADD nginx.conf /etc/nginx/nginx.conf
+COPY ./conf /etc/nginx/sites-enabled

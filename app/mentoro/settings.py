@@ -167,13 +167,32 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
+#STATIC_URL = '/staticfiles/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
 STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder',)
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+
+# STORAGE AWS S3 - files and staticfiles
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+AWS_S3_REGION_NAME = 'eu-central-1'
+AWS_DEFAULT_ACL = None
+AWS_IS_GZIPPED = True
+AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+AWS_S3_ADDRESSING_STYLE = 'virtual'
+AWS_S3_BUCKET_AUTH = False
+AWS_S3_MAX_AGE_SECONDS = 60 * 60 * 24 * 365  # 1 year.
+AWS_QUERYSTRING_AUTH = True
+# s3 static settings
+AWS_LOCATION = 'staticfiles'
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Registration settings
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
@@ -189,16 +208,6 @@ SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
 SENDGRID_SANDBOX_MODE_IN_DEBUG = os.environ.get("SENDGRID_SANDBOX_MODE_IN_DEBUG")
 # development
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
-
-# STORAGE DIGITALOCEAN SPACES - files and staticfiles
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-AWS_STORAGE_BUCKET_NAME = 'mentoro-space'
-AWS_S3_REGION_NAME = 'sfo2'
-AWS_S3_ENDPOINT_URL = 'https://sfo2.digitaloceanspaces.com'
-AWS_DEFAULT_ACL = None
-
 
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
