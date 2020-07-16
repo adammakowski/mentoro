@@ -1,11 +1,47 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-theme-gunmetal">
+            <a class="navbar-brand" href="#">Moja tablica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Moje materiały</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Moje zakupy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Moja sprzedaż</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Profil publiczny</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Saldo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Program afilacyjny</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ustawienia konta</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Pomoc</a>
+                    </li>
+                </ul>
+                <a class="btn btn-success font-special-bold shadow rounded-0" href="{% url 'account_register' %}" role="button">Dodaj</a>
+            </div>
+        </nav>
+
     <section class="pt-5 pb-5 bg-theme-milky">
         <div class="container">
             <div class="card shadow rounded-0 border-0">
                 <div class="card-body">
-
+                    Cześć, {{ user.username }}
                 </div>
             </div>
         </div>

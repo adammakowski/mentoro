@@ -11,7 +11,7 @@ setuptools==47.3.1
 djangorestframework==3.11.0
 django-redis==4.12.1
 django-storages==1.9.1
-sentry-sdk==0.15.1
+sentry-sdk==0.16.1
 boto3==1.14.14
 pillow==7.2.0
 django-optimized-image==0.3.0

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="pt-5 pb-5 bg-theme-milky">
+
+        <div class="container pb-5">
+            <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
+                <div class="card-body text-center p-5">
+                    <h3 class="text-white font-special-bold">Wsparcie klienta</h3>
+                    <h5 class="text-primary pb-3">Służymy pomocą 24/7/365</h5>
+                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-special-bold" href="{% url 'account_register' %}" role="button">Utwórz darmowe konto</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-white pt-5 pb-5">
+            <div class="container">
+                <p class="text-center pb-5">Pomoc klientom to jeden z naszych priorytetów. Staramy się by każdy otrzymał wsparcie na najwyższym możliwym poziomie.</p>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <h5 class="text-primary font-special-bold text-center">Poczta email</h5>
+                                <p class="text-center">Standardowa forma kontaktu poprzez email</p>
+                                <hr class="my-2">
+                                <p class="text-center">Dla tych którzy korzystaja najwięcej z poczty elektronicznej</p>
+                                <hr>
+                                <h5 class="font-special-bold text-center">0dpowiadamy w kilka godzin</h5>
+                                <p class="text-center text-primary font-special-bold">Na zawsze</p>
+                                <hr>
+                                <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="mailto:support@mentoro.online" role="button"><i class="far fa-envelope"></i> Wyślij email</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <h5 class="text-primary font-special-bold text-center">Live chat</h5>
+                                <p class="text-center">Najszybsza forma kontaktu</p>
+                                <hr class="my-2">
+                                <p class="text-center">Najszybsza i najwygodniejsza forma kontaktu</p>
+                                <hr>
+                                <h5 class="font-special-bold text-center">0dpowiadamy najszybciej jak to możliwe</h5>
+                                <p class="text-center text-primary font-special-bold">Na zawsze</p>
+                                <hr>
+                                <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="https://tawk.to/chat/5edcfdc54a7c6258179a18a1/default" target="_blank" role="button"><i class="fas fa-headset"></i> Otwórz chat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="pt-5">oraz możesz napisać na naszych social media</p>
+                    <a href="#" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-3" style="height: 3rem;"></a>
+                    <a href="#" target="_blank"><img src="{% static 'img/social/instagram.svg' %}" class="img-fluid mr-lg-3" style="height: 3rem;"></a>
+                    <a href="#" target="_blank"><img src="{% static 'img/social/twitter.svg' %}" class="img-fluid mr-lg-3" style="height: 3rem;"></a>
+                    <a href="#" target="_blank"><img src="{% static 'img/social/youtube.svg' %}" class="img-fluid mr-lg-3" style="height: 3rem;"></a>
+                </div>
+        </section>
+
+    </section>
+
+
+{% endblock content %}

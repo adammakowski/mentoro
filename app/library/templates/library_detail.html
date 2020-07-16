@@ -34,14 +34,14 @@
                     <img src="{{ library_file.image_preview.url }}" class="img-fluid" alt="{{ library_file.title }}">
                     <div class="card-body">
                         <a href="{% url 'library_detail' pk=library_file.pk %}" class="h5 text-decoration-none">{{ library_file.title }}</a>
-                        <p>Published {{ library_file.published_date }}</p>
-                        <p class="mb-0 font-special-bold">Short description</p>
+                        <p>Opublikowane {{ library_file.published_date }}</p>
+                        <p class="mb-0 font-special-bold">Krótki opis</p>
                         <p>{{ library_file.short_description|safe }}</p>
-                        <p class="mb-0 font-special-bold">Detailed description</p>
+                        <p class="mb-0 font-special-bold">Szczegółowy opis</p>
                         <p>{{ library_file.description|safe }}</p>
-                        <p class="mb-0 font-special-bold">Contents</p>
+                        <p class="mb-0 font-special-bold">Zawartość i spis treści</p>
                         <p>{{ library_file.contests|safe }}</p>
-                        <p class="mb-0 font-special-bold">Requirements</p>
+                        <p class="mb-0 font-special-bold">Wymagania</p>
                         <p>{{ library_file.requirements|safe }}</p>
                     </div>
                 </div>
@@ -49,19 +49,19 @@
             <div class="col-lg-4">
                 <div class="card shadow rounded-0">
                     <div class="card-body text-center">
-                        <p class="text-muted">Details</p>
+                        <p class="text-muted">Szczegóły</p>
                         <hr class="">
                         <p class="font-special-bold">{{ library_file.category }}</p>
                         <p class="font-special-bold"><span class="text-success">422</span> / <span class="text-danger">13</span></p>
-                        <p>In <span class="font-special-bold">{{ library_file.language }}</span> language</p>
+                        <p>Język <span class="font-special-bold">{{ library_file.language }}</span></p>
                         <hr>
-                        <p><img src="{% static 'img/avatar/user_avatar.png' %}" class="img-fluid rounded-circle" style="height: 10rem;" alt=""></p>
+                        <p><img src="{% static 'img/avatar/adrian.png' %}" class="img-fluid" alt="{{ library_file.category.author }}"></p>
                         <a href="" class="text-decoration-none">{{ library_file.author }}</a>
                         <hr>
-                        <p>Sold in quantities <span class="font-special-bold">435</span> pieces</p>
-                        <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">${{ library_file.price }}</h4>
+                        <p>Sprzedane w ilości <span class="font-special-bold">435</span> sztuk</p>
+                        <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">{{ library_file.price }} PLN</h4>
                         <hr>
-                        <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-shopping-cart"></i> Buy now</a>
+                        <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-shopping-cart"></i> Kup teraz</a>
                         <hr>
                         <small>14-Days Money-Back Guarantee</small>
                     </div>
@@ -69,9 +69,9 @@
                 <div class="pt-3"></div>
                 <div class="card shadow rounded-0">
                     <div class="card-body text-center">
-                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Share and earn <i class="fas fa-share-alt"></i></a>
-                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Add to wish list <i class="far fa-heart"></i></a>
-                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Give to friend <i class="fas fa-gift"></i></a>
+                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Udostępnij i zarabiaj <i class="fas fa-share-alt"></i></a>
+                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Dodaj do listy życzeń <i class="far fa-heart"></i></a>
+                        <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Podaruj <i class="fas fa-gift"></i></a>
                     </div>
                 </div>
 

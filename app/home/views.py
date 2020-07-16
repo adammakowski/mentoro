@@ -20,3 +20,9 @@ def home_salescharges(request):
 #@cache_page(60 * 60) # Cache time to live is 15 minutes.
 def home_affiliate(request):
     return render(request, 'home_affiliate.html', {})
+#@cache_page(60 * 60) # Cache time to live is 15 minutes.
+def home_support(request):
+    return render(request, 'home_support.html', {})
+#@cache_page(60 * 60) # Cache time to live is 15 minutes.
+def home_privacypolicy(request):
+    return render(request, 'home_privacypolicy.html', {})

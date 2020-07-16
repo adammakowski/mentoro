@@ -3,7 +3,7 @@ version: '3.7'
 services:
   web:
     build: ./app
-    command: uvicorn mentoro.asgi:application --host 0.0.0.0 --port 8000 --reload
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
     ports:
@@ -11,12 +11,13 @@ services:
     env_file:
       - ./.env.dev
     depends_on:
-      - db
+      - postgresql
       - redis
+    restart: always
     networks:
       - mentoro-network
-  db:
-    image: postgres:11
+  postgresql:
+    image: postgres:12.3
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/

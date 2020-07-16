@@ -19,10 +19,14 @@
                         <a class="dropdown-item" href="#">Mentoro | Mentorzy</a>
                         <a class="dropdown-item" href="#">Mentoro | Eksperci</a>
                         <a class="dropdown-item" href="{% url 'library_all' %}">Mentoro | Biblioteka</a>
+                        <a class="dropdown-item" href="{% url 'blog_all' %}">Mentoro | Blog</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home_pricing' %}">Cennik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog_all' %}">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,15 +40,13 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wsparcie</a>
+                    <a class="nav-link" href="{% url 'home_support' %}">Wsparcie</a>
                 </li>
             </ul>
 
             {% if user.is_authenticated %}
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="" class="nav-link">Hi, {{ user.username }}</a>
-                    <a href="{% url 'dashboard_index' %}" class="text-decoration-none dark-link">Dashboard</a>
-                    <a href="{% url 'accounts_index' %}" class="nav-link text-decoration-none dark-link">Account</a>
+                    <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
                     <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
                 </form>
             {% else %}

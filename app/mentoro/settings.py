@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'library', # Mentoro|Library app
     'mentors', # Mentoro|Mentors app
     'experts', # Mentoro|Experts app
+    'blog', # Mentoro|Blog app
 ]
 
 MIDDLEWARE = [
@@ -101,7 +102,6 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": os.environ.get("REDIS_CLIENT_CLASS"),
             "COMPRESSOR": os.environ.get("REDIS_COMPRESSOR"),
-            "MAX_ENTRIES": 1000,
         }
     }
 }
@@ -154,9 +154,9 @@ PASSWORD_HASHERS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Warsaw'
 
 USE_I18N = True
 
@@ -167,7 +167,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-#STATIC_URL = '/staticfiles/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
@@ -176,23 +175,23 @@ MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
 # STORAGE AWS S3 - files and staticfiles
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-AWS_S3_REGION_NAME = 'eu-central-1'
-AWS_DEFAULT_ACL = None
-AWS_IS_GZIPPED = True
-AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-AWS_S3_ADDRESSING_STYLE = 'virtual'
-AWS_S3_BUCKET_AUTH = False
-AWS_S3_MAX_AGE_SECONDS = 60 * 60 * 24 * 365  # 1 year.
-AWS_QUERYSTRING_AUTH = True
-# s3 static settings
-AWS_LOCATION = 'staticfiles'
-STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+if DEBUG:
+    STATIC_URL = '/staticfiles/'
+else:
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+    AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_S3_CUSTOM_DOMAIN')
+    AWS_S3_REGION_NAME = 'eu-central-1'
+    AWS_DEFAULT_ACL = None
+    AWS_IS_GZIPPED = True
+    AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+    AWS_S3_ADDRESSING_STYLE = 'virtual'
+    # s3 static settings
+    AWS_LOCATION = 'staticfiles'
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Registration settings
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window

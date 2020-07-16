@@ -30,6 +30,8 @@ urlpatterns = [
     path('courses/', include('courses.urls')),
     # Mentoro|Library path
     path('library/', include('library.urls')),
+    # Mentoro|Library path
+    path('blog/', include('blog.urls')),
     # users auth
     path('account/register/', accounts_views.register, name='account_register'),
     path('account/login/', auth_views.LoginView.as_view(template_name='account_login.html'), name='account_login'),

@@ -6,9 +6,6 @@ services:
       context: ./app
       dockerfile: Dockerfile.prod
     command: gunicorn mentoro.asgi:application -k uvicorn.workers.UvicornWorker -c gunicorn.conf.py
-    volumes:
-      - static_volume:/usr/src/app/mentoro/staticfiles
-      - media_volume:/usr/src/app/mediafiles
     expose:
       - "8000"
     env_file:
@@ -19,7 +16,7 @@ services:
     networks:
       - mentoro-network
   db-prod:
-    image: postgres:11
+    image: postgres:12.3
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
@@ -39,9 +36,6 @@ services:
   nginx-prod:
     restart: always
     build: ./nginx
-    volumes:
-      - static_volume:/usr/src/app/mentoro/staticfiles
-      - media_volume:/usr/src/app/mediafiles
     ports:
       - 80:80
       - 447:447
