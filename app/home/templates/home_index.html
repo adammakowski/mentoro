@@ -9,7 +9,7 @@
             <hr class="my-4">
             <p class="text-white">Możesz utworzyć konto za darmo, bez ukrytych opłat. Rejestracja zajmuje mniej niż 30 sekund.</p>
             {% if user.is_authenticated %}
-                <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'dashboard_index' %}" role="button">Go to dashboard</a>
+                <a class="btn btn-light btn-lg shadow rounded-0 font-weight-bold" href="{% url 'dashboard_index' %}" role="button">Moje konto</a>
             {% else %}
                 <a class="btn btn-light btn-lg shadow rounded-0 font-special-bold" href="{% url 'account_register' %}" role="button">Utwórz darmowe konto</a>
             {% endif %}

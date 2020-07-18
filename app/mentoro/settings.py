@@ -37,7 +37,6 @@ DEBUG_TOOLBAR_CONFIG = {
 }
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,12 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'captcha', # https://github.com/praekelt/django-recaptcha
     'ckeditor', # https://github.com/django-ckeditor/django-ckeditor
     'django_extensions', # https://github.com/django-extensions/django-extensions
     'crispy_forms', # https://django-crispy-forms.readthedocs.io
     'optimized_image', # TinyPNG optimize images
     'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
     'simple_history', # https://django-simple-history.readthedocs.io
+    'django_cleanup.apps.CleanupConfig', # https://github.com/un1t/django-cleanup
     'home', # home app
     'accounts', # accounts app
     'dashboard', # dashboard app
@@ -193,20 +194,22 @@ else:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/'
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-# Registration settings
-ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
-REGISTRATION_OPEN = True
-
 # URLS
 LOGIN_REDIRECT_URL = 'dashboard_index'
 LOGIN_URL = 'account_login'
 
 # Email config Sendgrid SMTP
-EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
-SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
-SENDGRID_SANDBOX_MODE_IN_DEBUG = os.environ.get("SENDGRID_SANDBOX_MODE_IN_DEBUG")
-# development
-EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+if DEBUG:
+    EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+    EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+else:
+    EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
+    SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
+    SENDGRID_SANDBOX_MODE_IN_DEBUG = os.environ.get("SENDGRID_SANDBOX_MODE_IN_DEBUG")
+
+# Django reCaptcha
+RECAPTCHA_PUBLIC_KEY = '6LfG1bIZAAAAADPKKRuOHKAPN1sVWwAyfPKRGcwn'
+RECAPTCHA_PRIVATE_KEY = '6LfG1bIZAAAAAKB-jx6gjxgZCvV29-eFH-ip0cMY'
 
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
