@@ -10,6 +10,7 @@
                         {% csrf_token %}
                         {{ form.media }}
                         {{ form|crispy }}
+                        <input type="file" class="course_create_pond" name="course_create_pond"/>
                         <button type="submit" value="Submit" class="btn btn-success shadow rounded-0 btn-block font-special-bold">Zapisz</button>
                     </form>
                 </div>

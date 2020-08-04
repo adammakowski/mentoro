@@ -49,9 +49,11 @@ INSTALLED_APPS = [
     'django_extensions', # https://github.com/django-extensions/django-extensions
     'crispy_forms', # https://django-crispy-forms.readthedocs.io
     'optimized_image', # TinyPNG optimize images
+    'defender', # https://django-defender.readthedocs.io/en/latest/
     'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
     'simple_history', # https://django-simple-history.readthedocs.io
     'django_cleanup.apps.CleanupConfig', # https://github.com/un1t/django-cleanup
+    'django_drf_filepond', # https://django-drf-filepond.readthedocs.io/en/latest/
     'home', # home app
     'accounts', # accounts app
     'dashboard', # dashboard app
@@ -72,6 +74,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
     'simple_history.middleware.HistoryRequestMiddleware', # https://django-simple-history.readthedocs.io
+    'defender.middleware.FailedLoginMiddleware', # https://django-defender.readthedocs.io/en/latest/
 ]
 
 ROOT_URLCONF = 'mentoro.urls'
@@ -208,8 +211,8 @@ else:
     SENDGRID_SANDBOX_MODE_IN_DEBUG = os.environ.get("SENDGRID_SANDBOX_MODE_IN_DEBUG")
 
 # Django reCaptcha
-RECAPTCHA_PUBLIC_KEY = '6LfG1bIZAAAAADPKKRuOHKAPN1sVWwAyfPKRGcwn'
-RECAPTCHA_PRIVATE_KEY = '6LfG1bIZAAAAAKB-jx6gjxgZCvV29-eFH-ip0cMY'
+RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
+RECAPTCHA_PRIVATE_KEY = os.environ.get("RECAPTCHA_PRIVATE_KEY")
 
 # TinyPNG compress images
 OPTIMIZED_IMAGE_METHOD = 'tinypng'
@@ -217,3 +220,18 @@ TINYPNG_KEY = os.environ.get("TINYPNG_KEY")
 
 # Django Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+#  Django Defender
+# https://django-defender.readthedocs.io/en/latest/
+DEFENDER_REDIS_URL = os.environ.get("REDIS_LOCATION")
+DEFENDER_LOGIN_FAILURE_LIMIT = 4
+DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
+DEFENDER_LOCKOUT_URL = 'account_locked'
+
+# Filepond JS Uploader
+# https://django-drf-filepond.readthedocs.io/en/latest/
+if DEBUG:
+    DJANGO_DRF_FILEPOND_UPLOAD_TMP = os.path.join(BASE_DIR, 'filepond-temp-uploads')
+    DJANGO_DRF_FILEPOND_FILE_STORE_PATH = os.path.join(BASE_DIR, 'stored_uploads')
+else:
+    DJANGO_DRF_FILEPOND_STORAGES_BACKEND = 'storages.backends.s3boto3.S3Boto3Storage'

@@ -6,3 +6,7 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def dashboard_index(request):
     return render(request, 'dashboard_index.html', {})
+
+@login_required
+def add_new(request):
+    return render(request, 'add_new.html', {})

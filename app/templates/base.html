@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{% static 'css/theme.css' %}">
     <!-- Plyr video player CSS -->
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"/>
+    <!-- Filepond stylesheet -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Fontawesome CSS -->
@@ -34,6 +36,11 @@
     <script>
         const player = new Plyr('#player');
     </script>
+    <!-- include FilePond library and jQuery adapter -->
+    <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+    <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+    <!-- Configure and initialise Filepond -->
+    <script src="{% static 'js/filepond.js' %}"></script>
 {% endblock javascript %}
 </body>
 </html>

@@ -6,11 +6,10 @@
         <div class="container">
             <div class="card shadow rounded-0">
                 <div class="card-body">
-                    <form method="post" id="example-form" enctype="multipart/form-data">
+                    <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form.media }}
-                        {{ form|crispy }}
-                        <button type="submit" value="Submit" class="btn btn-success btn-block shadow rounded-0 font-weight-bold">Add course</button>
+                        {% crispy form %}
                     </form>
                 </div>
             </div>

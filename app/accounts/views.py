@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm
 from django.views.decorators.cache import cache_page
 
-# @cache_page(60 * 1) # Cache time to live is 1 minutes.
+@cache_page(60 * 1) # Cache time to live is 1 minutes.
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -20,6 +20,9 @@ def register(request):
 @login_required
 def accounts_index(request):
     return render(request, 'account_index.html', {})
+
+def account_locked(request):
+    return render(request, 'account_locked.html', {})
 
 @login_required
 def profile(request):

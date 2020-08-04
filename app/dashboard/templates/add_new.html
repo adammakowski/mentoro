@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-theme-gunmetal">
+        <a class="navbar-brand" href="#">Moja tablica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Moje materiały</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Moje zakupy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Moja sprzedaż</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profil publiczny</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Saldo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Program afilacyjny</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ustawienia konta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pomoc</a>
+                </li>
+            </ul>
+            <a class="btn btn-success font-special-bold shadow rounded-0" href="{% url 'add_new' %}" role="button">Dodaj</a>
+        </div>
+    </nav>
+
+    <section class="pt-5 pb-5 bg-theme-milky">
+        <div class="container">
+            <div class="card shadow rounded-0 border-0">
+                <div class="card-body p-5">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="media-body">
+                                <h5 class="mt-0">Sprzedaż kursów wideo</h5>
+                                <img src="{% static 'img/logo/logo-courses.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+                                <p>Pobieramy 10% prowizji za każdy sprzedany kurs</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <a class="btn btn-success btn-block font-special-bold shadow rounded-0" href="{% url 'course_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj wideo kurs</a>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col">
+                            <div class="media-body">
+                                <h5 class="mt-0">Za każdą sesję mentoringu</h5>
+                                <img src="{% static 'img/logo/logo-mentors.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+                                <p>Pobieramy 10% prowizji za każdy sprzedany kurs</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-success btn-block font-special-bold shadow rounded-0" href="{% url 'course_new' %}" role="button"><i class="fas fa-plus"></i> Zostań mentorem</a>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col">
+                            <div class="media-body">
+                                <h5 class="mt-0">Sprzedaż szkoleń online</h5>
+                                <img src="{% static 'img/logo/logo-experts.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+                                <p>Za każde sprzedane szkolenie pobieramy 10% prowizji</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-success btn-block font-special-bold shadow rounded-0" href="{% url 'course_new' %}" role="button"><i class="fas fa-plus"></i> Zostań ekspertem</a>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col">
+                            <div class="media-body">
+                                <h5 class="mt-0">Sprzedaż ebooków i poradników</h5>
+                                <img src="{% static 'img/logo/logo-library.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+                                <p>Pobieramy 10% prowizji od każdego sprzedanego ebooka i poradnika</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-success btn-block font-special-bold shadow rounded-0" href="{% url 'library_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj pliki</a>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row d-flex align-items-center">
+                        <div class="col">
+                            <div class="media-body">
+                                <h5 class="mt-0">Blog edukacyjny</h5>
+                                <img src="{% static 'img/logo/logo-blog.png' %}" class="img-fluid" alt="Logo Mentoro Courses">
+                                <p>Każdy może przekazywać wiedzę bez ograniczeń.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-success btn-block font-special-bold shadow rounded-0" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj wpis</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+{% endblock content %}

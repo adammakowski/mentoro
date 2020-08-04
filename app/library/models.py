@@ -29,7 +29,7 @@ class LibraryFile(models.Model):
     contests = RichTextField(blank=False, null=False, verbose_name="Zawartość i spis treści", help_text='Podaj zawartość i spis treści Twojego materiału')
     requirements = RichTextField(blank=False, null=False, verbose_name="Wymagana wiedza", help_text='Wymagana wiedza do zrozumienia materiału')
     image_preview = OptimizedImageField(upload_to='library/image_library_preview/%Y/%m/%d/', blank=False, null=False, verbose_name="Zdjęcie podglądowe", help_text='Dodaj zdjęcie podglądowe materiału')
-    video_preview = models.FileField(upload_to='library/video_library_preview/%Y/%m/%d/', blank=True, null=True, verbose_name="Wideo wprowadzające" ,help_text='Dodaj film wideo reklamujący i opisujący Twoj materiał')
+    video_preview = models.FileField(upload_to='library/video_library_preview/%Y/%m/%d/', blank=True, null=True, verbose_name="Wideo prezentacja" ,help_text='Dodaj film wideo reklamujący i opisujący Twoj materiał')
     file_download = models.FileField(upload_to='library/files_library/%Y/%m/%d/', blank=False, null=False, verbose_name="Plik do pobrania", help_text='Dodaj plik który kupujący będzie mógł pobrać. Dozwolone formaty to: zip, rar, pdf, txt, epub')
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(default=timezone.now)

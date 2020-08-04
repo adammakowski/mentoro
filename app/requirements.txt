@@ -1,21 +1,21 @@
 asgiref==3.2.10
 six==1.15.0
-Django==3.0.8
+Django==3.1
 psycopg2-binary==2.8.5
 pytz==2020.1
 sqlparse==0.3.1
-gunicorn==20.0.4
-uvicorn==0.11.5
-argon2-cffi==20.1.0
-setuptools==49.2.0
+gunicorn==20.0.4 # Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model.
+uvicorn==0.11.8 # Uvicorn is a lightning-fast ASGI server, built on uvloop and httptools.
+argon2-cffi==20.1.0 # Argon2 is the winner of the 2015 Password Hashing Competition, a community organized open competition to select a next generation hashing algorithm. It’s designed not to be easier to compute on custom hardware than it is to compute on an ordinary CPU
+setuptools==49.2.1
 djangorestframework==3.11.0
 django-redis==4.12.1
-django-storages==1.9.1
-sentry-sdk==0.16.1
-boto3==1.14.22
-pillow==7.2.0
-django-optimized-image==0.3.0
-django-debug-toolbar==2.2
+django-storages==1.9.1 # django-storages is a collection of custom storage backends for Django.
+sentry-sdk==0.16.3
+boto3==1.14.34 # Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2
+pillow==7.2.0 # Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
+django-optimized-image==0.3.0 # django_optimized_image is a simple Django library that allows optimization of images by using TinyPNG or Pillow.
+django-debug-toolbar==2.2 # The Django Debug Toolbar is a configurable set of panels that display various debug information about the current request/response and when clicked, display more details about the panel's content.
 django-simple-history==2.11.0
 django-crispy-forms==1.9.2
 dj-stripe==2.3.0
@@ -24,3 +24,5 @@ django-extensions==3.0.3
 django-ckeditor==5.9.0
 django-cleanup==5.0.0 #The django-cleanup app automatically deletes files for FileField, ImageField and subclasses
 django-recaptcha==2.0.6 # Django reCAPTCHA form field/widget integration app.
+django-drf-filepond==0.3.0
+django-defender==0.7.0 # A simple Django reusable app that blocks people from brute forcing login attempts. The goal is to make this as fast as possible, so that we do not slow down the login attempts.
