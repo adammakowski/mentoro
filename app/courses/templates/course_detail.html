@@ -36,6 +36,10 @@
                             <p>Opublikowane {{ course.published_date }}</p>
                             <p class="mb-0 font-special-bold">Krótki opis</p>
                             <p>{{ course.short_description|safe }}</p>
+                            <p class="mb-0 font-special-bold">Lekcje</p>
+                            {% if course.lesson %}
+                                <p>{{  course_lesson.title }}</p>
+                            {% endif %}
                             <p class="mb-0 font-special-bold">Szczegółowy opis</p>
                             <p>{{ course.description|safe }}</p>
                             <p class="mb-0 font-special-bold">Zawartość i spis treści</p>

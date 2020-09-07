@@ -10,4 +10,5 @@ urlpatterns = [
     path('affiliate/', views.home_affiliate, name='home_affiliate'),
     path('support/', views.home_support, name='home_support'),
     path('privacypolicy/', views.home_privacypolicy, name='home_privacypolicy'),
+    path('terms/mentors_instructions_and_regulations', views.mentors_instructions_and_regulations, name='mentors_instructions_and_regulations'),
 ]

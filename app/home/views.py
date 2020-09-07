@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import TermsMentor
 from django.views.decorators.cache import cache_page
 
 # Create your views here.
@@ -41,3 +42,8 @@ def home_support(request):
 # @cache_page(60 * 60) # Cache time to live is 15 minutes.
 def home_privacypolicy(request):
     return render(request, 'home_privacypolicy.html', {})
+
+# @cache_page(60 * 60) # Cache time to live is 15 minutes.
+def mentors_instructions_and_regulations(request):
+    terms_mentor = TermsMentor.objects.all
+    return render(request, 'terms/mentors_instructions_and_regulations.html', {'terms_mentor': terms_mentor})

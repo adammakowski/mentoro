@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="pt-5 pb-5 bg-theme-milky">
+        <div class="container pt-5 pb-5">
+            <div class="card shadow rounded-0">
+                <div class="card-body text-center">
+                    <div class="alert alert-success shadow rounded-0" role="alert">
+                        <span class="font-special-bold">Gratulacje!</span> Twoja kadydatura na mentora została zgłoszona.
+                    </div>
+                    <p>Kandydatura oczekuje na rozpatrzenie przez zespół. Jeśli nie narusza naszego regulaminu wkrótce zostanie dodana.</p>
+                    <p>Dziękujemy za wkład w naszą społeczność.</p>
+                    <hr>
+                    <p>Możesz teraz wrócić do dalszego przeglądania mentorów <a href="{% url 'mentors_all' %}" class="text-decoration-none">klikając tutaj</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

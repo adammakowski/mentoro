@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <section class="bg-jumbo pt-5 pb-5">
+        <div class="container col-lg-4 col-md-12 col-sm-12 pt-5 pb-5">
+            <div class="card shadow rounded-0 border-0">
+                <div class="card-body text-center pt-5 pb-3">
+                    <h5 class="text-primary font-special-bold text-center pb-3">Twoje konto zostało pomyślnie utworzone</h5>
+                    <p>Twoje konto zostało pomyślnie utworzone. By móc bez ograniczeń z niego korzystać został ostatni krok.</p>
+                    <div class="alert alert-info text-center shadow rounded-0" role="alert">
+                        <p class="font-special-bold mb-0">Na Twoją skrzynkę pocztową wysłaliśmy kod aktywacyjny.</p>
+                    </div>
+                    <p>Aktywuj konto według podanej instrukcji która wysłaliśmy na Twój adres email.</p>
+                    <hr>
+                    <p class="mb-0">W razie jakichkolwiek problemów proszę skontaktuj się z Naszym działem wsparcia, udzielimy pomocy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

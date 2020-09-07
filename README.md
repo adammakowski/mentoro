@@ -38,6 +38,8 @@ docker exec -it mentoro_web-prod_1 python manage.py makemigrations
 docker exec -it mentoro_web_1 python manage.py makemigrations
 ### make migrate
 docker exec -it mentoro_web-prod_1 python manage.py migrate
+### make fake migrate
+docker exec -it mentoro_web-prod_1 python manage.py migrate --fake
 ### collectstatic files
 docker exec -it mentoro_web-prod_1 python manage.py collectstatic
 

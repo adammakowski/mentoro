@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="pt-5 pb-5 bg-theme-milky">
+        <div class="container pb-5">
+            <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
+                <div class="card-body text-center p-5">
+                    {% for term in terms_mentor %}
+                    <h5 class="text-white font-special-bold mb-0">{{ term.title|safe}}</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card shadow rounded-0">
+                <div class="card-body">
+                        <small class="float-right text-muted">Ostatnia aktualizacja: {{ term.published_date }}</small>
+                        {{ term.text|safe }}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+{% endblock content %}

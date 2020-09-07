@@ -3,7 +3,7 @@ from django.views.decorators.cache import cache_page
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from .models import Course
-from .forms import CourseForm
+from .forms import CourseForm, CourseLessonForm
 # Create your views here.
 
 #@cache_page(60 * 15) # Cache time to live is 15 minutes.
@@ -46,3 +46,18 @@ def course_edit(request, pk):
     else:
         form = CourseForm(instance=post)
     return render(request, 'course_edit.html', {'form': form})
+
+#@cache_page(60 * 15) # Cache time to live is 1 minutes.
+@login_required
+def course_lesson_new(request):
+    if request.method == "POST":
+        form = CourseLessonForm(request.POST, request.FILES)
+        if form.is_valid():
+            course_lesson = form.save(commit=False)
+            course_lesson.author = request.user
+            course_lesson.published_date = timezone.now()
+            course_lesson.save()
+            return redirect('course_detail', pk=course_lesson.pk)
+    else:
+        form = CourseLessonForm()
+    return render(request, 'course_lesson_edit.html', {'form': form})

@@ -40,3 +40,15 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+class CourseLesson(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    title = models.CharField(max_length=200, blank=False, null=False)
+    description = RichTextField(blank=False, null=False)
+    video = models.FileField(upload_to='courses/lessons/video/%Y/%m/%d/', blank=False, null=False)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+    history = HistoricalRecords()
+
+    def __str__(self):
+        return self.title

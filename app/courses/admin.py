@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, CourseCategory, CourseLanguage
+from .models import Course, CourseCategory, CourseLanguage, CourseLesson
 from simple_history.admin import SimpleHistoryAdmin
 
 @admin.register(Course)
@@ -12,3 +12,4 @@ class CourseAdmin(SimpleHistoryAdmin):
 
 admin.site.register(CourseCategory, SimpleHistoryAdmin)
 admin.site.register(CourseLanguage, SimpleHistoryAdmin)
+admin.site.register(CourseLesson, SimpleHistoryAdmin)

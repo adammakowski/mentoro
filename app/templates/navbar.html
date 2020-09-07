@@ -16,7 +16,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'courses_all' %}">Mentoro | Wideo kursy</a>
-                        <a class="dropdown-item" href="#">Mentoro | Mentorzy</a>
+                        <a class="dropdown-item" href="{% url 'mentors_all' %}">Mentoro | Mentorzy</a>
                         <a class="dropdown-item" href="#">Mentoro | Eksperci</a>
                         <a class="dropdown-item" href="{% url 'library_all' %}">Mentoro | Biblioteka</a>
                         <a class="dropdown-item" href="{% url 'blog_all' %}">Mentoro | Blog</a>
@@ -51,9 +51,9 @@
                 </form>
             {% else %}
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Wyszukaj cokolwiek" aria-label="Look for a mentor or course">
+{#                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Wyszukaj cokolwiek" aria-label="Look for a mentor or course">#}
                     <a class="nav-link dark-link font-special-bold" href="{% url 'account_login' %}">Zaloguj</a>
-                    <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'account_register' %}" role="button">Utwórz konto</a>
+                    <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Utwórz konto</a>
                 </form>
             {% endif %}
 

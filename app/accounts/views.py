@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm
 from django.views.decorators.cache import cache_page
 
+
 @cache_page(60 * 1) # Cache time to live is 1 minutes.
 def register(request):
     if request.method == 'POST':

@@ -17,7 +17,7 @@ services:
     networks:
       - mentoro-network
   postgresql:
-    image: postgres:12.3
+    image: postgres:12
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data/
@@ -44,4 +44,3 @@ volumes:
   redis_data:
 networks:
   mentoro-network:
-

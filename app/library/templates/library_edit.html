@@ -9,8 +9,7 @@
                     <form method="post" enctype='multipart/form-data'>
                         {% csrf_token %}
                         {{ form.media }}
-                        {{ form|crispy }}
-                        <input type="file" class="course_create_pond" name="course_create_pond"/>
+                        {% crispy form %}
                         <button type="submit" value="Submit" class="btn btn-success shadow rounded-0 btn-block font-special-bold">Zapisz</button>
                     </form>
                 </div>

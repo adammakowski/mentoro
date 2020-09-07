@@ -25,41 +25,54 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="pb-3">
-                        <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
+                        <a class="btn btn-success btn-block shadow rounded-0" href="" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
                     </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
                             <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'blog_all' %}">Wszystkie kategorie</a>
                         </li>
-                        {% for blog_post in blog_post %}
+                        {% for post in post_list %}
                             <li class="nav-item">
-                                <a class="nav-link dark-link" href="{% url 'library_all' %}">{{ blog_post.category }}</a>
+                                <a class="nav-link dark-link" href="{% url 'blog_all' %}">{{ post.category }}</a>
                             </li>
                         {% endfor %}
                     </ul>
                 </div>
 
                 <div class="col-lg-9">
-                    {% for blog_post in blog_post %}
+                    {% for post in post_list %}
                         <div class="pb-3">
                             <div class="card rounded-0 shadow">
-                                <a href="{% url 'blog_detail' pk=blog_post.pk %}"><img src="{{ blog_post.image_preview.url }}" class="img-fluid rounded-0" alt="{{ blog_post.title }}"></a>
+                                <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.url }}" class="img-fluid rounded-0" alt="{{ blog_post.title }}"></a>
                                 <div class="card-body">
-                                    <p class="mb-0 float-right">Pozytywnych <span class="text-success font-special-bold">422</span> i negatywnych <span class="text-danger font-special-bold">13</span> <a href=""
-                                                                                                                                                                                                           class="text-decoration-none">recenzji</a></p>
-                                    <p class="font-special-bold mb-0">{{ blog_post.language }}</p>
-                                    <p>{{ blog_post.category }}</p>
-                                    <a href="{% url 'blog_detail' pk=blog_post.pk %}" class="h5 text-decoration-none">{{ blog_post.title }}</a>
-                                    <p>{{ blog_post.short_description|safe }}</p>
-                                    <p class="mb-0">Opublikowane {{ blog_post.created_date }} przez <a href="" class="text-decoration-none">{{ blog_post.author }}</a></p>
-                                    <p class="mb-0">Ostatnia aktualizacja {{ blog_post.published_date }}</p>
-
+                                    <p class="mb-0 float-right">Ocena <span class="text-success font-special-bold">422</span> - <span class="text-danger font-special-bold">13</span></p>
+                                    <p class="font-special-bold mb-0">{{ post.language }}</p>
+                                    <p>{{ post.category }}</p>
+                                    <a href="{% url 'blog_detail' post.slug %}" class="h5 text-decoration-none">{{ post.title }}</a>
+                                    <p>{{ post.short_description|safe }}</p>
+                                    <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
+                                    <p class="mb-0">Ostatnia aktualizacja {{ post.published_date }}</p>
                                 </div>
                             </div>
                         </div>
                     {% endfor %}
-                </div>
+
+                    {% if is_paginated %}
+                        <nav aria-label="Page navigation conatiner">
+                            <ul class="pagination justify-content-center">
+                                {% if page_obj.has_previous %}
+                                    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Poprzednia strona</a></li>
+                                {% endif %}
+                                {% if page_obj.has_next %}
+                                    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Następna strona &raquo;</a></li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                        </div>
+                    {% endif %}
+
             </div>
         </div>
+
     </section>
 {% endblock content %}

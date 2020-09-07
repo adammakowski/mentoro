@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="bg-theme-milky">
+
+        <section class="pt-3">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb rounded-0">
+                        <li class="breadcrumb-item"><a href="{% url 'mentors_all' %}" class="text-decoration-none">Mentoro | Mentors</a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">{{ mentors.category }}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ mentors.title }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        {% if mentors.video_presentation %}
+            <section class="pt-5 pb-5 bg-theme-gunmetal">
+                <div class="container">
+                    <h4 class="text-white text-center">{{ mentors.title }}</h4>
+                    <p class="text-white text-center pb-3">{{ mentors.short_description|linebreaksbr }}</p>
+                    <video id="player" playsinline controls>
+                        <source src="{{ mentors.video_presentation.url }}" type='video/mp4'>
+                    </video>
+                </div>
+            </section>
+        {% endif %}
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card rounded-0 shadow">
+                        <img src="{{ mentors.image_preview.url }}" class="img-fluid" alt="{{ mentors.title }}">
+                        <div class="card-body">
+                            <a href="{% url 'mentors_detail' pk=mentors.pk %}" class="h5 text-decoration-none">{{ mentor.title }}</a>
+                            <p>Opublikowane {{ mentors.published_date }}</p>
+                            <p class="mb-0 font-special-bold">Krótki opis</p>
+                            <p>{{ mentors.short_description|safe }}</p>
+                            <p class="mb-0 font-special-bold">Szczegółowy opis</p>
+                            <p>{{ mentors.description|safe }}</p>
+                            <p>{{ mentors.contests|safe }}</p>
+                            <p class="mb-0 font-special-bold">Wymagania</p>
+                            <p>{{ mentors.requirements|safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow rounded-0">
+                        <div class="card-body text-center">
+                            <p class="text-muted">Szczegóły</p>
+                            <hr class="">
+                            <p class="font-special-bold">{{ mentors.category }}</p>
+                            <p class="font-special-bold"><span class="text-success">422</span> / <span class="text-danger">13</span></p>
+                            <p>Język <span class="font-special-bold">{{ mentors.language }}</span></p>
+                            <p><img src="{% static 'img/avatar/adrian.png' %}" class="img-fluid" alt="{{ mentors.author }}"></p>
+                            <a href="" class="text-decoration-none">{{ mentors.author }}</a>
+                            <hr>
+                            <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                            <hr>
+                            <p>Liczba uczniów <span class="font-special-bold">435</span></p>
+                            <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">{{ mentors.price }} zł</h4>
+                            <p class="">Miesięcznie w formie subskrypcji</p>
+                            <hr>
+                            <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-file-signature"></i> Aplikuj jako uczeń</a>
+                            <hr>
+                            <small>W każdej chwili możesz anulować subskrypcje</small>
+                        </div>
+                    </div>
+                    <div class="pt-3"></div>
+                    <div class="card shadow rounded-0">
+                        <div class="card-body text-center">
+                            <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Udostępnij i zarabiaj <i class="fas fa-share-alt"></i></a>
+                            <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Dodaj do listy życzeń <i class="far fa-heart"></i></a>
+                            <a class="btn btn-primary shadow rounded-0 btn-block" href="#" role="button">Podaruj <i class="fas fa-gift"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

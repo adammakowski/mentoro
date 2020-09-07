@@ -1,80 +1,81 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="pt-5 pb-5 bg-theme-milky">
+    <section class="pt-5 bg-theme-milky">
 
         <div class="container pb-5">
             <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
                 <div class="card-body text-center p-5">
                     <h3 class="text-white font-special-bold">Cennik</h3>
                     <h5 class="text-primary pb-3">Oferta dostosowana dla każdego</h5>
-                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-special-bold" href="{% url 'account_register' %}" role="button">Utwórz darmowe konto</a>
+                    <a class="btn btn-light btn-lg shadow rounded-0 border-0 font-special-bold" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card shadow rounded-0">
-                        <div class="card-body">
-                            <h5 class="text-primary font-special-bold text-center">Uczeń</h5>
-                            <p class="text-center">Kupuj kursy i zdobywaj wiedzę</p>
-                            <hr class="my-2">
-                            <p>Darmowe konto</p>
-                            <p>Brak dodatkowych opłat za korzystanie</p>
-                            <p>Płacisz tylko za to co kupujesz</p>
-                            <p>Dożywotni dostęp do zakupionych materiałów</p>
-                            <p>Możliwość zarobienia dodatkowych pieniędzy na polecaniu</p>
-                            <hr>
-                            <h5 class="font-special-bold text-center">0 PLN</h5>
-                            <p class="text-center text-primary font-special-bold">Na zawsze</p>
-                            <hr>
-                            <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="{% url 'account_register' %}" role="button">Utwórz darmowe konto</a>
+        <section class="pt-5 pb-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <h5 class="text-primary font-special-bold text-center">Uczeń</h5>
+                                <p class="text-center">Kupuj kursy i zdobywaj wiedzę</p>
+                                <hr class="my-2">
+                                <p>Darmowe konto</p>
+                                <p>Brak dodatkowych opłat za korzystanie</p>
+                                <p>Płacisz tylko za to co kupujesz</p>
+                                <p>Dożywotni dostęp do zakupionych materiałów</p>
+                                <p>Możliwość zarobienia dodatkowych pieniędzy w programie partnerskim</p>
+                                <hr>
+                                <h5 class="font-special-bold text-center">0 PLN</h5>
+                                <p class="text-center text-primary font-special-bold">Na zawsze</p>
+                                <hr>
+                                <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card shadow rounded-0">
-                        <div class="card-body">
-                            <h5 class="text-primary font-special-bold text-center">Mentor</h5>
-                            <p class="text-center">Przekazuj swoją wiedzę i zarabiaj</p>
-                            <hr class="my-2">
-                            <p>Darmowe konto</p>
-                            <p>Brak dodatkowych opłat za korzystanie</p>
-                            <p>Pobieramy 10% za każdą sprzedaną lekcję</p>
-                            <p>Darmowe narzędzia do zarządzania uczniami</p>
-                            <p>Możliwość zarobienia dodatkowych pieniędzy na polecaniu</p>
-                            <p>Wsparcie zespołu Mentoro</p>
-                            <hr>
-                            <h5 class="font-special-bold text-center">0 PLN + 10% prowizji</h5>
-                            <p class="text-center text-primary font-special-bold">Na zawsze</p>
-                            <hr>
-                            <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="{% url 'account_register' %}" role="button">Utwórz darmowe konto</a>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <h5 class="text-primary font-special-bold text-center">Mentor</h5>
+                                <p class="text-center">Przekazuj swoją wiedzę i zarabiaj</p>
+                                <hr class="my-2">
+                                <p>Darmowe konto</p>
+                                <p>Brak dodatkowych opłat za korzystanie</p>
+                                <p>Pobieramy 10% miesięcznie za każdą subskrypcję</p>
+                                <p>Darmowe narzędzia do zarządzania uczniami</p>
+                                <p>Możliwość zarobienia dodatkowych pieniędzy na polecaniu</p>
+                                <p>Wsparcie zespołu Mentoro</p>
+                                <hr>
+                                <h5 class="font-special-bold text-center">0 PLN + 10% prowizji</h5>
+                                <p class="text-center text-primary font-special-bold">Na zawsze</p>
+                                <hr>
+                                <a class="btn btn-success btn-block shadow rounded-0 border-0 font-special-bold" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card shadow rounded-0">
-                        <div class="card-body">
-                            <h5 class="text-primary font-special-bold text-center">Ekspert</h5>
-                            <p class="text-center">Prowadź szkolenia i zarabiaj</p>
-                            <hr class="my-2">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <h5 class="text-primary font-special-bold text-center">Ekspert</h5>
+                                <p class="text-center">Prowadź szkolenia i zarabiaj</p>
+                                <hr class="my-2">
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bg-theme-gunmetal pt-5 pb-5">
+        <section class="bg-theme-gunmetal pt-5 pb-5">
             <div class="container">
                 <p class="text-white mb-0">Potrzebujesz pomocy? Nasz dział wsparcia klienta udzieli Ci odpowiedzi na wszystkie nurtujące Cię pytania.</p>
             </div>
         </section>
-
+    </section>
 
 {% endblock content %}

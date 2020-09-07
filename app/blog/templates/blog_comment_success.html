@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="pt-5 pb-5 bg-theme-milky">
+        <div class="container pt-5 pb-5">
+            <div class="card shadow rounded-0">
+                <div class="card-body text-center">
+                    <div class="alert alert-success shadow rounded-0" role="alert">
+                        <span class="font-special-bold">Gratulacje!</span> Twój komentarz został dodany.
+                    </div>
+                    <p>Komentarz oczekuje na moderacje przez zespół. Jeśli nie narusza naszego regulaminu wkrótce zostanie dodany.</p>
+                    <p>Dziękujemy za wkład w naszą społeczność.</p>
+                    <hr>
+                    <p>Możesz teraz wrócić do dalszego czytania bloga <a href="{% url 'blog_all' %}" class="text-decoration-none">klikając tutaj</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

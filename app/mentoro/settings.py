@@ -44,24 +44,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'captcha', # https://github.com/praekelt/django-recaptcha
-    'ckeditor', # https://github.com/django-ckeditor/django-ckeditor
-    'django_extensions', # https://github.com/django-extensions/django-extensions
-    'crispy_forms', # https://django-crispy-forms.readthedocs.io
-    'optimized_image', # TinyPNG optimize images
-    'defender', # https://django-defender.readthedocs.io/en/latest/
-    'debug_toolbar', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    'simple_history', # https://django-simple-history.readthedocs.io
-    'django_cleanup.apps.CleanupConfig', # https://github.com/un1t/django-cleanup
-    'django_drf_filepond', # https://django-drf-filepond.readthedocs.io/en/latest/
-    'home', # home app
-    'accounts', # accounts app
-    'dashboard', # dashboard app
-    'courses', # Mentoro|Courses app
-    'library', # Mentoro|Library app
-    'mentors', # Mentoro|Mentors app
-    'experts', # Mentoro|Experts app
-    'blog', # Mentoro|Blog app
+    'django_registration',  # https://django-registration.readthedocs.io
+    'captcha',  # https://github.com/praekelt/django-recaptcha
+    'ckeditor',  # https://github.com/django-ckeditor/django-ckeditor
+    'ckeditor_uploader',  # https://github.com/django-ckeditor/django-ckeditor#required-for-using-widget-with-file-upload
+    'django_extensions',  # https://github.com/django-extensions/django-extensions
+    'crispy_forms',  # https://django-crispy-forms.readthedocs.io
+    'optimized_image',  # TinyPNG optimize images
+    'defender',  # https://django-defender.readthedocs.io/en/latest/
+    'debug_toolbar',  # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
+    'simple_history',  # https://django-simple-history.readthedocs.io
+    'django_cleanup.apps.CleanupConfig',  # https://github.com/un1t/django-cleanup
+    'django_drf_filepond',  # https://django-drf-filepond.readthedocs.io/en/latest/
+    'anymail',  # https://anymail.readthedocs.io/en/stable/
+    'home',  # home app
+    'accounts',  # accounts app
+    'dashboard',  # dashboard app
+    'courses',  # Mentoro|Courses app
+    'library',  # Mentoro|Library app
+    'mentors',  # Mentoro|Mentors app
+    'experts',  # Mentoro|Experts app
+    'blog',  # Mentoro|Blog app
 ]
 
 MIDDLEWARE = [
@@ -72,9 +75,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware', # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    'simple_history.middleware.HistoryRequestMiddleware', # https://django-simple-history.readthedocs.io
-    'defender.middleware.FailedLoginMiddleware', # https://django-defender.readthedocs.io/en/latest/
+    'debug_toolbar.middleware.DebugToolbarMiddleware',  # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
+    'simple_history.middleware.HistoryRequestMiddleware',  # https://django-simple-history.readthedocs.io
+    'defender.middleware.FailedLoginMiddleware',  # https://django-defender.readthedocs.io/en/latest/
 ]
 
 ROOT_URLCONF = 'mentoro.urls'
@@ -95,10 +98,15 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mentoro.wsgi.application'
-ASGI_APPLICATION = 'mentoro.asgi.application'
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
-# Caches
+WSGI_APPLICATION = 'mentoro.wsgi.application'
+
+# Caches Redis
 CACHES = {
     "default": {
         "BACKEND": os.environ.get("REDIS_BACKEND"),
@@ -120,6 +128,14 @@ DATABASES = {
     "default": {
         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
         "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
+        "USER": os.environ.get("SQL_USER", "user"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
+        "HOST": os.environ.get("SQL_HOST", "localhost"),
+        "PORT": os.environ.get("SQL_PORT", "5432"),
+    },
+    "pool1": {
+        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("SQL_DATABASE_POOL1", os.path.join(BASE_DIR, "db.sqlite3")),
         "USER": os.environ.get("SQL_USER", "user"),
         "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
         "HOST": os.environ.get("SQL_HOST", "localhost"),
@@ -170,11 +186,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'),)
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
-STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder','django.contrib.staticfiles.finders.AppDirectoriesFinder',)
+STATICFILES_FINDERS = ('django.contrib.staticfiles.finders.FileSystemFinder', 'django.contrib.staticfiles.finders.AppDirectoriesFinder',)
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
 
@@ -199,16 +214,13 @@ else:
 
 # URLS
 LOGIN_REDIRECT_URL = 'dashboard_index'
-LOGIN_URL = 'account_login'
 
-# Email config Sendgrid SMTP
-if DEBUG:
-    EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
-    EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
-else:
-    EMAIL_BACKEND = os.environ.get("EMAIL_BACKEND")
-    SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
-    SENDGRID_SANDBOX_MODE_IN_DEBUG = os.environ.get("SENDGRID_SANDBOX_MODE_IN_DEBUG")
+# Email config Mailgun SMTP
+EMAIL_BACKEND = "anymail.backends.sendinblue.EmailBackend"
+DEFAULT_FROM_EMAIL = "support@mentoro.online"  # if you don't already have this in settings
+ANYMAIL = {
+    "SENDINBLUE_API_KEY": "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",
+}
 
 # Django reCaptcha
 RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
@@ -228,6 +240,10 @@ DEFENDER_LOGIN_FAILURE_LIMIT = 4
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 DEFENDER_LOCKOUT_URL = 'account_locked'
 
+#  django-registration - https://django-registration.readthedocs.io/en/3.1
+ACCOUNT_ACTIVATION_DAYS = 1  # One-day activation window
+REGISTRATION_OPEN = True
+
 # Filepond JS Uploader
 # https://django-drf-filepond.readthedocs.io/en/latest/
 if DEBUG:
@@ -235,3 +251,12 @@ if DEBUG:
     DJANGO_DRF_FILEPOND_FILE_STORE_PATH = os.path.join(BASE_DIR, 'stored_uploads')
 else:
     DJANGO_DRF_FILEPOND_STORAGES_BACKEND = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# Ckeditor Uploader
+CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'ckeditor-uploads')
+CKEDITOR_ALLOW_NONIMAGE_FILES = False
+CKEDITOR_CONFIGS = {
+    'default': {
+        'width': '100%'
+    },
+}
