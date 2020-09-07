@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <!-- Theme CSS -->
     <link rel="stylesheet" href="{% static 'css/theme.css' %}">
@@ -30,8 +31,6 @@
 {% include 'navbar.html' %}
 {% block content %}{% endblock content %}
 {% include 'footer.html' %}
-{% block javascript %}
-    <!-- Services other -->
     {% include 'elements/google_analytics.html' %}
     {% include 'elements/tawk_to.html' %}
     {% include 'elements/hotjar.html' %}
@@ -49,6 +48,5 @@
     <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
     <!-- Configure and initialise Filepond -->
     <script src="{% static 'js/filepond.js' %}"></script>
-{% endblock javascript %}
 </body>
 </html>

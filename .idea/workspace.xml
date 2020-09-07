@@ -20,292 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add filepond">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0002_auto_20200806_1443.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0003_auto_20200806_1444.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0004_auto_20200806_1446.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0005_auto_20200806_1508.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0006_auto_20200806_1550.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0007_auto_20200806_1622.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0008_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0009_auto_20200808_2254.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0010_auto_20200808_2306.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0011_auto_20200808_2310.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0012_remove_comment_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0013_auto_20200813_1733.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0014_auto_20200813_1751.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/templates/blog_comment_success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0005_courselessons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0006_auto_20200805_2149.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0007_auto_20200805_2156.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0008_auto_20200805_2214.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0009_auto_20200806_1442.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/templates/course_lesson_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/templates/course_lesson_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/migrations/0002_auto_20200825_2015.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/migrations/0003_auto_20200825_2022.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/migrations/0004_auto_20200825_2102.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/home/templates/terms/mentors_instructions_and_regulations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/migrations/0022_auto_20200811_1603.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/migrations/0023_auto_20200811_1608.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/library/migrations/0024_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/nav_sidebar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/nav_sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/avatar/adrian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/bg/bg-blog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/img/logo/logo-blog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/js/filepond.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0002_auto_20200812_1916.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0003_auto_20200812_1917.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0004_auto_20200817_2305.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0005_auto_20200817_2307.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0006_auto_20200817_2336.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0007_auto_20200817_2349.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0008_auto_20200817_2351.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0009_auto_20200817_2352.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0010_auto_20200817_2354.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0011_auto_20200817_2355.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0012_auto_20200825_1950.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_new_success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200807-165725-140429562766432.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200807-170705-140429532752624.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200807-203750-140270935745440.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200808-182730-140505335844192.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200808-234127-140171339221120.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sent_emails/20200826-194426-139799675884880.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bright-squares.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/city.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/city1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/city2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/city2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/city3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmonaut_astronaut_spacesuit_169107_2160x2700.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos333.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cosmos8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/earth_planet_space_135594_8192x8192.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/galaxy_earth_network_126341_9751x6520.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/retrospace9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/ride.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/stars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/texture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/texture1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/favicon/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/activation_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/activation_email_body.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_closed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/elements/google_analytics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/elements/hubspot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/elements/tawk_to.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mentoro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mentoro.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile.prod" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0002_auto_20200713_1942.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/templates/course_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/course_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/templates/dashboard_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/templates/dashboard_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_support.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_support.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/templates/library_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/templates/library_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/templates/library_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/templates/library_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/changelists.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/changelists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive_rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/responsive_rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/css/widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectFilter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/SelectFilter2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/actions.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/cancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/change_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/change_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/collapse.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/inlines.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/jquery.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/jquery.init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/popup_response.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/popup_response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/prepopulate_init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/urlify.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/urlify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/dsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/dsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/hy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ne.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tk.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/student.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/student.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/elements/tawk.to.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/elements/google_analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/elements/google_analytics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/elements/tawk_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/elements/tawk_to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,7 +213,7 @@
       <workItem from="1599167138813" duration="738000" />
       <workItem from="1599212166705" duration="2130000" />
       <workItem from="1599255044496" duration="21064000" />
-      <workItem from="1599426112960" duration="5805000" />
+      <workItem from="1599426112960" duration="14623000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -565,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596544358127</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add filepond">
+      <created>1599483134473</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599483134474</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,10 +375,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="777" y="152" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598475394560" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596544362549">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599483147708">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1596544362549" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599483147708" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592765073826">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
