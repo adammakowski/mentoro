@@ -19,27 +19,53 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add filepond">
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update tawkto">
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0002_auto_20200907_1955.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0003_auto_20200907_2002.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0004_auto_20200907_2008.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0005_auto_20200907_2019.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0006_auto_20200907_2031.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0007_auto_20200907_2036.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0008_auto_20200907_2158.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0013_auto_20200907_1850.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/people2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/people2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-165725-140429562766432.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-170705-140429532752624.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-203750-140270935745440.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200808-182730-140505335844192.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200808-234127-140171339221120.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200826-194426-139799675884880.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa10.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/elements/google_analytics.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/elements/google_analytics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/elements/tawk_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/elements/tawk_to.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +239,10 @@
       <workItem from="1599167138813" duration="738000" />
       <workItem from="1599212166705" duration="2130000" />
       <workItem from="1599255044496" duration="21064000" />
-      <workItem from="1599426112960" duration="14623000" />
+      <workItem from="1599426112960" duration="16227000" />
+      <workItem from="1599497934179" duration="11138000" />
+      <workItem from="1599590764064" duration="1591000" />
+      <workItem from="1599670123066" duration="6222000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -306,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599483134474</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update tawkto">
+      <created>1599494636115</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599494636115</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +368,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add recaptcha" />
     <MESSAGE value="add filepond" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filepond" />
+    <MESSAGE value="update tawkto" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tawkto" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591194406512">
@@ -375,10 +412,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="777" y="152" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598475394560" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599483147708">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599494637786">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599483147708" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599494637786" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592765073826">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

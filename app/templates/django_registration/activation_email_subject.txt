@@ -1,1 +1,1 @@
-Twoje konto zostalo utworzone
+{{ user }}, Twoje konto w Mentoro zostało utworzone

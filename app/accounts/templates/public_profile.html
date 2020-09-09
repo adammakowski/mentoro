@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <section class="bg-theme-milky">
+        {% for public in profiles %}
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card shadow rounded-0">
+                            <div class="card-body">
+                                <p class="text-muted font-special-bold mb-0 text-uppercase">mentor</p>
+                                <h5 class="font-special-bold">{{ public.first_name }} {{ public.last_name }}</h5>
+                                <p>Award Winning MBA Professor, Venture Capitalist and Author.</p>
+                                <p class="mb-0">Data dołączenia {{ user.date_joined }}</p>
+                                <p>Urodziłem się {{ public.birth_date }} i mieszkam w {{ public.location }}</p>
+                                <p class="font-special-bold mb-0">O mnie</p>
+                                <p>{{ public.bio }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow rounded-0">
+                            <img src="{{ public.avatar.url }}" class="img-fluid" alt="{{ public.user }}">
+                            <div class="card-body text-center">
+                                <a href="" class="text-decoration-none">{{ public.user }}</a>
+                                <hr>
+                                <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                                <hr>
+                                {# Facebook ULR profile #}
+                                <div class="bg-theme-milky w-100">
+                                    <p class="d-flex align-items-center"><a href="{{ public.facebook }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-2" style="height: 2rem;">Facebook</a></p>
+                                </div>
+                                {# LinkedIn ULR profile #}
+                                <div class="bg-theme-milky w-100">
+                                    <p class="d-flex align-items-center"><a href="{{ public.linkedin }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/linkedin.svg' %}" class="img-fluid mr-lg-2" style="height: 2rem;">LinkedIn</a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        {% endfor %}
+    </section>
+{% endblock content %}

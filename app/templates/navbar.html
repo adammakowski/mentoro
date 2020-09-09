@@ -45,16 +45,35 @@
             </ul>
 
             {% if user.is_authenticated %}
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
-                    <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
-                </form>
+                {# Mobile view #}
+                <div class="d-lg-none">
+                    <hr class="my-2">
+                    <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'dashboard_index' %}" role="button"> Moja tablica</a>
+                    <a class="btn btn-outline-danger font-special-bold shadow rounded-0 btn-block my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
+                </div>
+                {# Desktop view #}
+                <div class="d-none d-lg-block">
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
+                        <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
+                    </form>
+                </div>
             {% else %}
-                <form class="form-inline my-2 my-lg-0">
-{#                    <input class="form-control mr-sm-2 shadow rounded-0" type="search" placeholder="Wyszukaj cokolwiek" aria-label="Look for a mentor or course">#}
-                    <a class="nav-link dark-link font-special-bold" href="{% url 'account_login' %}">Zaloguj</a>
-                    <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Utwórz konto</a>
-                </form>
+                {# Mobile view #}
+                <div class="d-lg-none">
+                    <hr class="my-2">
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'account_login' %}" role="button"><i class="far fa-user-circle"></i> Zaloguj</a>
+                        <a class="btn btn-primary font-special-bold shadow rounded-0 btn-block" href="{% url 'django_registration_register' %}" role="button"><i class="fas fa-user-plus"></i> Utwórz konto</a>
+                    </form>
+                </div>
+                {# Desktop view #}
+                <div class="d-none d-lg-block">
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="nav-link dark-link font-special-bold" href="{% url 'account_login' %}">Zaloguj</a>
+                        <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Utwórz konto</a>
+                    </form>
+                </div>
             {% endif %}
 
         </div>
