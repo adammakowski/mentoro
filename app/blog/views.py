@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.cache import cache_page
 
+#@cache_page(60 * 5) # cache 60s * 5 = 5 minutes
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_date')
     template_name = 'blog_all.html'

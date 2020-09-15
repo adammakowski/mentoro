@@ -19,53 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update tawkto">
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0002_auto_20200907_1955.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0003_auto_20200907_2002.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0004_auto_20200907_2008.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0005_auto_20200907_2019.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0006_auto_20200907_2031.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0007_auto_20200907_2036.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0008_auto_20200907_2158.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mentors/migrations/0013_auto_20200907_1850.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.webp" afterDir="false" />
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update templates and images compress">
+      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0009_auto_20200912_1554.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/locustfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/social/bitbucket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/social/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locust/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locust/locustfile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-165725-140429562766432.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-170705-140429532752624.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200807-203750-140270935745440.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200808-182730-140505335844192.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200808-234127-140171339221120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sent_emails/20200826-194426-139799675884880.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-blog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-courses.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-experts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-jumbo7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-library.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-mentors.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/nasa10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -106,15 +75,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\staticfiles\js" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\tests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\staticfiles\js" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
     </key>
   </component>
   <component name="RunManager">
@@ -242,7 +211,13 @@
       <workItem from="1599426112960" duration="16227000" />
       <workItem from="1599497934179" duration="11138000" />
       <workItem from="1599590764064" duration="1591000" />
-      <workItem from="1599670123066" duration="6222000" />
+      <workItem from="1599670123066" duration="7752000" />
+      <workItem from="1599757993939" duration="3593000" />
+      <workItem from="1599917144481" duration="228000" />
+      <workItem from="1599918463954" duration="12224000" />
+      <workItem from="1599995609100" duration="4517000" />
+      <workItem from="1600174243431" duration="8154000" />
+      <workItem from="1600186715659" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -342,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599494636115</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update templates and images compress">
+      <created>1599677301496</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599677301497</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,13 +351,10 @@
     <MESSAGE value="add recaptcha" />
     <MESSAGE value="add filepond" />
     <MESSAGE value="update tawkto" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tawkto" />
+    <MESSAGE value="update templates and images compress" />
+    <option name="LAST_COMMIT_MESSAGE" value="update templates and images compress" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591194406512">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1591194406512" />
     <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596561664109">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -392,30 +371,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596704048690" />
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom" timestamp="1591194374829">
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor" timestamp="1600178732847">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1591194374829" />
-    <state width="2517" height="282" key="GridCell.Tab.0.center" timestamp="1591194374829">
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600178732847" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599677310129">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2517" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1591194374829" />
-    <state width="2517" height="282" key="GridCell.Tab.0.left" timestamp="1591194374829">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2517" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1591194374829" />
-    <state width="2517" height="282" key="GridCell.Tab.0.right" timestamp="1591194374829">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state width="2517" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1591194374829" />
-    <state x="777" y="152" width="998" height="708" key="SettingsEditor" timestamp="1598475394560">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="777" y="152" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598475394560" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599494637786">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599494637786" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599677310129" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592765073826">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

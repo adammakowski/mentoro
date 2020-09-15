@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load crispy_forms_tags %}
 {% block content %}
     <section class="bg-theme-milky">
         {% for public in profiles %}
@@ -12,8 +11,6 @@
                                 <p class="text-muted font-special-bold mb-0 text-uppercase">mentor</p>
                                 <h5 class="font-special-bold">{{ public.first_name }} {{ public.last_name }}</h5>
                                 <p>Award Winning MBA Professor, Venture Capitalist and Author.</p>
-                                <p class="mb-0">Data dołączenia {{ user.date_joined }}</p>
-                                <p>Urodziłem się {{ public.birth_date }} i mieszkam w {{ public.location }}</p>
                                 <p class="font-special-bold mb-0">O mnie</p>
                                 <p>{{ public.bio }}</p>
                             </div>
@@ -24,18 +21,51 @@
                             <img src="{{ public.avatar.url }}" class="img-fluid" alt="{{ public.user }}">
                             <div class="card-body text-center">
                                 <a href="" class="text-decoration-none">{{ public.user }}</a>
+                                <p class="mb-0">Data dołączenia {{ user.date_joined }}</p>
                                 <hr>
                                 <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                                <p class="mb-0">Urodziłem się {{ public.birth_date }}</p>
+                                <p>Mieszkam w {{ public.location }}</p>
                                 <hr>
-                                {# Facebook ULR profile #}
-                                <div class="bg-theme-milky w-100">
-                                    <p class="d-flex align-items-center"><a href="{{ public.facebook }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-2" style="height: 2rem;">Facebook</a></p>
-                                </div>
-                                {# LinkedIn ULR profile #}
-                                <div class="bg-theme-milky w-100">
-                                    <p class="d-flex align-items-center"><a href="{{ public.linkedin }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/linkedin.svg' %}" class="img-fluid mr-lg-2" style="height: 2rem;">LinkedIn</a></p>
-                                </div>
-
+                                {% if public.facebook %}
+                                    <a href="{{ public.facebook }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" alt="Facebook" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Facebook"></a>
+                                {% endif %}
+                                {% if public.linkedin %}
+                                    <a href="{{ public.linkedin }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/linkedIn.svg' %}" alt="LinkedIn" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój LinkedIn"></a>
+                                {% endif %}
+                                {% if public.youtube %}
+                                    <a href="{{ public.youtube }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/youtube.svg' %}" alt="YouTube" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój YouTube"></a>
+                                {% endif %}
+                                {% if public.instagram %}
+                                    <a href="{{ public.instagram }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/instagram.svg' %}" alt="Instagram" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Instagram"></a>
+                                {% endif %}
+                                {% if public.twitter %}
+                                    <a href="{{ public.twitter }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/twitter.svg' %}" alt="Twitter" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Twitter"></a>
+                                {% endif %}
+                                {% if public.behance %}
+                                    <a href="{{ public.behance }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/behance.svg' %}" alt="Behance" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Behance"></a>
+                                {% endif %}
+                                {% if public.dribbble %}
+                                    <a href="{{ public.dribbble }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/dribbble.svg' %}" alt="Dribbble" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Dribbble"></a>
+                                {% endif %}
+                                {% if public.flickr %}
+                                    <a href="{{ public.flickr }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/flickr.svg' %}" alt="Flickr" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Flickr"></a>
+                                {% endif %}
+                                {% if public.tumblr %}
+                                    <a href="{{ public.tumblr }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/tumblr.svg' %}" alt="Tumblr" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Tumblr"></a>
+                                {% endif %}
+                                {% if public.vimeo %}
+                                    <a href="{{ public.vimeo }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/vimeo.svg' %}" alt="Vimeo" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Vimeo"></a>
+                                {% endif %}
+                                {% if public.deviantart %}
+                                    <a href="{{ public.deviantart }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/deviantart.svg' %}" alt="Deviantart" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Deviantart"></a>
+                                {% endif %}
+                                {% if public.github %}
+                                    <a href="{{ public.github }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/github.svg' %}" alt="Github" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Github"></a>
+                                {% endif %}
+                                {% if public.bitbucket %}
+                                    <a href="{{ public.bitbucket }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/bitbucket.svg' %}" alt="Bitbucket" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Bitbucket"></a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

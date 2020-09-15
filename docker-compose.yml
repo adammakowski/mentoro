@@ -38,6 +38,15 @@ services:
       - ./.env.dev
     networks:
       - mentoro-network
+  locust:
+    image: locustio/locust
+    restart: always
+    ports:
+      - "8089:8089"
+    build: ./locust
+    command: python -f locustfile.py
+    networks:
+      - mentoro-network
 
 volumes:
   postgres_data:
