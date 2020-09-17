@@ -9,6 +9,7 @@ from .models import Public
 def accounts_index(request):
     return render(request, 'account_index.html', {})
 
+@cache_page(60 * 5) # cache 60s * 5 = 5 minutes
 def account_locked(request):
     return render(request, 'account_locked.html', {})
 

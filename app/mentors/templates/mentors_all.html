@@ -1,87 +1,88 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cache %}
 {% block content %}
-    <section class="pb-5 bg-theme-milky">
-        <div class="container pt-4">
-            <form>
-                <div class="form-row">
-                    <div class="col-5">
-                        <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="LanguageSelect">
-                                <option>Wszystkie kategorie</option>
-                                <option>Angielski</option>
-                                <option>Polski</option>
-                            </select>
+    {% cache 300 mentors_all %}
+        <section class="pb-5 bg-theme-milky">
+            <div class="container pt-4">
+                <form>
+                    <div class="form-row">
+                        <div class="col-5">
+                            <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <select class="form-control" id="LanguageSelect">
-                                <option>Wszystkie języki</option>
-                                <option>Angielski</option>
-                                <option>Polski</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
-                    </div>
-                </div>
-            </form>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="pb-3">
-                        <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'mentors_new' %}" role="button"><i class="fas fa-plus"></i> Zostań mentorem</a>
-                    </div>
-                    <ul class="nav nav-pills flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'mentors_all' %}">Wszystkie kategorie</a>
-                        </li>
-                        {% for mentor in mentors %}
-                            <li class="nav-item">
-                                <a class="nav-link dark-link" href="{% url 'mentors_all' %}">{{ mentor.category }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-
-                <div class="col-lg-9">
-                    {% for mentor in mentors %}
-                        <div class="pb-3">
-                            <div class="card rounded-0 shadow">
-                                <a href="{% url 'mentors_detail' pk=mentor.pk %}"><img src="{{ mentor.image_preview.url }}" class="img-fluid rounded-0" alt="{{ mentor.title }}"></a>
-                                <div class="card-body">
-                                    <p class="mb-0 float-right">Ocena <span class="text-success font-special-bold">422</span> - <span class="text-danger font-special-bold">13</span></p>
-                                    <p class="font-special-bold mb-0">{{ mentor.language }}</p>
-                                    <p>{{ post.category }}</p>
-                                    <a href="{% url 'mentors_detail' pk=mentor.pk %}" class="h5 text-decoration-none">{{ mentor.title }}</a>
-                                    <p>{{ mentor.who_am_i|safe }}</p>
-                                    <p class="mb-0">Opublikowane {{ mentor.created_date }} przez <a href="" class="text-decoration-none">{{ mentor.author }}</a></p>
-                                    <p class="mb-0">Ostatnia aktualizacja {{ mentor.published_date }}</p>
-                                </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <select class="form-control" id="LanguageSelect">
+                                    <option>Wszystkie kategorie</option>
+                                    <option>Angielski</option>
+                                    <option>Polski</option>
+                                </select>
                             </div>
                         </div>
-                    {% endfor %}
-
-                    {% if is_paginated %}
-                        <nav aria-label="Page navigation conatiner">
-                            <ul class="pagination justify-content-center">
-                                {% if page_obj.has_previous %}
-                                    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Poprzednia strona</a></li>
-                                {% endif %}
-                                {% if page_obj.has_next %}
-                                    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Następna strona &raquo;</a></li>
-                                {% endif %}
-                            </ul>
-                        </nav>
+                        <div class="col">
+                            <div class="form-group">
+                                <select class="form-control" id="LanguageSelect">
+                                    <option>Wszystkie języki</option>
+                                    <option>Angielski</option>
+                                    <option>Polski</option>
+                                </select>
+                            </div>
                         </div>
-                    {% endif %}
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="pb-3">
+                            <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'mentors_new' %}" role="button"><i class="fas fa-plus"></i> Zostań mentorem</a>
+                        </div>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'mentors_all' %}">Wszystkie kategorie</a>
+                            </li>
+                            {% for mentor in mentors %}
+                                <li class="nav-item">
+                                    <a class="nav-link dark-link" href="{% url 'mentors_all' %}">{{ mentor.category }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
 
+                    <div class="col-lg-9">
+                        {% for mentor in mentors %}
+                            <div class="pb-3">
+                                <div class="card rounded-0 shadow">
+                                    <a href="{% url 'mentors_detail' pk=mentor.pk %}"><img src="{{ mentor.image_preview.url }}" class="img-fluid rounded-0" alt="{{ mentor.title }}"></a>
+                                    <div class="card-body">
+                                        <p class="mb-0 float-right">Ocena <span class="text-success font-special-bold">422</span> - <span class="text-danger font-special-bold">13</span></p>
+                                        <p class="font-special-bold mb-0">{{ mentor.language }}</p>
+                                        <p>{{ post.category }}</p>
+                                        <a href="{% url 'mentors_detail' pk=mentor.pk %}" class="h5 text-decoration-none">{{ mentor.title }}</a>
+                                        <p>{{ mentor.who_am_i|safe }}</p>
+                                        <p class="mb-0">Opublikowane {{ mentor.created_date }} przez <a href="" class="text-decoration-none">{{ mentor.author }}</a></p>
+                                        <p class="mb-0">Ostatnia aktualizacja {{ mentor.published_date }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                        {% if is_paginated %}
+                            <nav aria-label="Page navigation conatiner">
+                                <ul class="pagination justify-content-center">
+                                    {% if page_obj.has_previous %}
+                                        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Poprzednia strona</a></li>
+                                    {% endif %}
+                                    {% if page_obj.has_next %}
+                                        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Następna strona &raquo;</a></li>
+                                    {% endif %}
+                                </ul>
+                            </nav>
+                            </div>
+                        {% endif %}
+                </div>
             </div>
-        </div>
-
-    </section>
+        </section>
+    {% endcache %}
 {% endblock content %}

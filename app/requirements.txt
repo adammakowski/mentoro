@@ -26,3 +26,4 @@ django-drf-filepond==0.3.0
 django-registration==3.1
 django-defender==0.7.0 # A simple Django reusable app that blocks people from brute forcing login attempts. The goal is to make this as fast as possible, so that we do not slow down the login attempts.
 django-anymail==8.0 # https://anymail.readthedocs.io/en/stable/
+locust==1.2.3

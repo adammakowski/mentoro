@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cache %}
 {% block content %}
+    {% cache 900 mentors_detail %}
     <section class="bg-theme-milky">
-
         <section class="pt-3">
             <div class="container">
                 <nav aria-label="breadcrumb">
@@ -79,4 +80,5 @@
             </div>
         </div>
     </section>
+    {% endcache %}
 {% endblock content %}

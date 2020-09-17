@@ -19,22 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update templates and images compress">
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0009_auto_20200912_1554.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/locustfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/social/bitbucket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/social/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locust/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/locust/locustfile.py" afterDir="false" />
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add locust">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/gunicorn.conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/gunicorn.conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/locustfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/locustfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mentors/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locust/locustfile.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +76,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\staticfiles\js" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,7 +218,9 @@
       <workItem from="1599918463954" duration="12224000" />
       <workItem from="1599995609100" duration="4517000" />
       <workItem from="1600174243431" duration="8154000" />
-      <workItem from="1600186715659" duration="1474000" />
+      <workItem from="1600186715659" duration="5409000" />
+      <workItem from="1600260138322" duration="4438000" />
+      <workItem from="1600349534276" duration="5827000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -324,7 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599677301497</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add locust">
+      <created>1600188258909</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1600188258909</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add locust">
+      <created>1600188294359</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1600188294359</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +369,8 @@
     <MESSAGE value="add filepond" />
     <MESSAGE value="update tawkto" />
     <MESSAGE value="update templates and images compress" />
-    <option name="LAST_COMMIT_MESSAGE" value="update templates and images compress" />
+    <MESSAGE value="add locust" />
+    <option name="LAST_COMMIT_MESSAGE" value="add locust" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596561664109">
@@ -371,14 +389,14 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596704048690" />
-    <state x="1043" y="177" width="998" height="708" key="SettingsEditor" timestamp="1600178732847">
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor" timestamp="1600191013247">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600178732847" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599677310129">
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600191013247" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600188296248">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599677310129" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1600188296248" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592765073826">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

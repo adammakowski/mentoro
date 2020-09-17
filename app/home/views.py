@@ -4,7 +4,7 @@ from django.views.decorators.cache import cache_page
 
 # Create your views here.
 
-# @cache_page(60 * 60) # Cache time to live is 60 minutes.
+# @cache_page(60 * 5) # Cache time to live is 5 minutes.
 def home_index(request):
     return render(request, 'home_index.html', {})
 
@@ -43,7 +43,7 @@ def home_support(request):
 def home_privacypolicy(request):
     return render(request, 'home_privacypolicy.html', {})
 
-# @cache_page(60 * 60) # Cache time to live is 15 minutes.
+@cache_page(60 * 60) # Cache time to live is 60 minutes.
 def mentors_instructions_and_regulations(request):
     terms_mentor = TermsMentor.objects.all
     return render(request, 'terms/mentors_instructions_and_regulations.html', {'terms_mentor': terms_mentor})
