@@ -19,24 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add locust">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/gunicorn.conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/gunicorn.conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locustfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/locustfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locust/locustfile.py" beforeDir="false" />
-    </list>
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add cache" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +203,7 @@
       <workItem from="1600174243431" duration="8154000" />
       <workItem from="1600186715659" duration="5409000" />
       <workItem from="1600260138322" duration="4438000" />
-      <workItem from="1600349534276" duration="5827000" />
+      <workItem from="1600349534276" duration="6193000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -341,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600188294359</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add cache">
+      <created>1600355754247</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1600355754247</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +360,8 @@
     <MESSAGE value="update tawkto" />
     <MESSAGE value="update templates and images compress" />
     <MESSAGE value="add locust" />
-    <option name="LAST_COMMIT_MESSAGE" value="add locust" />
+    <MESSAGE value="add cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cache" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596561664109">
