@@ -49,3 +49,5 @@ Done!
 
 ### update repo
 git pull origin master
+git commit -m "My message"
+git stash
