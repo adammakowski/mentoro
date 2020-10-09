@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load cache %}
 {% block content %}
-    {% cache 300 mentors_all %}
+
         <section class="pb-5 bg-theme-milky">
             <div class="container pt-4">
                 <form>
@@ -84,5 +83,4 @@
                 </div>
             </div>
         </section>
-    {% endcache %}
 {% endblock content %}

@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add cache">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/tokens.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="4804ffed-2a56-4490-b5b0-5290204b1107" />
   <component name="ProjectId" id="1cnmuAamUCDQVG9KPPPTtNEx9nT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,7 +62,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-on-docker-master" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,6 +107,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -208,6 +217,9 @@
       <workItem from="1600186715659" duration="5409000" />
       <workItem from="1600260138322" duration="4438000" />
       <workItem from="1600349534276" duration="6808000" />
+      <workItem from="1601657107753" duration="953000" />
+      <workItem from="1601658384463" duration="2582000" />
+      <workItem from="1602270162482" duration="1462000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -346,7 +358,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -383,17 +395,19 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1010" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1598477085560" />
-    <state x="248" y="86" key="DiffContextDialog" timestamp="1592764492206">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="795" y="261" key="FileChooserDialogImpl" timestamp="1602270730868">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="248" y="86" key="DiffContextDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1592764492206" />
-    <state x="1060" y="261" key="FileChooserDialogImpl" timestamp="1596704048690">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
+    <state x="795" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602270730868" />
     <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596704048690" />
-    <state x="1043" y="177" width="998" height="708" key="SettingsEditor" timestamp="1600191013247">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1602270833132">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602270833132" />
+    <state x="782" y="177" width="916" height="708" key="SettingsEditor" timestamp="1601657493014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601657493014" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600191013247" />
     <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600356030534">
       <screen x="0" y="0" width="2560" height="1040" />
