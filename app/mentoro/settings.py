@@ -215,11 +215,15 @@ else:
 LOGIN_REDIRECT_URL = 'dashboard_index'
 
 # Email config Mailgun SMTP
-EMAIL_BACKEND = "anymail.backends.sendinblue.EmailBackend"
-DEFAULT_FROM_EMAIL = "support@mentoro.online"  # if you don't already have this in settings
-ANYMAIL = {
-    "SENDINBLUE_API_KEY": "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",
-}
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+    EMAIL_FILE_PATH = 'app-messages'  # change this to a proper location
+else:
+    EMAIL_BACKEND = "anymail.backends.sendinblue.EmailBackend"
+    DEFAULT_FROM_EMAIL = "support@mentoro.online"  # if you don't already have this in settings
+    ANYMAIL = {
+        "SENDINBLUE_API_KEY": "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",
+    }
 
 # Django reCaptcha
 RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
