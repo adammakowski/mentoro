@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add cache">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update python in Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/mentoro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mentoro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Dockerfile.prod" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -219,7 +220,7 @@
       <workItem from="1600349534276" duration="6808000" />
       <workItem from="1601657107753" duration="953000" />
       <workItem from="1601658384463" duration="2582000" />
-      <workItem from="1602270162482" duration="1462000" />
+      <workItem from="1602270162482" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -354,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600356028948</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update python in Dockerfile">
+      <created>1602272402309</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602272402309</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +392,8 @@
     <MESSAGE value="update templates and images compress" />
     <MESSAGE value="add locust" />
     <MESSAGE value="add cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cache" />
+    <MESSAGE value="update python in Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update python in Dockerfile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596561664109">
@@ -404,14 +413,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602270833132" />
-    <state x="782" y="177" width="916" height="708" key="SettingsEditor" timestamp="1601657493014">
+    <state x="782" y="177" width="916" height="708" key="SettingsEditor" timestamp="1602273341292">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601657493014" />
+    <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600191013247" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600356030534">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="654" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602272409150">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
     <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1600356030534" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
