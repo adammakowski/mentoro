@@ -41,7 +41,16 @@
                                 <p class="p-2 mb-0"><i class="fas fa-lock text-success"></i> <span class="text-muted">https://</span>mentoro.online</p>
                             </section>
                         </div>
-                        <form method="post" class="pt-4">
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p class="text-center font-special-bold">Utwórz konto za pomocą</p>
+                            <a href="#" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;"></a>
+                            <a href="#" target="_blank"><img src="{% static 'img/social/linkedin.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;"></a>
+                            <a href="#" target="_blank"><img src="{% static 'img/social/twitter.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;"></a>
+                            <a href="#" target="_blank"><img src="{% static 'img/social/youtube.svg' %}" class="img-fluid" style="height: 2.5rem;"></a>
+                        </div>
+                        <hr class="my-4">
+                        <form method="post">
                             {% csrf_token %}
                             {{ form|crispy }}
                             <p class="text-center text-justify pt-3">Rejestracja oznacza, że przeczytałeś i akceptujesz <a href="">Regulamin</a> oraz naszą <a href="">Politykę prywatności</a>.</p>

@@ -4,6 +4,7 @@ Django==3.1.2
 psycopg2-binary==2.8.6
 pytz==2020.1
 sqlparse==0.4.1
+django-allauth==0.42.0
 gunicorn==20.0.4 # Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model.
 uvicorn==0.12.1 # Uvicorn is a lightning-fast ASGI server, built on uvloop and httptools.
 argon2-cffi==20.1.0 # Argon2 is the winner of the 2015 Password Hashing Competition, a community organized open competition to select a next generation hashing algorithm. It’s designed not to be easier to compute on custom hardware than it is to compute on an ordinary CPU

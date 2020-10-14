@@ -42,6 +42,8 @@ urlpatterns = [
     path('library/', include('library.urls')),
     # Mentoro|Blog path
     path('blog/', include('blog.urls')),
+    # Social Auth
+    path('social/accounts/', include('allauth.urls')),
     # The two-step activation workflow
     path('accounts/', include('django_registration.backends.activation.urls')),
     # user authorizations

@@ -20,11 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update python in Dockerfile">
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/cool.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.esm.min.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mentoro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mentoro.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile.prod" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/colors.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +82,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="4804ffed-2a56-4490-b5b0-5290204b1107" />
+  <component name="JupyterTrust" id="50d027cb-ebef-4fa1-9674-974e9d22ca71" />
   <component name="ProjectId" id="1cnmuAamUCDQVG9KPPPTtNEx9nT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,14 +106,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-on-docker-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mentoro - dane" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -221,6 +265,8 @@
       <workItem from="1601657107753" duration="953000" />
       <workItem from="1601658384463" duration="2582000" />
       <workItem from="1602270162482" duration="2770000" />
+      <workItem from="1602691206707" duration="172000" />
+      <workItem from="1602691397160" duration="16595000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -396,6 +442,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update python in Dockerfile" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602694220045">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1602694220045" />
     <state x="1020" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596561664109">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -404,20 +454,20 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1010" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1598477085560" />
-    <state x="795" y="261" key="FileChooserDialogImpl" timestamp="1602270730868">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1060" y="261" key="FileChooserDialogImpl" timestamp="1602693970298">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="795" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602270730868" />
-    <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596704048690" />
+    <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1602693970298" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1602270833132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602270833132" />
-    <state x="782" y="177" width="916" height="708" key="SettingsEditor" timestamp="1602273341292">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1043" y="177" width="916" height="708" key="SettingsEditor" timestamp="1602692798806">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
-    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1600191013247" />
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1602692798806" />
     <state x="654" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602272409150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

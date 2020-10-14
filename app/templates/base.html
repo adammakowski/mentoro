@@ -6,8 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="{% static 'css/theme.css' %}">
     <!-- Plyr video player CSS -->
@@ -32,22 +35,20 @@
 {% include 'navbar.html' %}
 {% block content %}{% endblock content %}
 {% include 'footer.html' %}
-    {% include 'elements/google_analytics.html' %}
-    {% include 'elements/tawk_to.html' %}
-    {% include 'elements/hotjar.html' %}
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
-    <script>
-        const player = new Plyr('#player');
-    </script>
-    <!-- include FilePond library and jQuery adapter -->
-    <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
-    <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
-    <!-- Configure and initialise Filepond -->
-    <script src="{% static 'js/filepond.js' %}"></script>
+{% include 'elements/google_analytics.html' %}
+{% include 'elements/tawk_to.html' %}
+{% include 'elements/hotjar.html' %}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script>
+    const player = new Plyr('#player');
+</script>
+<!-- include FilePond library and jQuery adapter -->
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
+<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+<!-- Configure and initialise Filepond -->
+<script src="{% static 'js/filepond.js' %}"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@ git clone https://gitlab.com/narzuta/mentoro.git
 Upload env files
 
 Create migrate
-docker exec -it mentoro_web-prod_1 python manage.py migrate
+docker exec -it mentoro_web_1 python manage.py migrate
 Create superuser
 docker exec -it mentoro_web-prod_1 python manage.py createsuperuser
 Collectstatic and upload staticfiles to S3

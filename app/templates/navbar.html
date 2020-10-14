@@ -1,15 +1,16 @@
 {% load static %}
-<section class="fixed-top bg-white shadow">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white container">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+    <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{% url 'home_index' %}">
             <img src="{% static 'img/logo/logo.png' %}" style="height: 1.5rem;" alt="Mentoro">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Produkty
@@ -43,39 +44,103 @@
                     <a class="nav-link" href="{% url 'home_support' %}">Wsparcie</a>
                 </li>
             </ul>
-
             {% if user.is_authenticated %}
-                {# Mobile view #}
-                <div class="d-lg-none">
-                    <hr class="my-2">
-                    <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'dashboard_index' %}" role="button"> Moja tablica</a>
-                    <a class="btn btn-outline-danger font-special-bold shadow rounded-0 btn-block my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
-                </div>
-                {# Desktop view #}
-                <div class="d-none d-lg-block">
-                    <form class="form-inline my-2 my-lg-0">
-                        <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
-                        <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
-                    </form>
-                </div>
-            {% else %}
-                {# Mobile view #}
-                <div class="d-lg-none">
-                    <hr class="my-2">
-                    <form class="form-inline my-2 my-lg-0">
-                        <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'account_login' %}" role="button"><i class="far fa-user-circle"></i> Zaloguj</a>
-                        <a class="btn btn-primary font-special-bold shadow rounded-0 btn-block" href="{% url 'django_registration_register' %}" role="button"><i class="fas fa-user-plus"></i> Utwórz konto</a>
-                    </form>
-                </div>
-                {# Desktop view #}
-                <div class="d-none d-lg-block">
-                    <form class="form-inline my-2 my-lg-0">
-                        <a class="nav-link dark-link font-special-bold" href="{% url 'account_login' %}">Zaloguj</a>
-                        <a class="btn btn-primary font-special-bold shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Utwórz konto</a>
-                    </form>
-                </div>
+                <form class="d-flex">
+                    <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
+                </form>
+                <form class="d-flex">
+                    <a class="btn btn-outline-danger shadow" href="{% url 'account_logout' %}" role="button">Wyloguj</a>
+                </form>
+                {% else %}
+                <form class="d-flex">
+                    <a class="nav-link dark-link" href="{% url 'account_login' %}">Zaloguj</a>
+                </form>
+                <form class="d-flex">
+                    <a class="btn btn-success shadow" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
+                </form>
             {% endif %}
-
         </div>
-    </nav>
-</section>
+    </div>
+</nav>
+
+
+{#<section class="fixed-top bg-white shadow">#}
+{#    <nav class="navbar navbar-expand-lg navbar-light bg-white container">#}
+{#        <a class="navbar-brand d-flex align-items-center" href="{% url 'home_index' %}">#}
+{#            <img src="{% static 'img/logo/logo.png' %}" style="height: 1.5rem;" alt="Mentoro">#}
+{#        </a>#}
+{#        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#            <span class="navbar-toggler-icon"></span>#}
+{#        </button>#}
+{##}
+{#        <div class="collapse navbar-collapse" id="navbarSupportedContent">#}
+{#            <ul class="navbar-nav mr-auto">#}
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                        Produkty#}
+{#                    </a>#}
+{#                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+{#                        <a class="dropdown-item" href="{% url 'courses_all' %}">Mentoro | Wideo kursy</a>#}
+{#                        <a class="dropdown-item" href="{% url 'mentors_all' %}">Mentoro | Mentorzy</a>#}
+{#                        <a class="dropdown-item" href="#">Mentoro | Eksperci</a>#}
+{#                        <a class="dropdown-item" href="{% url 'library_all' %}">Mentoro | Biblioteka</a>#}
+{#                        <a class="dropdown-item" href="{% url 'blog_all' %}">Mentoro | Blog</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'home_pricing' %}">Cennik</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'blog_all' %}">Blog</a>#}
+{#                </li>#}
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                        Firma#}
+{#                    </a>#}
+{#                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+{#                        <a class="dropdown-item" href="{% url 'home_aboutus' %}">O Nas</a>#}
+{#                        <a class="dropdown-item" href="#">Współpraca</a>#}
+{#                        <a class="dropdown-item" href="#">Kariera</a>#}
+{#                        <a class="dropdown-item" href="#">Kontakt</a>#}
+{#                    </div>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'home_support' %}">Wsparcie</a>#}
+{#                </li>#}
+{#            </ul>#}
+{##}
+{#            {% if user.is_authenticated %}#}
+{# Mobile view #}
+{#                <div class="d-lg-none">#}
+{#                    <hr class="my-2">#}
+{#                    <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'dashboard_index' %}" role="button"> Moja tablica</a>#}
+{#                    <a class="btn btn-outline-danger font-special-bold shadow rounded-0 btn-block my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>#}
+{#                </div>#}
+{# Desktop view #}
+{#                <div class="d-none d-lg-block">#}
+{#                    <form class="form-inline my-2 my-lg-0">#}
+{#                        <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>#}
+{#                        <a class="btn btn-outline-danger font-weight-bold shadow rounded-0 my-2 my-sm-0" href="{% url 'account_logout' %}" role="button">Wyloguj</a>#}
+{#                    </form>#}
+{#                </div>#}
+{#            {% else %}#}
+{# Mobile view #}
+{#                <div class="d-lg-none">#}
+{#                    <hr class="my-2">#}
+{#                    <form class="form-inline my-2 my-lg-0">#}
+{#                        <a class="btn btn-outline-dark font-special-bold shadow rounded-0 btn-block" href="{% url 'account_login' %}" role="button"><i class="far fa-user-circle"></i> Zaloguj</a>#}
+{#                        <a class="btn btn-primary font-special-bold shadow rounded-0 btn-block" href="{% url 'django_registration_register' %}" role="button"><i class="fas fa-user-plus"></i> Utwórz konto</a>#}
+{#                    </form>#}
+{#                </div>#}
+{# Desktop view #}
+{#                <div class="d-flex">#}
+{#                    <form class="form-inline">#}
+{#                        <a class="nav-link dark-link" href="{% url 'account_login' %}">Zaloguj</a>#}
+{#                        <a class="btn btn-primary shadow rounded-0" href="{% url 'django_registration_register' %}" role="button">Utwórz konto</a>#}
+{#                    </form>#}
+{#                </div>#}
+{#            {% endif %}#}
+{##}
+{#        </div>#}
+{#    </nav>#}
+{#</section>#}

@@ -1,32 +1,16 @@
 @import "background";
 @import "colors";
 
-@font-face {
-  font-family: Jost-Regular;
-  src: url(/staticfiles/font/Jost-Regular.ttf);
-}
-@font-face {
-  font-family: Jost-Black;
-  src: url(/staticfiles/font/Jost-Black.ttf);
-}
-@font-face {
-  font-family: Jost-Bold;
-  src: url(/staticfiles/font/Jost-Bold.ttf);
-}
 body {
-  font-family: 'Jost-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   padding-top: 55px;
 }
 // Plyr player style
 :root {
   --plyr-color-main: #007bff;
 }
-
-.font-special-black {
-  font-family: 'Jost-Black', sans-serif;
-}
-.font-special-bold {
-  font-family: 'Jost-Bold', sans-serif;
+.font-special {
+  font-family: 'Secular One', sans-serif;
 }
 
 .form-control {
@@ -53,37 +37,47 @@ body {
 }
 
 .bg-jumbo {
-  background-image: url("/staticfiles/img/bg/bg-jumbo.webp");
+  background-image: url("/staticfiles/img/bg/bg.png");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
-  background-blend-mode: multiply;
-  background-color: @color-blue-primary;
+  background-blend-mode: screen;
+  background-color: @color-milky;
 }
 .bg-courses {
   background-image: url("/staticfiles/img/bg/bg-courses.webp");
   background-position: center;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: @color-blue-primary;
 }
 .bg-mentors {
   background-image: url("/staticfiles/img/bg/bg-mentors.webp");
   background-position: top;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: @color-blue-primary;
 }
 .bg-experts {
   background-image: url("/staticfiles/img/bg/bg-experts.webp");
   background-position: top;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: @color-blue-primary;
 }
 .bg-library {
   background-image: url("/staticfiles/img/bg/bg-library.webp");
   background-position: top;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: @color-blue-primary;
 }
 .bg-blog {
   background-image: url("/staticfiles/img/bg/bg-blog.webp");
   background-position: top;
   background-size: cover;
+  background-blend-mode: multiply;
+  background-color: @color-blue-primary;
 }
 // navbar links colors
 .navbar-light .navbar-nav .nav-link {
