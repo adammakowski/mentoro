@@ -19,68 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update theme">
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/bg/bg3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/001-audio book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/002-book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/003-files.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/004-cloud library.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/005-users.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/007-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/008-mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/009-web.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/010-education.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/011-graduation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/012-phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/013-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/014-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/015-library.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/016-book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/017-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/018-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/019-web.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/020-online learning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/021-podcast.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/022-tablet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/023-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/024-open book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/025-document.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/026-tablet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/027-book.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/028-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/030-conversation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/031-web.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/032-video.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/education.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/monitor.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/monitor1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/icons/webinar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mentoro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mentoro.iml" afterDir="false" />
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="new design theme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/colors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/colors.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/colors.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/bg-home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/bg/cool.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/four.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/funds.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/mentor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/money-bag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/sad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/student.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/student1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/time.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/trophy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/icons/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +226,8 @@
       <workItem from="1602691206707" duration="172000" />
       <workItem from="1602691397160" duration="16721000" />
       <workItem from="1602747826558" duration="7851000" />
-      <workItem from="1602784487814" duration="2190000" />
+      <workItem from="1602784487814" duration="2967000" />
+      <workItem from="1602862345840" duration="2231000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -429,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602710443359</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="new design theme">
+      <created>1602786798322</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602786798322</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +415,8 @@
     <MESSAGE value="add cache" />
     <MESSAGE value="update python in Dockerfile" />
     <MESSAGE value="update theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update theme" />
+    <MESSAGE value="new design theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="new design theme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602694220045">
@@ -490,11 +445,11 @@
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1602762104576" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602710447395">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602786800764">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1602710447395" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1602786800764" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

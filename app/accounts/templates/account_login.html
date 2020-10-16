@@ -42,9 +42,9 @@
     <div class="d-none d-lg-block">
         <section class="bg-jumbo pt-5 pb-5">
             <div class="container pt-5 pb-5 col-lg-4 col-md-12 col-sm-12">
-                <div class="card rounded-0 border-0 shadow">
+                <div class="card shadow">
                     <div class="card-body pt-5">
-                        <h5 class="text-primary font-special-bold text-center pb-3">Zaloguj się do MENTORO</h5>
+                        <h5 class="color-blue-primary font-special text-center pb-3">Zaloguj się do MENTORO</h5>
                         <p class="text-center text-muted mb-0">Sprawdź, czy odwiedzasz prawidłowy adres URL:</p>
                         <div class="d-flex justify-content-center">
                             <section class="ssl-bar text-center">
@@ -60,22 +60,13 @@
                                 {% endfor %}
                             {% endif %}
                         </div>
-                        <hr class="my-4">
-                        <div class="text-center">
-                            <p class="text-center font-special-bold">Logowanie za pomocą</p>
-                            <a href="{% provider_login_url "facebook" method="oauth2" %}"><img src="{% static 'img/social/facebook.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;" alt="Facebook"></a>
-                            <a href="#" target="_blank"><img src="{% static 'img/social/linkedin.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;" alt="LinkedIn"></a>
-                            <a href="#" target="_blank"><img src="{% static 'img/social/twitter.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;"></a>
-                            <a href="#" target="_blank"><img src="{% static 'img/social/youtube.svg' %}" class="img-fluid mr-lg-3" style="height: 2.5rem;"></a>
-                        </div>
-                        <hr class="my-4">
-                        <form method="post">
+                        <form method="post" class="pt-3">
                             {% csrf_token %}
                             {{ form|crispy }}
-                            <a href="{% url 'account_password_reset' %}" class="pb-3 float-right dark-link text-decoration-none">Nie pamiętasz hasła?</a>
-                            <button class="btn btn-success btn-block rounded-0 shadow font-special-bold" value="Submit" type="submit">Zaloguj się</button>
+                            <a href="{% url 'account_password_reset' %}" class="pt-3 pb-3 float-right dark-link text-decoration-none">Nie pamiętasz hasła?</a>
+                            <button class="btn btn-primary btn-block shadow" value="Submit" type="submit">Zaloguj się</button>
                         </form>
-                        <p class="text-center pt-5">Nie masz jeszcze konta w Mentoro? <a href="{% url 'django_registration_register' %}" class="text-decoration-none dark-link font-special-bold">Utwórz darmowe konto</a></p>
+                        <p class="text-center pt-4">Nie masz jeszcze konta w Mentoro? <a href="{% url 'django_registration_register' %}" class="text-decoration-none dark-link font-special">Utwórz darmowe konto</a></p>
                     </div>
                 </div>
             </div>
