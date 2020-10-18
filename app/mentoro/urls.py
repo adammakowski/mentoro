@@ -24,8 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # defender admin
     path('admin/defender/', include('defender.urls')),
-    # Filepond
-    path('fp/', include('django_drf_filepond.urls')),
     # Ckeditor uploader
     path('ckeditor/', include('ckeditor_uploader.urls')),
     # sites path
@@ -42,8 +40,6 @@ urlpatterns = [
     path('library/', include('library.urls')),
     # Mentoro|Blog path
     path('blog/', include('blog.urls')),
-    # Social Auth
-    path('social/accounts/', include('allauth.urls')),
     # The two-step activation workflow
     path('accounts/', include('django_registration.backends.activation.urls')),
     # user authorizations

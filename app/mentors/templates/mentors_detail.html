@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load cache %}
 {% block content %}
-    {% cache 900 mentors_detail %}
     <section class="bg-theme-milky">
         <section class="pt-3">
             <div class="container">
@@ -22,7 +20,7 @@
                     <h4 class="text-white text-center">{{ mentors.title }}</h4>
                     <p class="text-white text-center pb-3">{{ mentors.short_description|linebreaksbr }}</p>
                     <video id="player" playsinline controls>
-                        <source src="{{ mentors.video_presentation.url }}" type='video/mp4'>
+                        <source src="{{ mentors.video_presentation.cdn_url }}" type='video/mp4'>
                     </video>
                 </div>
             </section>
@@ -31,7 +29,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card rounded-0 shadow">
-                        <img src="{{ mentors.image_preview.url }}" class="img-fluid" alt="{{ mentors.title }}">
+                        <img src="{{ mentors.image_preview.cdn_url }}" class="img-fluid" alt="{{ mentors.title }}">
                         <div class="card-body">
                             <a href="{% url 'mentors_detail' pk=mentors.pk %}" class="h5 text-decoration-none">{{ mentor.title }}</a>
                             <p>Opublikowane {{ mentors.published_date }}</p>
@@ -80,5 +78,4 @@
             </div>
         </div>
     </section>
-    {% endcache %}
 {% endblock content %}

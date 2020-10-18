@@ -5,6 +5,12 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 sentry_sdk.init(
     dsn="https://b5618401fa044fc1b952aa8677600a7a@o376411.ingest.sentry.io/5197194", integrations=[DjangoIntegration()],
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production,
+    traces_sample_rate=1.0,
+
     # If you wish to associate users to errors (assuming you are using
     # django.contrib.auth) you may enable sending PII data.
     send_default_pii=True
@@ -45,24 +51,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    # AllAuth providers
-    'allauth.socialaccount.providers.facebook',
     'django_registration',  # https://django-registration.readthedocs.io
     'captcha',  # https://github.com/praekelt/django-recaptcha
     'ckeditor',  # https://github.com/django-ckeditor/django-ckeditor
     'ckeditor_uploader',  # https://github.com/django-ckeditor/django-ckeditor#required-for-using-widget-with-file-upload
     'django_extensions',  # https://github.com/django-extensions/django-extensions
     'crispy_forms',  # https://django-crispy-forms.readthedocs.io
-    'optimized_image',  # TinyPNG optimize images
     'defender',  # https://django-defender.readthedocs.io/en/latest/
     'debug_toolbar',  # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    'simple_history',  # https://django-simple-history.readthedocs.io
     'django_cleanup.apps.CleanupConfig',  # https://github.com/un1t/django-cleanup
-    'django_drf_filepond',  # https://django-drf-filepond.readthedocs.io/en/latest/
     'anymail',  # https://anymail.readthedocs.io/en/stable/
+    'pyuploadcare.dj',  #
     'home',  # home app
     'accounts',  # accounts app
     'dashboard',  # dashboard app
@@ -75,29 +74,9 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-# Provider specific settings
-SOCIALACCOUNT_PROVIDERS = {
-    'facebook': {
-        'METHOD': 'oauth2',
-        'SDK_URL': '//connect.facebook.net/{locale}/sdk.js',
-        'SCOPE': ['email', 'public_profile'],
-        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
-        'INIT_PARAMS': {'cookie': True},
-        'FIELDS': [
-            'id',
-            'first_name',
-            'last_name',
-            'middle_name',
-            'name',
-            'name_format',
-            'picture',
-            'short_name'
-        ],
-        'EXCHANGE_TOKEN': True,
-        'LOCALE_FUNC': 'path.to.callable',
-        'VERIFIED_EMAIL': False,
-        'VERSION': 'v7.0',
-    }
+UPLOADCARE = {
+    'pub_key': '35c7d9cd80d3eca2638f',
+    'secret': 'c812ab963276566f9d47',
 }
 
 MIDDLEWARE = [
@@ -108,18 +87,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',  # Django Debug Toolbar https://github.com/jazzband/django-debug-toolbar
-    'simple_history.middleware.HistoryRequestMiddleware',  # https://django-simple-history.readthedocs.io
     'defender.middleware.FailedLoginMiddleware',  # https://django-defender.readthedocs.io/en/latest/
 ]
 
 ROOT_URLCONF = 'mentoro.urls'
-
-AUTHENTICATION_BACKENDS = [
-    # Needed to login by username in Django admin, regardless of `allauth`
-    'django.contrib.auth.backends.ModelBackend',
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
-]
 
 TEMPLATES = [
     {
@@ -136,12 +107,6 @@ TEMPLATES = [
         },
     },
 ]
-
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': [
-#         'rest_framework.authentication.TokenAuthentication',
-#     ]
-# }
 
 WSGI_APPLICATION = 'mentoro.wsgi.application'
 
@@ -269,10 +234,6 @@ else:
 RECAPTCHA_PUBLIC_KEY = os.environ.get("RECAPTCHA_PUBLIC_KEY")
 RECAPTCHA_PRIVATE_KEY = os.environ.get("RECAPTCHA_PRIVATE_KEY")
 
-# TinyPNG compress images
-OPTIMIZED_IMAGE_METHOD = 'tinypng'
-TINYPNG_KEY = os.environ.get("TINYPNG_KEY")
-
 # Django Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -286,14 +247,6 @@ DEFENDER_LOCKOUT_URL = 'account_locked'
 #  django-registration - https://django-registration.readthedocs.io/en/3.1
 ACCOUNT_ACTIVATION_DAYS = 1  # One-day activation window
 REGISTRATION_OPEN = True
-
-# Filepond JS Uploader
-# https://django-drf-filepond.readthedocs.io/en/latest/
-if DEBUG:
-    DJANGO_DRF_FILEPOND_UPLOAD_TMP = os.path.join(BASE_DIR, 'filepond-temp-uploads')
-    DJANGO_DRF_FILEPOND_FILE_STORE_PATH = os.path.join(BASE_DIR, 'stored_uploads')
-else:
-    DJANGO_DRF_FILEPOND_STORAGES_BACKEND = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Ckeditor Uploader
 CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'ckeditor-uploads')

@@ -7,8 +7,8 @@
         <div class="container pb-5">
             <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
                 <div class="card-body text-center p-5">
-                    <h3 class="text-white font-special-bold">Kandyduj na mentora</h3>
-                    <h5 class="text-primary pb-3">Zacznij monetyzować własną wiedzę.</h5>
+                    <h3 class="text-white font-special">Kandyduj na mentora</h3>
+                    <h5 class="color-neon-green pb-3">Zacznij monetyzować własną wiedzę.</h5>
                     <p class="text-white mb-0">Pamiętaj że nie oceniamy Twoich zdolności i wiedzy, robią to użytkownicy naszego portalu.</p>
                     <p class="text-white mb-0">Przed dodaniem zgłoszenia zapoznaj się z <a href="{% url 'mentors_instructions_and_regulations' %}" target="_blank" class="text-decoration-none">instrukcją i regulaminem kandydatury na mentora</a>.</p>
                     <p class="text-white mb-0">Pomoże Ci to zrozumieć czego wymagamy i przyszpieszy proces rozpatrzenia Twojej kandydatury.</p>
@@ -22,7 +22,8 @@
                     <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form.media }}
-                        {% crispy form %}
+                        {{ form|crispy }}
+                        <button type="submit" class="save btn btn-primary btn-block shadow">Zgłoś kandydaturę</button>
                     </form>
                 </div>
             </div>

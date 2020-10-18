@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from optimized_image.fields import OptimizedImageField
-from simple_history.models import HistoricalRecords
+from pyuploadcare.dj.models import ImageField, FileField
 from ckeditor.fields import RichTextField
 
 STATUS = (
@@ -11,14 +10,12 @@ STATUS = (
 
 class Category(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    history = HistoricalRecords()
 
     def __str__(self):
         return self.title
 
 class Language(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    history = HistoricalRecords()
 
     def __str__(self):
         return self.title
@@ -33,13 +30,12 @@ class Mentor(models.Model):
     description = RichTextField(blank=False, null=False, verbose_name='Szczegółowy opis i dodatkowe informacje', help_text='Czym więcej informacji dla potencjalnego ucznia tym lepiej, napisz jak najwięcej.')
     what_can_i_teach_you = RichTextField(blank=False, null=False, verbose_name='Czego mogę nauczyć')
     requirements = RichTextField(blank=False, null=False, verbose_name='Moje wymagania od ucznia')
-    image_preview = OptimizedImageField(upload_to='mentors/image_preview/%Y/%m/%d/', blank=False, null=False, verbose_name='Zdjęcie podglądowe')
-    video_presentation = models.FileField(upload_to='mentors/video_presentation/%Y/%m/%d/', blank=True, null=True, verbose_name='Wideo prezentacja')
+    image_preview = ImageField(blank=False, null=False, manual_crop="", verbose_name='Zdjęcie podglądowe')
+    video_presentation = FileField(blank=True, null=True, verbose_name='Wideo prezentacja')
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0, help_text='Status publikacji')
     active = models.BooleanField(default=False, verbose_name='Zatwierdzone')
-    history = HistoricalRecords()
 
     class Meta:
         ordering = ['-created_date']

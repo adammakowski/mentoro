@@ -1,9 +1,8 @@
 from django.contrib import admin
 from .models import Post, Category, Language, Comment
-from simple_history.admin import SimpleHistoryAdmin
 
 @admin.register(Post)
-class PostAdmin(SimpleHistoryAdmin):
+class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'category', 'author', 'language', 'created_date', 'published_date')
     list_filter = ('language', 'created_date', 'published_date', 'status')
     search_fields = ('title',)
@@ -11,8 +10,8 @@ class PostAdmin(SimpleHistoryAdmin):
     history_list_display = ('title')
     list_per_page = 50
 
-admin.site.register(Category, SimpleHistoryAdmin)
-admin.site.register(Language, SimpleHistoryAdmin)
+admin.site.register(Category)
+admin.site.register(Language)
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):

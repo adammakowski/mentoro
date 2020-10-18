@@ -20,13 +20,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="new design theme">
+      <change afterPath="$PROJECT_DIR$/app/app-messages/20201018-192501-139973712237424.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0002_auto_20200907_1955.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0003_auto_20200907_2002.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0004_auto_20200907_2008.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0005_auto_20200907_2019.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0006_auto_20200907_2031.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0007_auto_20200907_2036.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0008_auto_20200907_2158.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/migrations/0009_auto_20200912_1554.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0002_auto_20200806_1443.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0003_auto_20200806_1444.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0004_auto_20200806_1446.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0005_auto_20200806_1508.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0006_auto_20200806_1550.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0007_auto_20200806_1622.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0008_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0009_auto_20200808_2254.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0010_auto_20200808_2306.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0011_auto_20200808_2310.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0012_remove_comment_email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0013_auto_20200813_1733.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/0014_auto_20200813_1751.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0002_auto_20200728_2047.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0003_auto_20200804_1211.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0004_auto_20200804_1232.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0005_courselessons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0006_auto_20200805_2149.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0007_auto_20200805_2156.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0008_auto_20200805_2214.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/migrations/0009_auto_20200806_1442.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/migrations/0002_auto_20200825_2015.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/migrations/0003_auto_20200825_2022.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/migrations/0004_auto_20200825_2102.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0002_auto_20200526_1723.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0003_historicallibrarycategory_historicallibraryfile_historicallibrarylanguage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0004_auto_20200528_1319.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0005_auto_20200616_0830.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0006_auto_20200626_1507.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0007_auto_20200626_1509.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0008_auto_20200626_1517.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0009_auto_20200626_1521.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0010_auto_20200626_1523.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0011_auto_20200626_1534.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0012_auto_20200626_1546.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0013_auto_20200626_1548.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0014_auto_20200626_1655.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0015_auto_20200626_1818.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0016_auto_20200630_0829.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0017_auto_20200701_0856.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0018_auto_20200701_0856.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0019_auto_20200710_1244.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0020_auto_20200713_1907.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0021_auto_20200728_1622.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0022_auto_20200811_1603.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0023_auto_20200811_1608.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/migrations/0024_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/library/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0002_auto_20200812_1916.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0003_auto_20200812_1917.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0004_auto_20200817_2305.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0005_auto_20200817_2307.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0006_auto_20200817_2336.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0007_auto_20200817_2349.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0008_auto_20200817_2351.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0009_auto_20200817_2352.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0010_auto_20200817_2354.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0011_auto_20200817_2355.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0012_auto_20200825_1950.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0013_auto_20200907_1850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/django_registration/registration_complete.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,18 +160,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\staticfiles\js" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -227,7 +316,9 @@
       <workItem from="1602691397160" duration="16721000" />
       <workItem from="1602747826558" duration="7851000" />
       <workItem from="1602784487814" duration="2967000" />
-      <workItem from="1602862345840" duration="2231000" />
+      <workItem from="1602862345840" duration="2325000" />
+      <workItem from="1602958272099" duration="1308000" />
+      <workItem from="1603027119096" duration="13040000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -383,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602786798322</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="new design theme">
+      <created>1602871099878</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602871099878</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,25 +529,25 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1010" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1598477085560" />
-    <state x="1060" y="261" key="FileChooserDialogImpl" timestamp="1602693970298">
+    <state x="1060" y="261" key="FileChooserDialogImpl" timestamp="1602871167858">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="795" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602270730868" />
-    <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1602693970298" />
+    <state x="1060" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1602871167858" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1602270833132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602270833132" />
-    <state x="1043" y="177" width="916" height="708" key="SettingsEditor" timestamp="1602762104576">
+    <state x="1043" y="177" width="916" height="708" key="SettingsEditor" timestamp="1603029522308">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
-    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1602762104576" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602786800764">
+    <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1603029522308" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602871106833">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1602786800764" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1602871106833" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

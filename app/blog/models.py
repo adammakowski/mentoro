@@ -1,6 +1,5 @@
 from django.db import models
-from optimized_image.fields import OptimizedImageField
-from simple_history.models import HistoricalRecords
+from pyuploadcare.dj.models import ImageField
 from ckeditor.fields import RichTextField
 
 STATUS = (
@@ -10,14 +9,12 @@ STATUS = (
 
 class Category(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    history = HistoricalRecords()
 
     def __str__(self):
         return self.title
 
 class Language(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    history = HistoricalRecords()
 
     def __str__(self):
         return self.title
@@ -30,11 +27,10 @@ class Post(models.Model):
     language = models.ForeignKey(Language, on_delete=models.CASCADE, verbose_name="Język", help_text='Wybierz język w którym są Twoje treści')
     short_description = RichTextField(blank=False, null=False, max_length=500, verbose_name="Krótki opis", help_text='Dodaj krótki opis. Maksymalna ilość znaków to 500')
     description = RichTextField(blank=False, null=False, verbose_name="Szczegółowy opis", help_text='Podaj szczegółowy opis Twojego materiału.')
-    image_preview = OptimizedImageField(upload_to='blog/image_blog_preview/%Y/%m/%d/', blank=False, null=False, verbose_name="Zdjęcie podglądowe", help_text='Dodaj zdjęcie podglądowe materiału')
+    image_preview = ImageField(blank=False, null=False, verbose_name="Zdjęcie podglądowe", help_text='Dodaj zdjęcie podglądowe materiału')
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(auto_now= True)
     status = models.IntegerField(choices=STATUS, default=0)
-    history = HistoricalRecords()
 
     class Meta:
         ordering = ['-created_date']
