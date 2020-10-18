@@ -75,8 +75,8 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 UPLOADCARE = {
-    'pub_key': '35c7d9cd80d3eca2638f',
-    'secret': 'c812ab963276566f9d47',
+    'pub_key': os.environ.get('UPLOADCARE_PUB_KEY'),
+    'secret': os.environ.get('UPLOADCARE_SECRET_KEY'),
 }
 
 MIDDLEWARE = [
