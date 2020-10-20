@@ -4,7 +4,7 @@
     <section class="pb-5 bg-theme-milky">
         <div class="container pt-4">
             <form>
-                <div class="form-row">
+                <div class="row">
                     <div class="col-7">
                         <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
                     </div>
@@ -24,7 +24,7 @@
             </form>
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="pb-3">
+                    <div class="pt-3 pb-3">
                         <a class="btn btn-success btn-block shadow rounded-0" href="" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
                     </div>
                     <ul class="nav nav-pills flex-column">
@@ -40,10 +40,10 @@
                 </div>
 
                 <div class="col-lg-9">
-                    {% for post in post_list %}
-                        <div class="pb-3">
+                    {% for post in posts %}
+                        <div class="pt-3 pb-3">
                             <div class="card rounded-0 shadow">
-                                <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.url }}" class="img-fluid rounded-0" alt="{{ blog_post.title }}"></a>
+                                <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ blog_post.title }}"></a>
                                 <div class="card-body">
                                     <p class="mb-0 float-right">Ocena <span class="text-success font-special-bold">422</span> - <span class="text-danger font-special-bold">13</span></p>
                                     <p class="font-special-bold mb-0">{{ post.language }}</p>

@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="pt-5 bg-theme-milky">
+    <section class="pt-5">
 
         <div class="container pb-5">
             <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
                 <div class="card-body text-center p-5">
                     <h3 class="text-white font-special">Cennik</h3>
                     <h5 class="text-white pb-3">Oferta dostosowana dla każdego</h5>
-                    <a class="btn btn-neon shadow" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
+                    <a class="btn btn-neon btn-lg shadow border-0" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
                 </div>
             </div>
         </div>
@@ -17,19 +17,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <div class="card shadow rounded-0">
+                        <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="text-primary font-special text-center">Uczeń</h5>
+                                <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
+                                <h5 class="color-blue-primary font-special text-center">Uczeń</h5>
                                 <p class="text-center">Kupuj kursy i zdobywaj wiedzę</p>
                                 <hr class="my-2">
-                                <p>Darmowe konto</p>
-                                <p>Brak dodatkowych opłat za korzystanie</p>
-                                <p>Płacisz tylko za to co kupujesz</p>
-                                <p>Dożywotni dostęp do zakupionych materiałów</p>
-                                <p>Możliwość zarobienia dodatkowych pieniędzy w programie partnerskim</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Darmowe konto</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Brak dodatkowych opłat za korzystanie</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Płacisz tylko za to co kupujesz</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Dożywotni dostęp do zakupionych materiałów</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Dodatkowe pieniądze za polecanie</p>
                                 <hr>
                                 <h5 class="font-special text-center">0 PLN</h5>
-                                <p class="text-center text-primary font-special">Na zawsze</p>
+                                <p class="text-center color-blue-primary font-special">Na zawsze</p>
                                 <hr>
                                 <a class="btn btn-primary btn-block shadow" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
                             </div>
@@ -39,15 +40,16 @@
                     <div class="col-lg-4 col-sm-12">
                         <div class="card shadow rounded-0">
                             <div class="card-body">
-                                <h5 class="text-primary font-special text-center">Mentor</h5>
+                                <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
+                                <h5 class="color-blue-primary font-special text-center">Mentor i ekspert</h5>
                                 <p class="text-center">Przekazuj swoją wiedzę i zarabiaj</p>
                                 <hr class="my-2">
-                                <p>Darmowe konto</p>
-                                <p>Brak dodatkowych opłat za korzystanie</p>
-                                <p>Pobieramy 10% miesięcznie za każdą subskrypcję</p>
-                                <p>Darmowe narzędzia do zarządzania uczniami</p>
-                                <p>Możliwość zarobienia dodatkowych pieniędzy na polecaniu</p>
-                                <p>Wsparcie zespołu Mentoro</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Darmowe konto</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Brak dodatkowych opłat za korzystanie</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Prowizja 10% miesięcznie za każdą subskrypcję</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Darmowe narzędzia do zarządzania uczniami</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Dodatkowe pieniądze za polecanie</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Wsparcie zespołu Mentoro</p>
                                 <hr>
                                 <h5 class="font-special text-center">0 PLN + 10% prowizji</h5>
                                 <p class="text-center text-primary font-special">Na zawsze</p>
@@ -60,12 +62,26 @@
                     <div class="col-lg-4 col-sm-12">
                         <div class="card shadow rounded-0">
                             <div class="card-body">
-                                <h5 class="text-primary font-special text-center">Ekspert</h5>
-                                <p class="text-center">Prowadź szkolenia i zarabiaj</p>
+                                <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
+                                <h5 class="color-blue-primary font-special text-center">Twórca</h5>
+                                <p class="text-center">Twórz i sprzedawaj</p>
                                 <hr class="my-2">
+                                <p><i class="fas fa-check color-neon-green"></i> Darmowe konto</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Brak dodatkowych opłat za korzystanie</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Prowizja 10% za każdą sprzedaż</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Darmowe narzędzia</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Dodatkowe pieniądze za polecanie</p>
+                                <p><i class="fas fa-check color-neon-green"></i> Wsparcie zespołu Mentoro</p>
+                                <hr>
+                                <h5 class="font-special text-center">0 PLN + 10% prowizji</h5>
+                                <p class="text-center text-primary font-special">Na zawsze</p>
+                                <hr>
+                                <a class="btn btn-primary btn-block shadow border-0 font-special-bold" href="{% url 'django_registration_register' %}" role="button">Utwórz darmowe konto</a>
                             </div>
                         </div>
                     </div>
+
+
 
                 </div>
             </div>

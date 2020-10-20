@@ -7,10 +7,11 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.cache import cache_page
 
 #@cache_page(60 * 5) # cache 60s * 5 = 5 minutes
-class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_date')
-    template_name = 'blog_all.html'
-    paginate_by = 3
+def post_list(request):
+    posts = Post.objects.filter(status=1).order_by('-created_date')
+    context = {'posts': posts}
+    return render(request, 'blog_all.html', context)
+
 
 class PostCreate(generic.CreateView):
     model = Post

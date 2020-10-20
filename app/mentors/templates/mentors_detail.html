@@ -25,6 +25,7 @@
                 </div>
             </section>
         {% endif %}
+
         <div class="container pt-5 pb-5">
             <div class="row">
                 <div class="col-lg-8">
@@ -33,12 +34,12 @@
                         <div class="card-body">
                             <a href="{% url 'mentors_detail' pk=mentors.pk %}" class="h5 text-decoration-none">{{ mentor.title }}</a>
                             <p>Opublikowane {{ mentors.published_date }}</p>
-                            <p class="mb-0 font-special-bold">Krótki opis</p>
+                            <p class="mb-0 font-special">Krótki opis</p>
                             <p>{{ mentors.short_description|safe }}</p>
-                            <p class="mb-0 font-special-bold">Szczegółowy opis</p>
+                            <p class="mb-0 font-special">Szczegółowy opis</p>
                             <p>{{ mentors.description|safe }}</p>
                             <p>{{ mentors.contests|safe }}</p>
-                            <p class="mb-0 font-special-bold">Wymagania</p>
+                            <p class="mb-0 font-special">Wymagania</p>
                             <p>{{ mentors.requirements|safe }}</p>
                         </div>
                     </div>
@@ -57,7 +58,7 @@
                             <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
                             <hr>
                             <p>Liczba uczniów <span class="font-special-bold">435</span></p>
-                            <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">{{ mentors.price }} zł</h4>
+                            <h4 class="text-white font-special bg-theme-gunmetal p-1">{{ mentors.price }} zł</h4>
                             <p class="">Miesięcznie w formie subskrypcji</p>
                             <hr>
                             <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-file-signature"></i> Aplikuj jako uczeń</a>

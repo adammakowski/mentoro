@@ -6,7 +6,8 @@ from django.contrib.auth.decorators import login_required
 
 def mentors_all(request):
     mentors = Mentor.objects.filter(active=True, status=1).order_by('-created_date')
-    return render(request, 'mentors_all.html', {'mentors': mentors})
+    context = {'mentors':mentors}
+    return render(request, 'mentors_all.html', context)
 
 def mentors_detail(request, pk):
     mentors = get_object_or_404(Mentor, pk=pk)
