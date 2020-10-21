@@ -18,7 +18,7 @@
                         <div class="pt-3">
                             {% if messages %}
                                 {% for message in messages %}
-                                    <div class="rounded-0 alert alert-{{ message.tags }}">
+                                    <div class="rounded-0 border-0 text-center alert alert-{{ message.tags }}">
                                         {{ message }}
                                     </div>
                                 {% endfor %}
@@ -30,7 +30,7 @@
                             <a href="{% url 'account_password_reset' %}" class="pb-3 float-right dark-link text-decoration-none">Nie pamiętasz hasła?</a>
                             <button class="btn btn-success btn-block rounded-0 shadow font-special-bold" value="Submit" type="submit">Zaloguj się</button>
                         </form>
-                        <p class="text-center pt-5">Nie masz jeszcze konta w Mentoro? <a href="{% url 'django_registration_register' %}" class="text-decoration-none dark-link font-special-bold">Utwórz darmowe konto</a></p>
+                        <p class="text-center pt-5">Nie masz jeszcze konta w Mentoro? <a href="" class="text-decoration-none dark-link font-special-bold">Utwórz darmowe konto</a></p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                             <a href="{% url 'account_password_reset' %}" class="pt-3 pb-3 float-right dark-link text-decoration-none">Nie pamiętasz hasła?</a>
                             <button class="btn btn-primary btn-block shadow" value="Submit" type="submit">Zaloguj się</button>
                         </form>
-                        <p class="text-center pt-4">Nie masz jeszcze konta w Mentoro? <a href="{% url 'django_registration_register' %}" class="text-decoration-none dark-link font-special">Utwórz darmowe konto</a></p>
+                        <p class="text-center pt-4">Nie masz jeszcze konta w Mentoro? <a href="" class="text-decoration-none dark-link font-special">Utwórz darmowe konto</a></p>
                     </div>
                 </div>
             </div>

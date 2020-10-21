@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'django_registration',  # https://django-registration.readthedocs.io
     'captcha',  # https://github.com/praekelt/django-recaptcha
     'ckeditor',  # https://github.com/django-ckeditor/django-ckeditor
     'ckeditor_uploader',  # https://github.com/django-ckeditor/django-ckeditor#required-for-using-widget-with-file-upload
@@ -244,9 +243,6 @@ DEFENDER_LOGIN_FAILURE_LIMIT = 4
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 DEFENDER_LOCKOUT_URL = 'account_locked'
 
-#  django-registration - https://django-registration.readthedocs.io/en/3.1
-ACCOUNT_ACTIVATION_DAYS = 1  # One-day activation window
-REGISTRATION_OPEN = True
 
 # Ckeditor Uploader
 CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'ckeditor-uploads')

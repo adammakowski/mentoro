@@ -19,22 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update uploadcare">
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app-messages/20201018-192501-139973712237424.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mentors/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/background.less" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/background.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/staticfiles/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/activation_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/activation_email_body.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/activation_email_subject.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_closed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/django_registration/registration_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +241,8 @@
       <workItem from="1602958272099" duration="1308000" />
       <workItem from="1603027119096" duration="14768000" />
       <workItem from="1603203905516" duration="4678000" />
-      <workItem from="1603212672446" duration="5251000" />
+      <workItem from="1603212672446" duration="5278000" />
+      <workItem from="1603272878919" duration="4716000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -416,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603046543437</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update">
+      <created>1603222226172</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603222226172</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +449,6 @@
     <MESSAGE value="ngnix domain add" />
     <MESSAGE value="add" />
     <MESSAGE value="add s3 static files proxy" />
-    <MESSAGE value="update" />
     <MESSAGE value="add recaptcha" />
     <MESSAGE value="add filepond" />
     <MESSAGE value="update tawkto" />
@@ -450,7 +459,8 @@
     <MESSAGE value="update theme" />
     <MESSAGE value="new design theme" />
     <MESSAGE value="update uploadcare" />
-    <option name="LAST_COMMIT_MESSAGE" value="update uploadcare" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602694220045">
@@ -479,11 +489,11 @@
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1603029522308" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603046544956">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603222227451">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1603046544956" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1603222227451" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
