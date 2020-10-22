@@ -29,11 +29,11 @@
                     </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'blog_all' %}">Wszystkie kategorie</a>
+                            <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
                         </li>
-                        {% for post in post_list %}
+                        {% for category in categories %}
                             <li class="nav-item">
-                                <a class="nav-link dark-link" href="{% url 'blog_all' %}">{{ post.category }}</a>
+                                <a class="nav-link dark-link" href="{% url 'blog_category' pk=category.pk %}">{{ category.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>

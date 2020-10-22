@@ -1,5 +1,5 @@
 from django.views import generic
-from .models import Post
+from .models import Post, Category
 from django.views.generic import ListView
 from .forms import CommentForm
 from django.http import HttpResponseRedirect
@@ -12,11 +12,21 @@ def post_list(request):
     context = {'posts': posts}
     return render(request, 'blog_all.html', context)
 
-
 class PostCreate(generic.CreateView):
     model = Post
     queryset = Post.objects.all()
     template_name = 'blog_new.html'
+
+def category_list(request):
+    categories = Category.objects.all() # this will get all categories, you can do some filtering if you need (e.g. excluding categories without posts in it)
+    context = {'categories': categories}
+    return render (request, 'blog_categories.html', context) # blog/category_list.html should be the template that categories are listed.
+
+def category_detail(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+    posts = Post.objects.filter(status=1).order_by('-created_date')
+    posts = posts.filter(category=category)
+    return render(request, 'blog_category_detail.html', {'category': category, 'posts': posts }) # in this template, you will have access to category and posts under that category by (category.post_set).
 
 
 #@cache_page(60 * 5) # cache 60s * 5 = 5 minutes

@@ -4,14 +4,17 @@ from .models import Mentor
 from .forms import MentorForm
 from django.contrib.auth.decorators import login_required
 
+
 def mentors_all(request):
     mentors = Mentor.objects.filter(active=True, status=1).order_by('-created_date')
-    context = {'mentors':mentors}
+    context = {'mentors': mentors}
     return render(request, 'mentors_all.html', context)
+
 
 def mentors_detail(request, pk):
     mentors = get_object_or_404(Mentor, pk=pk)
     return render(request, 'mentors_detail.html', {'mentors': mentors})
+
 
 @login_required
 def mentors_new(request):
@@ -26,6 +29,7 @@ def mentors_new(request):
     else:
         form = MentorForm()
     return render(request, 'mentors_edit.html', {'form': form})
+
 
 def mentors_new_success(request):
     return render(request, 'mentors_new_success.html', {})

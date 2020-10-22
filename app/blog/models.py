@@ -10,6 +10,11 @@ STATUS = (
 class Category(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
 
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+        ordering = ['title']
+
     def __str__(self):
         return self.title
 
@@ -33,6 +38,8 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     class Meta:
+        verbose_name = "Post"
+        verbose_name_plural = "Posts"
         ordering = ['-created_date']
 
     def __str__(self):
