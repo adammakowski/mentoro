@@ -9,7 +9,8 @@ from django.views.decorators.cache import cache_page
 #@cache_page(60 * 5) # cache 60s * 5 = 5 minutes
 def post_list(request):
     posts = Post.objects.filter(status=1).order_by('-created_date')
-    context = {'posts': posts}
+    categories = Category.objects.all()
+    context = {'posts': posts, 'categories': categories}
     return render(request, 'blog_all.html', context)
 
 class PostCreate(generic.CreateView):
@@ -26,13 +27,15 @@ def category_detail(request, pk):
     category = get_object_or_404(Category, pk=pk)
     posts = Post.objects.filter(status=1).order_by('-created_date')
     posts = posts.filter(category=category)
-    return render(request, 'blog_category_detail.html', {'category': category, 'posts': posts }) # in this template, you will have access to category and posts under that category by (category.post_set).
+    context = {'posts': posts, 'category': category}
+    return render(request, 'blog_category_detail.html', context) # in this template, you will have access to category and posts under that category by (category.post_set).
 
 
 #@cache_page(60 * 5) # cache 60s * 5 = 5 minutes
 def post_detail(request, slug):
     template_name = 'blog_detail.html'
     post = get_object_or_404(Post, slug=slug)
+    categories = Category.objects.filter(post=post)
     comments = post.comments.filter(active=True)
     new_comment = None
     # Comment posted
@@ -50,7 +53,7 @@ def post_detail(request, slug):
     else:
         comment_form = CommentForm()
 
-    return render(request, template_name, {'post': post, 'comments': comments, 'new_comment': new_comment, 'comment_form': comment_form})
+    return render(request, template_name, {'post': post, 'categories': categories, 'comments': comments, 'new_comment': new_comment, 'comment_form': comment_form})
 
 def blog_comment_success(request):
     return render(request, 'blog_comment_success.html', {})

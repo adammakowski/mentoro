@@ -8,7 +8,9 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb rounded-0">
                     <li class="breadcrumb-item"><a href="{% url 'blog_all' %}" class="text-decoration-none">Mentoro | Blog</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">{{ post.category }}</a></li>
+                    {% for category in categories %}
+                        <li class="breadcrumb-item"><a href="{% url 'category_detail' pk=category.pk %}" class="text-decoration-none">{{ category.title }}</a></li>
+                    {% endfor %}
                     <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'blog_detail' post.slug %}" class="text-decoration-none">{{ post.title }}</a></li>
                 </ol>
             </nav>

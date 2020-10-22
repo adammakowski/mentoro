@@ -1,12 +1,46 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container pt-5 pb-5">
-        <p>Kategoria: {{ category.title }}</p>
+    <div class="container pt-3 pb-3">
+        <section class="bg-theme-gunmetal pt-5 pb-5 text-center text-white">
+            <h5 class="color-neon-green font-special">{{ category.title }}</h5>
+            <p class="mb-0">Wszystkie posty w kategorii programowanie.</p>
+        </section>
+    </div>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <select class="form-control" id="LanguageSelect">
+                            <option>Wszystkie języki</option>
+                            <option>Angielski</option>
+                            <option>Polski</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container pt-3">
         {% for post in posts %}
-            <div class="card">
-                <div class="card-body">
-                    <p>{{ post.category }}</p>
-                    {{ post.title }}
+            <div class="card rounded-0 mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ post.title }}"></a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a href="{% url 'blog_detail' post.slug %}" class="h5 text-decoration-none font-special">{{ post.title }}</a>
+                            <p>{{ post.short_description|safe }}</p>
+                            <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         {% endfor %}

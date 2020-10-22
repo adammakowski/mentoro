@@ -29,11 +29,11 @@
                     </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
+                            <a class="nav-link active rounded-0 dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
                         </li>
                         {% for category in categories %}
                             <li class="nav-item">
-                                <a class="nav-link dark-link" href="{% url 'blog_category' pk=category.pk %}">{{ category.title }}</a>
+                                <a class="nav-link dark-link" href="{% url 'category_detail' pk=category.pk %}">{{ category.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -43,7 +43,7 @@
                     {% for post in posts %}
                         <div class="pt-3 pb-3">
                             <div class="card rounded-0 shadow">
-                                <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ blog_post.title }}"></a>
+                                <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ post.title }}"></a>
                                 <div class="card-body">
                                     <p class="mb-0 float-right">Ocena <span class="text-success font-special-bold">422</span> - <span class="text-danger font-special-bold">13</span></p>
                                     <p class="font-special-bold mb-0">{{ post.language }}</p>
