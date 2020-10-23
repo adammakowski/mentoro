@@ -32,6 +32,33 @@
 
                     <div class="pt-3">
                         <p>Liczba komentarzy: {{ comments.count }}</p>
+                        <p>
+                            <a class="btn btn-primary shadow btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Dodaj komentarz</a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card">
+                                <div class="card-body shadow rounded-0">
+                                    {% if user.is_authenticated %}
+                                        {% if new_comment %}
+                                            <div class="alert alert-success shadow rounded-0 mb-0" role="alert">
+                                                Twój komentarz oczekuje na akceptacje.
+                                            </div>
+                                        {% else %}
+                                            <form method="post">
+                                                {% csrf_token %}
+                                                {{ comment_form.media }}
+                                                {{ comment_form | crispy }}
+                                                <button type="submit" class="btn btn-primary btn-block shadow border-0">Wyślij</button>
+                                            </form>
+                                        {% endif %}
+                                    {% else %}
+                                        <div class="alert alert-info shadow rounded-0 mb-0" role="alert">
+                                            <p class="mb-0"><a href="" class="text-decoration-none">Zaloguj się</a> aby dodać komentarz lub <a href="" class="text-decoration-none">utwórz nowe konto</a> jeśli jeszcze go nie masz.</p>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
                         {% for comment in comments %}
                             <div class="pb-3">
                                 <div class="card shadow rounded-0">
@@ -47,28 +74,7 @@
                             </div>
                         {% endfor %}
 
-                        <div class="card">
-                            <div class="card-body shadow rounded-0">
-                                {% if user.is_authenticated %}
-                                    {% if new_comment %}
-                                        <div class="alert alert-success shadow rounded-0 mb-0" role="alert">
-                                            Twój komentarz oczekuje na akceptacje.
-                                        </div>
-                                    {% else %}
-                                        <form method="post">
-                                            {% csrf_token %}
-                                            {{ comment_form.media }}
-                                            {{ comment_form | crispy }}
-                                            <button type="submit" class="btn btn-primary btn-block shadow border-0">Dodaj komentarz</button>
-                                        </form>
-                                    {% endif %}
-                                {% else %}
-                                    <div class="alert alert-info shadow rounded-0 mb-0" role="alert">
-                                        <p class="mb-0"><a href="" class="text-decoration-none">Zaloguj się</a> aby dodać komentarz lub <a href="" class="text-decoration-none">utwórz nowe konto</a> jeśli jeszcze go nie masz.</p>
-                                    </div>
-                                {% endif %}
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>

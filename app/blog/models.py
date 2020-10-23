@@ -9,7 +9,6 @@ STATUS = (
 
 class Category(models.Model):
     title = models.CharField(max_length=150, blank=False, null=False)
-    image_banner = ImageField(blank=False, null=False, verbose_name="Baner kategori", help_text='Baner kategorii')
 
     class Meta:
         verbose_name = "Category"
