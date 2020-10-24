@@ -1,8 +1,7 @@
-from django.views import generic
 from .models import Post, Category
-from django.views.generic import ListView
-from .forms import CommentForm
-from django.http import HttpResponseRedirect
+from django.utils import timezone
+from django.contrib.auth.decorators import login_required
+from .forms import CommentForm, BlogForm
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.cache import cache_page
 
@@ -13,10 +12,19 @@ def post_list(request):
     context = {'posts': posts, 'categories': categories}
     return render(request, 'blog_all.html', context)
 
-class PostCreate(generic.CreateView):
-    model = Post
-    queryset = Post.objects.all()
-    template_name = 'blog_new.html'
+@login_required
+def post_new(request):
+    if request.method == "POST":
+        form = BlogForm(request.POST, request.FILES)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('mentors_new_success')
+    else:
+        form = BlogForm()
+    return render(request, 'blog_edit.html', {'form': form})
 
 def category_list(request):
     categories = Category.objects.all() # this will get all categories, you can do some filtering if you need (e.g. excluding categories without posts in it)

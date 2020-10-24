@@ -216,6 +216,7 @@ else:
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # URLS
+LOGIN_URL = 'account_login'
 LOGIN_REDIRECT_URL = 'dashboard_index'
 
 # Email config Mailgun SMTP

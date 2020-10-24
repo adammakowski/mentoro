@@ -3,27 +3,43 @@
 {% block content %}
     <section class="bg-theme-milky">
         {% for public in profiles %}
-            <div class="container pt-5 pb-5">
+
+            {% if public.video %}
+                <section class="pt-5 pb-5 bg-theme-gunmetal">
+                    <div class="container text-center">
+                        <video id="player" playsinline controls>
+                            <source src="{{ public.video.cdn_url }}" type='video/mp4'>
+                        </video>
+                    </div>
+                </section>
+            {% endif %}
+
+            <div class="container pt-3 pb-5">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="card shadow rounded-0">
+                            <img src="{{ public.banner.cdn_url }}" class="img-fluid" alt="{{ post.title }}">
                             <div class="card-body">
                                 <p class="text-muted font-special-bold mb-0 text-uppercase">mentor</p>
-                                <h5 class="font-special-bold">{{ public.first_name }} {{ public.last_name }}</h5>
+                                <h5 class="font-special">{{ public.first_name }} {{ public.last_name }}</h5>
                                 <p>Award Winning MBA Professor, Venture Capitalist and Author.</p>
-                                <p class="font-special-bold mb-0">O mnie</p>
-                                <p>{{ public.bio }}</p>
+                                <p class="font-special mb-0">O mnie</p>
+                                <p class="text-justify">{{ public.bio|safe }}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow rounded-0">
-                            <img src="{{ public.avatar.url }}" class="img-fluid" alt="{{ public.user }}">
+                            <img src="{{ public.avatar.cdn_url }}" class="img-fluid" alt="{{ public.user }}">
                             <div class="card-body text-center">
                                 <a href="" class="text-decoration-none">{{ public.user }}</a>
                                 <p class="mb-0">Data dołączenia {{ user.date_joined }}</p>
                                 <hr>
-                                <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                                {% if public.verification %}
+                                    <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                                {% else %}
+                                    <p><i class="fas fa-check-circle text-danger"></i> Brak weryfikacji profilu</p>
+                                {% endif %}
                                 <p class="mb-0">Urodziłem się {{ public.birth_date }}</p>
                                 <p>Mieszkam w {{ public.location }}</p>
                                 <hr>
