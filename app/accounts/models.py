@@ -1,8 +1,9 @@
 from django.db import models
-from django.utils import timezone
 from pyuploadcare.dj.models import ImageField, FileField
 from ckeditor.fields import RichTextField
 from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+
 
 class Public(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -30,6 +31,12 @@ class Public(models.Model):
     bitbucket = models.URLField(null=True, blank=True)
     verification = models.BooleanField(default=False, verbose_name='Weryfikacja profilu')
     active = models.BooleanField(default=False, verbose_name='Zatwierdzone')
+
+    def create_user_profile(sender, instance, created, **kwargs):
+        if created:
+            Public.objects.create(user=instance)
+
+    post_save.connect(create_user_profile, sender=User)
 
     def __str__(self):
         return self.first_name

@@ -3,7 +3,7 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-# user authorizations
+    # user authorizations
     path('signup', views.signup, name='account_signup'),
     path('login', auth_views.LoginView.as_view(template_name='account_login.html'), name='account_login'),
     path('logout', auth_views.LogoutView.as_view(template_name='account_logout.html'), name='account_logout'),
@@ -18,5 +18,7 @@ urlpatterns = [
 
     path('', views.accounts_index, name='accounts_index'),
     path('login/account_locked/', views.account_locked, name='account_locked'),
-    path('public', views.public, name='public'),
+    # Public user profile
+    path('public/<int:pk>/', views.public_detail, name='public_detail'),
+    path('public/<int:pk>/edit/', views.public_profile_edit, name='public_profile_edit'),
 ]

@@ -32,11 +32,11 @@
             <div class="card rounded-0 mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <a href="{% url 'blog_detail' post.slug %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ post.title }}"></a>
+                        <a href="{% url 'blog_detail' post.pk %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ post.title }}"></a>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <a href="{% url 'blog_detail' post.slug %}" class="h5 text-decoration-none font-special">{{ post.title }}</a>
+                            <a href="{% url 'blog_detail' post.pk %}" class="h5 text-decoration-none font-special">{{ post.title }}</a>
                             <p>{{ post.short_description|safe }}</p>
                             <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
                         </div>

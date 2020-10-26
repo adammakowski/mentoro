@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    {% if user.is_authenticated %}
+        {% if user.id == profiles.user.id %}
+            <div class="container pt-3 pb-3">
+                <div class="row d-flex align-items-center text-center">
+                    <div class="col-sm-12 col-md-8">
+                        <p class="m-0">To jest widok Twojego konta publicznego. Możesz edytować informacje o nim w każdej chwili.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a class="btn btn-primary btn-block" href="{% url 'public_profile_edit' pk=profiles.pk %}">Edytuj informacje o koncie publicznym</a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <section class="">
+        {% if profiles.video %}
+            <section class="pt-5 pb-5 bg-theme-gunmetal">
+                <div class="container text-center">
+                    <video id="player" playsinline controls>
+                        <source src="{{ profiles.video.cdn_url }}" type='video/mp4'>
+                    </video>
+                </div>
+            </section>
+        {% endif %}
+
+        <div class="container pt-3 pb-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card shadow rounded-0">
+                        <img src="{{ profiles.banner.cdn_url }}" class="img-fluid" alt="{{ post.title }}">
+                        <div class="card-body">
+                            <p class="text-muted font-special-bold mb-0 text-uppercase">mentor</p>
+                            <h5 class="font-special">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
+                            <p>Award Winning MBA Professor, Venture Capitalist and Author.</p>
+                            <p class="font-special mb-0">O mnie</p>
+                            <p class="text-justify">{{ profiles.bio|safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow rounded-0">
+                        <img src="{{ profiles.avatar.cdn_url }}" class="img-fluid" alt="{{ profiles.user }}">
+                        <div class="card-body text-center">
+                            <a href="" class="text-decoration-none">{{ profiles.user }}</a>
+                            <p class="mb-0">Data dołączenia {{ user.date_joined }}</p>
+                            <hr>
+                            {% if profiles.verification %}
+                                <p><i class="fas fa-check-circle text-success"></i> Profil zweryfikowany</p>
+                            {% else %}
+                                <p><i class="fas fa-check-circle text-danger"></i> Brak weryfikacji profilu</p>
+                            {% endif %}
+                            <p class="mb-0">Urodziłem się {{ profiles.birth_date }}</p>
+                            <p>Mieszkam w {{ profiles.location }}</p>
+                            <hr>
+                            {% if profiles.facebook %}
+                                <a href="{{ profiles.facebook }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/facebook.svg' %}" alt="Facebook" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Facebook"></a>
+                            {% endif %}
+                            {% if profiles.linkedin %}
+                                <a href="{{ profiles.linkedin }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/linkedIn.svg' %}" alt="LinkedIn" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój LinkedIn"></a>
+                            {% endif %}
+                            {% if profiles.youtube %}
+                                <a href="{{ profiles.youtube }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/youtube.svg' %}" alt="YouTube" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój YouTube"></a>
+                            {% endif %}
+                            {% if profiles.instagram %}
+                                <a href="{{ profiles.instagram }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/instagram.svg' %}" alt="Instagram" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Instagram"></a>
+                            {% endif %}
+                            {% if profiles.twitter %}
+                                <a href="{{ profiles.twitter }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/twitter.svg' %}" alt="Twitter" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Twitter"></a>
+                            {% endif %}
+                            {% if profiles.behance %}
+                                <a href="{{ profiles.behance }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/behance.svg' %}" alt="Behance" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Behance"></a>
+                            {% endif %}
+                            {% if profiles.dribbble %}
+                                <a href="{{ profiles.dribbble }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/dribbble.svg' %}" alt="Dribbble" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Dribbble"></a>
+                            {% endif %}
+                            {% if profiles.flickr %}
+                                <a href="{{ profiles.flickr }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/flickr.svg' %}" alt="Flickr" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Flickr"></a>
+                            {% endif %}
+                            {% if profiles.tumblr %}
+                                <a href="{{ profiles.tumblr }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/tumblr.svg' %}" alt="Tumblr" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Tumblr"></a>
+                            {% endif %}
+                            {% if profiles.vimeo %}
+                                <a href="{{ profiles.vimeo }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/vimeo.svg' %}" alt="Vimeo" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Vimeo"></a>
+                            {% endif %}
+                            {% if profiles.deviantart %}
+                                <a href="{{ profiles.deviantart }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/deviantart.svg' %}" alt="Deviantart" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Deviantart"></a>
+                            {% endif %}
+                            {% if profiles.github %}
+                                <a href="{{ profiles.github }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/github.svg' %}" alt="Github" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Github"></a>
+                            {% endif %}
+                            {% if profiles.bitbucket %}
+                                <a href="{{ profiles.bitbucket }}" class="text-decoration-none" target="_blank"><img src="{% static 'img/social/bitbucket.svg' %}" alt="Bitbucket" class="img-fluid mt-2 mr-2" style="height: 2rem;" data-toggle="tooltip" data-placement="top" title="Mój Bitbucket"></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+{% endblock content %}

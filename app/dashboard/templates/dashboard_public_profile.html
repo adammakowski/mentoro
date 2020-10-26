@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="bg-theme-milky">
+        <div class="container pt-5 pb-5">
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    {% for public in profiles %}
+                        <h5 class="font-special">{{ public.first_name }} {{ public.last_name }}</h5>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -27,7 +27,6 @@ class Language(models.Model):
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=150, unique=True, blank=False, null=False, verbose_name="Tytuł", help_text='Podaj tytuł wpisu który chcesz dodać')
-    slug = models.SlugField(max_length=150, unique=True, default='')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Kategoria", help_text='Wybierz kategorię w której chcesz dodać wpis')
     language = models.ForeignKey(Language, on_delete=models.CASCADE, verbose_name="Język", help_text='Wybierz język w którym są Twoje treści')
     short_description = RichTextField(blank=False, null=False, max_length=500, verbose_name="Krótki opis", help_text='Dodaj krótki opis. Maksymalna ilość znaków to 500')

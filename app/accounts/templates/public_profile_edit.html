@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container pt-5 pb-5">
+        <p>Edytuj publiczne informacje o koncie</p>
+        <div class="card shadow border-0">
+            <div class="card-body">
+                <form method="POST" class="post-form">
+                    {% csrf_token %}
+                    {{ form.media }}
+                    {{ form|crispy }}
+                    <button type="submit" class="save btn btn-primary">Zapisz</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
