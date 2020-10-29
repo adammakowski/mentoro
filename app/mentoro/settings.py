@@ -217,7 +217,7 @@ else:
 
 # URLS
 LOGIN_URL = 'account_login'
-LOGIN_REDIRECT_URL = 'dashboard_index'
+LOGIN_REDIRECT_URL = 'account_dashboard'
 
 # Email config Mailgun SMTP
 if DEBUG:

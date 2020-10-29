@@ -3,12 +3,12 @@
 {% block content %}
     <section class="pt-5">
 
-        <div class="container pb-5">
-            <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
-                <div class="card-body text-center p-5">
-                    <h3 class="text-white font-special">Cennik</h3>
-                    <h5 class="text-white pb-3">Oferta dostosowana dla każdego</h5>
-                    <a class="btn btn-neon btn-lg shadow border-0" href="{% url 'account_signup' %}" role="button">Utwórz darmowe konto</a>
+        <div class="container">
+            <div class="card border-0 bg-theme-gunmetal shadow">
+                <div class="card-body text-center pt-5 pb-5">
+                    <h5 class="text-white font-special">Cennik</h5>
+                    <p class="text-white">Oferta dostosowana dla każdego</p>
+                    <a class="btn btn-neon shadow border-0" href="{% url 'account_signup' %}" role="button">Utwórz darmowe konto</a>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <div class="card shadow">
+                        <div class="card shadow border-0">
                             <div class="card-body">
                                 <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
                                 <h5 class="color-blue-primary font-special text-center">Uczeń</h5>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-12">
-                        <div class="card shadow rounded-0">
+                        <div class="card shadow border-0">
                             <div class="card-body">
                                 <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
                                 <h5 class="color-blue-primary font-special text-center">Mentor i ekspert</h5>
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-12">
-                        <div class="card shadow rounded-0">
+                        <div class="card shadow border-0">
                             <div class="card-body">
                                 <div class="text-center pb-3"><img src="{% static 'img/icons/education.svg' %}" style="height: 5rem;" class="img-fluid" alt=""></div>
                                 <h5 class="color-blue-primary font-special text-center">Twórca</h5>
@@ -82,14 +82,20 @@
                     </div>
 
 
-
                 </div>
             </div>
         </section>
 
-        <section class="bg-theme-gunmetal pt-5 pb-5">
+        <section class="bg-theme-gunmetal pt-4 pb-4">
             <div class="container">
-                <p class="text-white mb-0">Potrzebujesz pomocy? Nasz dział wsparcia klienta udzieli Ci odpowiedzi na wszystkie nurtujące Cię pytania.</p>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-10">
+                        <p class="text-white mb-0">Potrzebujesz pomocy? Nasz dział wsparcia klienta udzieli Ci odpowiedzi na wszystkie nurtujące Cię pytania.</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <a class="btn btn-neon shadow btn-block" href="https://tawk.to/chat/5f56492bf0e7167d000e1ff6/default" target="_blank" role="button"><i class="fas fa-headset"></i> Otwórz chat</a>
+                    </div>
+                </div>
             </div>
         </section>
     </section>

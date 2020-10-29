@@ -46,7 +46,7 @@
             </ul>
             {% if user.is_authenticated %}
                 <form class="d-flex">
-                    <a href="{% url 'dashboard_index' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
+                    <a href="{% url 'account_dashboard' %}" class="nav-link text-decoration-none dark-link">Moja tablica</a>
                 </form>
                 <form class="d-flex">
                     <a class="btn btn-outline-danger shadow" href="{% url 'account_logout' %}" role="button">Wyloguj</a>

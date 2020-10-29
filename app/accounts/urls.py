@@ -3,6 +3,8 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
+    # dashboard
+    path('dashboard', views.account_dashboard, name='account_dashboard'),
     # user authorizations
     path('signup', views.signup, name='account_signup'),
     path('login', auth_views.LoginView.as_view(template_name='account_login.html'), name='account_login'),

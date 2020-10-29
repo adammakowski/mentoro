@@ -20,29 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="upadate public profile">
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0005_auto_20201026_2109.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/migrations/0006_auto_20201026_2110.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/accounts/templates/public_profile_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0003_remove_post_slug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/templates/dashboard_public_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0004_auto_20201029_1806.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_password_change.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_category_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_category_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/courses/templates/courses_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/courses_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/templates/dashboard_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/templates/dashboard_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/elements/hotjar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/elements/hotjar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_salescharges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +249,9 @@
       <workItem from="1603441633074" duration="1889000" />
       <workItem from="1603528958850" duration="5746000" />
       <workItem from="1603625786818" duration="851000" />
-      <workItem from="1603724157317" duration="16547000" />
+      <workItem from="1603724157317" duration="16834000" />
+      <workItem from="1603812849165" duration="2378000" />
+      <workItem from="1603989974992" duration="10759000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -472,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603537048945</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="upadate public profile">
+      <created>1603743360760</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603743360760</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,11 +544,11 @@
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1603029522308" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603537051468">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603743619452">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1603537051468" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1603743619452" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

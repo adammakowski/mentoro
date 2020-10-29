@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
+                    <button type="submit" class="btn btn-primary shadow btn-block"><i class="fas fa-search"></i> Szukaj</button>
                 </div>
             </div>
         </form>
@@ -37,7 +37,7 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <a href="{% url 'blog_detail' post.pk %}" class="h5 text-decoration-none font-special">{{ post.title }}</a>
-                            <p>{{ post.short_description|safe }}</p>
+                            <p>{{ post.content|safe|truncatechars_html:360 }}</p>
                             <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
                         </div>
                     </div>

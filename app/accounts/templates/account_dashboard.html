@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
     <section class="">
@@ -43,33 +42,13 @@
                 <div class="col pt-3 pb-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{% url 'account_dashboard' %}" class="text-decoration-none">Ustawienia konta</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Zmiana hasła</li>
+                            <li class="breadcrumb-item"><a href="{% url 'account_dashboard' %}" class="text-decoration-none">Konto</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Tablica</li>
                         </ol>
                     </nav>
+                    <div class="card shadow border-0">
+                        <div class="card-body">
 
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Zmiana hasła</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ustawienia płatności</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-
-
-                    <div class="pl-5 pr-5">
-                        <div class="">
-                            <form method="post">
-                                {% csrf_token %}
-                                {{ form|crispy }}
-                                <div class="pt-3">
-                                    <button class="btn btn-primary btn-block shadow" type="submit">Zmień hasło</button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>

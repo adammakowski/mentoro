@@ -51,3 +51,7 @@ def public_profile_edit(request, pk):
         return render(request, 'public_profile_edit.html', {'form': form})
     else:
         return redirect('home_index')
+
+@login_required
+def account_dashboard(request):
+    return render(request, 'account_dashboard.html', {})

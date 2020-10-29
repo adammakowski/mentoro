@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <section class="pb-5 bg-theme-milky">
+    <section class="pb-5">
         <div class="container pt-4">
             <form>
-                <div class="form-row">
+                <div class="row">
                     <div class="col-7">
                         <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
                     </div>
@@ -18,14 +18,14 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
+                        <button type="submit" class="btn btn-primary shadow border-0 btn-block"><i class="fas fa-search"></i> Szukaj</button>
                     </div>
                 </div>
             </form>
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="pb-3">
-                        <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'course_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj wideo kurs</a>
+                    <div class="pt-3 pb-3">
+                        <a class="btn btn-success btn-block shadow" href="{% url 'course_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj wideo kurs</a>
                     </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
@@ -40,26 +40,19 @@
                 </div>
                 <div class="col-lg-9">
                     {% for course in courses %}
-                        <div class="pb-3">
-                            <div class="card rounded-0 shadow">
-                                <img src="{{ course.image_preview.url }}" class="img-fluid rounded-0" alt="">
+                        <div class="pt-3 pb-3">
+                            <div class="card border-0 shadow">
+                                <a href="{% url 'course_detail' pk=course.pk %}"><img src="{{ course.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ course.title }}"></a>
                                 <div class="card-body">
-                                    <h4 class="float-right text-white font-special-bold bg-theme-gunmetal p-2">zł {{ course.price }}</h4>
+                                    <h4 class="float-right text-white font-special bg-theme-gunmetal p-2">zł {{ course.price }}</h4>
                                     <p class="font-special-bold mb-0">{{ course.language }}</p>
                                     <p>{{ course.category }}</p>
                                     <a href="{% url 'course_detail' pk=course.pk %}" class="h5 text-decoration-none">{{ course.title }}</a>
                                     <p>{{ course.short_description|safe }}</p>
                                     <p class="mb-0">Opublikowany {{ course.published_date }} przez <a href="" class="text-decoration-none">{{ course.author }}</a></p>
                                     <p class="mb-0">Pozytywnych <span class="text-success font-special-bold">422</span> i negatywnych <span class="text-danger font-special-bold">13</span> <a href="" class="text-decoration-none">recenzji</a></p>
-                                    <p>Sprzedany w ilości <span class="font-special-bold">435</span> sztuk</p>
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="{% url 'course_detail' pk=course.pk %}" class="btn btn-dark btn-block font-weight-bold shadow rounded-0"><i class="fas fa-info-circle"></i> Sprawdz szczegóły</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#" class="btn btn-success btn-block font-weight-bold shadow rounded-0"><i class="fas fa-shopping-cart"></i> Kup</a>
-                                        </div>
-                                    </div>
+                                    <p>Sprzedany w ilości <span class="font-special">435</span> sztuk</p>
+                                    <a href="#" class="btn btn-primary btn-block shadow border-0"><i class="fas fa-shopping-cart"></i> Kup</a>
                                 </div>
                             </div>
                         </div>

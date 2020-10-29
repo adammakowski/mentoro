@@ -1,5 +1,5 @@
 from .models import Post, Category
-from accounts.models import Public
+# from accounts.models import Public
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from .forms import CommentForm, BlogForm
