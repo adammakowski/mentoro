@@ -18,18 +18,18 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-primary shadow rounded-0 btn-block font-special-bold"><i class="fas fa-search"></i> Szukaj</button>
+                        <button type="submit" class="btn btn-primary shadow btn-block"><i class="fas fa-search"></i> Szukaj</button>
                     </div>
                 </div>
             </form>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="pt-3 pb-3">
-                        <a class="btn btn-success btn-block shadow rounded-0" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
+                        <a class="btn btn-success btn-block shadow" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
                     </div>
                     <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active rounded-0 dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
+                            <a class="nav-link active dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
                         </li>
                         {% for category in categories %}
                             <li class="nav-item">
