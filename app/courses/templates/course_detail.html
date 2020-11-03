@@ -19,9 +19,9 @@
             <section class="pt-5 pb-5 bg-theme-gunmetal">
                 <div class="container">
                     <h4 class="text-white text-center">{{ course.title }}</h4>
-                    <p class="text-white text-center pb-3">{{ course.short_description|linebreaksbr }}</p>
+                    <p class="text-white text-center pb-3">{{ course.short_description }}</p>
                     <video id="player" playsinline controls>
-                        <source src="{{ course.video_preview.url }}" type='video/mp4'>
+                        <source src="{{ course.video_preview.cdn_url }}" type='video/mp4'>
                     </video>
                 </div>
             </section>
@@ -30,21 +30,32 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card rounded-0 shadow">
-                        <img src="{{ course.image_preview.url }}" class="img-fluid" alt="{{ course.title }}">
+                        <img src="{{ course.image_preview.cdn_url }}" class="img-fluid" alt="{{ course.title }}">
                         <div class="card-body">
                             <a href="{% url 'course_detail' pk=course.pk %}" class="h5 text-decoration-none">{{ course.title }}</a>
                             <p>Opublikowane {{ course.published_date }}</p>
-                            <p class="mb-0 font-special-bold">Krótki opis</p>
+                            <p class="mb-0 font-special">Krótki opis</p>
                             <p>{{ course.short_description|safe }}</p>
-                            <p class="mb-0 font-special-bold">Lekcje</p>
-                            {% if course.lesson %}
-                                <p>{{  course_lesson.title }}</p>
-                            {% endif %}
-                            <p class="mb-0 font-special-bold">Szczegółowy opis</p>
+                            <p class="mb-0 font-special">Lekcje</p>
+                            {% for lesson in lessons %}
+                                <a class="text-decoration-none nav-link" data-toggle="collapse" href="#collapse{{ lesson.position }}" role="button" aria-expanded="false" aria-controls="collapse{{ lesson.position }}">{{ lesson.position }}. {{ lesson.title }}</a>
+                                <div class="collapse" id="collapse{{ lesson.position }}">
+                                    {% if lesson.free_lesson %}
+                                        <p>{{ lesson.description|safe }}</p>
+                                        <video class="img-fluid" id="player" playsinline controls>
+                                            <source src="{{ lesson.video.cdn_url }}" type='video/mp4'>
+                                        </video>
+                                    {% else %}
+                                        <p>{{ lesson.description|safe }}</p>
+                                        <p>Upsss...Dostęp jest możliwy tylko po zakupie kursu.</p>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                            <p class="mb-0 font-special">Szczegółowy opis</p>
                             <p>{{ course.description|safe }}</p>
-                            <p class="mb-0 font-special-bold">Zawartość i spis treści</p>
+                            <p class="mb-0 font-special">Zawartość i spis treści</p>
                             <p>{{ course.contests|safe }}</p>
-                            <p class="mb-0 font-special-bold">Wymagania</p>
+                            <p class="mb-0 font-special">Wymagania</p>
                             <p>{{ course.requirements|safe }}</p>
                         </div>
                     </div>
@@ -61,8 +72,8 @@
                             <p><img src="{% static 'img/avatar/adrian.png' %}" class="img-fluid" alt="{{ course.category.author }}"></p>
                             <a href="" class="text-decoration-none">{{ course.author }}</a>
                             <hr>
-                            <p>Sprzedane w ilości <span class="font-special-bold">435</span> sztuk</p>
-                            <h4 class="text-white font-special-bold bg-theme-gunmetal p-1">{{ course.price }} PLN</h4>
+                            <p>Sprzedane w ilości <span class="font-special">435</span> sztuk</p>
+                            <h4 class="text-white font-special bg-theme-gunmetal p-1">{{ course.price }} PLN</h4>
                             <hr>
                             <a class="btn btn-success btn-block shadow rounded-0" href="#" role="button"><i class="fas fa-shopping-cart"></i> Kup teraz</a>
                             <hr>

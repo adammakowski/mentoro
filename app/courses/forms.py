@@ -1,5 +1,5 @@
 from django import forms
-from .models import Course, CourseLesson
+from .models import Course, Lesson
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Div
 
@@ -25,7 +25,7 @@ class CourseForm(forms.ModelForm):
         fields = ('title', 'price', 'category', 'language', 'short_description', 'description', 'image_preview', 'video_preview',)
 
 # Courses Lesson forms
-class CourseLessonForm(forms.ModelForm):
+class LessonForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -34,9 +34,9 @@ class CourseLessonForm(forms.ModelForm):
             'title',
             'description',
             Div('video', css_class=""),
-            Submit('submit', 'Dodaj lekce', css_class='btn btn-success btn-block shadow rounded-0 font-weight-bold')
+            Submit('submit', 'Dodaj lekcję', css_class='btn btn-success btn-block shadow rounded-0 font-weight-bold')
         )
 
     class Meta:
-        model = CourseLesson
+        model = Lesson
         fields = ('title', 'description', 'video')

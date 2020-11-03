@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Course, CourseCategory, CourseLanguage, CourseLesson
+from .models import Course, Category, Language, Lesson
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
@@ -9,6 +9,6 @@ class CourseAdmin(admin.ModelAdmin):
     history_list_display = ('title')
     list_per_page = 50
 
-admin.site.register(CourseCategory)
-admin.site.register(CourseLanguage)
-admin.site.register(CourseLesson)
+admin.site.register(Category)
+admin.site.register(Language)
+admin.site.register(Lesson)

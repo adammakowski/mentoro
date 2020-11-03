@@ -31,28 +31,42 @@
                         <li class="nav-item">
                             <a class="nav-link active rounded-0 shadow dark-link" href="{% url 'courses_all' %}">Wszystkie kategorie</a>
                         </li>
-                        {% for course in courses %}
+{#                        {% for course in courses %}#}
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link dark-link" href="{% url 'courses_all' %}">{{ course.category }}</a>#}
+{#                            </li>#}
+{#                        {% endfor %}#}
+                        {% for category in categories %}
                             <li class="nav-item">
-                                <a class="nav-link dark-link" href="{% url 'courses_all' %}">{{ course.category }}</a>
+                                <a class="nav-link dark-link" href="{% url 'category_detail' pk=category.pk %}">{{ category.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="col-lg-9">
+
                     {% for course in courses %}
                         <div class="pt-3 pb-3">
-                            <div class="card border-0 shadow">
-                                <a href="{% url 'course_detail' pk=course.pk %}"><img src="{{ course.image_preview.cdn_url }}" class="img-fluid rounded-0" alt="{{ course.title }}"></a>
-                                <div class="card-body">
-                                    <h4 class="float-right text-white font-special bg-theme-gunmetal p-2">zł {{ course.price }}</h4>
-                                    <p class="font-special-bold mb-0">{{ course.language }}</p>
-                                    <p>{{ course.category }}</p>
-                                    <a href="{% url 'course_detail' pk=course.pk %}" class="h5 text-decoration-none">{{ course.title }}</a>
-                                    <p>{{ course.short_description|safe }}</p>
-                                    <p class="mb-0">Opublikowany {{ course.published_date }} przez <a href="" class="text-decoration-none">{{ course.author }}</a></p>
-                                    <p class="mb-0">Pozytywnych <span class="text-success font-special-bold">422</span> i negatywnych <span class="text-danger font-special-bold">13</span> <a href="" class="text-decoration-none">recenzji</a></p>
-                                    <p>Sprzedany w ilości <span class="font-special">435</span> sztuk</p>
-                                    <a href="#" class="btn btn-primary btn-block shadow border-0"><i class="fas fa-shopping-cart"></i> Kup</a>
+                            <div class="">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-4">
+                                        <a href="{% url 'course_detail' pk=course.pk %}"><img src="{{ course.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ course.title }}"></a>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card shadow">
+                                            <div class="card-body">
+                                                <h5 class="float-right font-special">{{ course.price }} zł</h5>
+                                                <h5 class="font-special mb-0"><span class="text-success font-special">422</span> / <span class="text-danger font-special">13</span></h5>
+                                                <a href="{% url 'course_detail' pk=course.pk %}" class="h5 text-decoration-none">{{ course.title }}</a>
+                                                <p class="m-0">{{ course.short_description|safe }}</p>
+                                                <p class="mb-0">Opublikowany {{ course.published_date }} przez <a href="" class="text-decoration-none">{{ course.author }}</a></p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p class="mb-1 text-center">Kurs sprzedany w ilości <span class="font-special">435</span> sztuk</p>
+                                                <a href="#" class="btn btn-success btn-block shadow"><i class="fas fa-shopping-cart"></i> Kup i rozpocznij naukę</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

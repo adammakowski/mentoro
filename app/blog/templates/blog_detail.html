@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <div class="card rounded-0 shadow">
+                    <div class="card shadow">
                         <img src="{{ post.image_preview.cdn_url }}" class="img-fluid" alt="{{ post.title }}">
                         <div class="card-body">
                             <p class="float-right">Autorem wpisu jest <a href="" class="text-decoration-none">{{ post.author }}</a></p>
@@ -29,10 +29,11 @@
                         </div>
                     </div>
 
+
                     <div class="pt-3">
                         <p>Liczba komentarzy: {{ comments.count }}</p>
                         <p>
-                            <a class="btn btn-dark shadow btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="far fa-comments"></i> Dodaj komentarz</a>
+                            <a class="btn btn-dark shadow btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="far fa-comments"></i> Dodaj komentarz i ocenę</a>
                         </p>
                         <div class="collapse" id="collapseExample">
                             {% if user.is_authenticated %}
@@ -62,7 +63,7 @@
                                     <div class="card-body pb-0">
                                         <div>
                                             <p class="float-right text-muted">{{ comment.created_on }}</p>
-                                            <p><span class="text-muted">Komentarz napisany przez</span> <span class="font-special">{{ comment.name }}</span></p>
+                                            <p><span class="font-special">{{ comment.rating }}</span><span class="text-muted"> - komentarz napisany przez</span> <span class="font-special">{{ comment.name }}</span></p>
                                             <hr>
                                             {{ comment.body|safe }}
                                         </div>
