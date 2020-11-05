@@ -19,31 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="upadate public profile">
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0005_auto_20201101_1121.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0006_auto_20201101_1615.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0007_auto_20201101_1621.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0008_auto_20201101_1623.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0009_auto_20201101_1624.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0002_auto_20201102_1312.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0003_auto_20201102_1333.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0004_auto_20201103_0645.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0005_auto_20201103_0648.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0006_lesson_free_lesson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/templates/course_category_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/courses/templates/courses_categories.html" afterDir="false" />
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add lessons to courses">
+      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0007_auto_20201104_1022.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/courses/migrations/0008_auto_20201104_1023.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/courses/templates/course_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/course_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/courses/templates/courses_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/templates/courses_all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/courses/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_affiliate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/staticfiles/img/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/staticfiles/img/logo/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,15 +86,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Dane\mentoro\app\templates\elements" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\locust\app" />
       <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\staticfiles\js" />
-      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\gunicorn" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adam\Desktop\Projekty\mentoro\app\accounts\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,7 +259,15 @@
       <workItem from="1604318989662" duration="1426000" />
       <workItem from="1604321948873" duration="595000" />
       <workItem from="1604338441425" duration="1221000" />
-      <workItem from="1604382032667" duration="4357000" />
+      <workItem from="1604382032667" duration="4393000" />
+      <workItem from="1604416517134" duration="611000" />
+      <workItem from="1604420859821" duration="504000" />
+      <workItem from="1604474428141" duration="4417000" />
+      <workItem from="1604481567890" duration="1202000" />
+      <workItem from="1604484023955" duration="1416000" />
+      <workItem from="1604490217806" duration="4628000" />
+      <workItem from="1604497169720" duration="1059000" />
+      <workItem from="1604576697370" duration="3606000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -504,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604048560965</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add lessons to courses">
+      <created>1604387976089</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1604387976089</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,7 +552,8 @@
     <MESSAGE value="add category blog" />
     <MESSAGE value="upadate category blog" />
     <MESSAGE value="upadate public profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="upadate public profile" />
+    <MESSAGE value="add lessons to courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lessons to courses" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602694220045">
@@ -566,16 +577,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602270833132" />
+    <state x="1083" y="240" key="RollbackChangesDialog" timestamp="1604493451634">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1083" y="240" key="RollbackChangesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1604493451634" />
     <state x="1043" y="177" width="916" height="708" key="SettingsEditor" timestamp="1603029522308">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1603029522308" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604048565084">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604387981218">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1604048565084" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1604387981218" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

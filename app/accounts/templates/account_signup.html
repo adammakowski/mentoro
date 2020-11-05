@@ -2,60 +2,30 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
-    {# Start mobile view #}
-    <div class="d-lg-none">
-        <section class="bg-theme-gunmetal pt-5 pb-5">
-            <div class="container col-lg-4 col-md-12 col-sm-12 pt-5 pb-5">
-                <div class="card shadow rounded-0 border-0">
-                    <div class="card-body pt-5">
-                        <h5 class="text-primary font-special-bold text-center pb-3">Zarejestruj się za darmo i już dziś doświadcz MENTORO</h5>
-                        <p class="text-center text-muted mb-0">Sprawdź, czy odwiedzasz prawidłowy adres URL:</p>
-                        <div class="d-flex justify-content-center">
-                            <section class="ssl-bar text-center">
-                                <p class="p-2 mb-0"><i class="fas fa-lock text-success"></i> <span class="text-muted">https://</span>mentoro.online</p>
-                            </section>
-                        </div>
-                        <form method="post" class="pt-4">
-                            {% csrf_token %}
-                            {{ form|crispy }}
-                            <p class="text-center text-justify pt-3">Rejestracja oznacza, że przeczytałeś i akceptujesz <a href="">Regulamin</a> oraz naszą <a href="">Politykę prywatności</a>.</p>
-                            <button class="btn btn-success btn-block rounded-0 shadow font-special-bold" value="Submit" type="submit">Utwórz darmowe konto</button>
-                        </form>
-                        <p class="text-center pt-5">Masz już aktywne konto? <a href="{% url 'account_login' %}" class="text-decoration-none dark-link font-special-bold">Zaloguj się</a></p>
+    <section class="bg-jumbo pt-5 pb-5">
+        <div class="container col-lg-4 col-md-4 col-sm-12">
+            <div class="card shadow">
+                <div class="card-body pt-5">
+                    <div class="text-center pb-3">
+                        <img src="{% static 'img/icons/man.svg' %}" style="height: 4.5rem;" alt="Signup">
                     </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    {# end mobile view #}
-    {# Start deskotop view #}
-    <div class="d-none d-lg-block">
-        <section class="bg-jumbo pt-5 pb-5">
-            <div class="container col-lg-4 col-md-4 col-sm-12 pt-5 pb-5">
-                <div class="card shadow">
-                    <div class="card-body pt-5">
-                        <div class="text-center pb-3">
-                            <img src="{% static 'img/icons/man.svg' %}" style="height: 4.5rem;" alt="Signup">
-                        </div>
-                        <h5 class="color-blue-primary font-special text-center pb-3">Zarejestruj się za darmo i już dziś doświadcz MENTORO</h5>
-                        <p class="text-center text-muted mb-0">Sprawdź, czy odwiedzasz prawidłowy adres URL:</p>
-                        <div class="d-flex justify-content-center">
-                            <section class="ssl-bar text-center">
-                                <p class="p-2 mb-0"><i class="fas fa-lock text-success"></i> <span class="text-muted">https://</span>mentoro.online</p>
-                            </section>
-                        </div>
+                    <h5 class="color-blue-primary font-special text-center pb-3">Zarejestruj się za darmo i już dziś doświadcz MENTORO</h5>
+                    <p class="text-center text-muted mb-0">Sprawdź, czy odwiedzasz prawidłowy adres URL:</p>
+                    <div class="d-flex justify-content-center">
+                        <section class="ssl-bar text-center">
+                            <p class="p-2 mb-0"><i class="fas fa-lock text-success"></i> <span class="text-muted">https://</span>mentoro.online</p>
+                        </section>
+                    </div>
 
-                        <form method="post" class="pt-3">
-                            {% csrf_token %}
-                            {{ form|crispy }}
-                            <p class="text-center text-justify pt-3">Rejestracja oznacza, że przeczytałeś i akceptujesz <a href="" class="text-decoration-none">Regulamin</a> oraz naszą <a href="" class="text-decoration-none">Politykę prywatności</a>.</p>
-                            <button class="btn btn-primary btn-block shadow font-special" value="Submit" type="submit">Utwórz darmowe konto</button>
-                        </form>
-                        <p class="text-center pt-4">Masz już aktywne konto? <a href="{% url 'account_login' %}" class="text-decoration-none dark-link font-special">Zaloguj się</a></p>
-                    </div>
+                    <form method="post" class="pt-3">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <p class="text-center text-justify pt-3">Rejestracja oznacza, że przeczytałeś i akceptujesz <a href="" class="text-decoration-none">Regulamin</a> oraz naszą <a href="" class="text-decoration-none">Politykę prywatności</a>.</p>
+                        <button class="btn btn-primary btn-block shadow font-special" value="Submit" type="submit">Utwórz darmowe konto</button>
+                    </form>
+                    <p class="text-center pt-4">Masz już aktywne konto? <a href="{% url 'account_login' %}" class="text-decoration-none dark-link font-special">Zaloguj się</a></p>
                 </div>
             </div>
-        </section>
-    </div>
-    {# end desktop view #}
+        </div>
+    </section>
 {% endblock content %}

@@ -1,86 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    {% load cache %}
-    {% cache 1000 blog_all %}
-        <section class="pb-5">
-            <div class="container pt-4">
-                <form>
-                    <div class="row">
-                        <div class="col-7">
-                            <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <select class="form-control" id="LanguageSelect">
-                                    <option>Wszystkie języki</option>
-                                    <option>Angielski</option>
-                                    <option>Polski</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary shadow btn-block"><i class="fas fa-search"></i> Szukaj</button>
-                        </div>
-                    </div>
-                </form>
+    <section class="pb-5">
+        <div class="container pt-4">
+            <form>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="pt-3 pb-3">
-                            <a class="btn btn-success btn-block shadow" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
-                        </div>
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
-                            </li>
-                            {% for category in categories %}
-                                <li class="nav-item">
-                                    <a class="nav-link dark-link" href="{% url 'category_detail' pk=category.pk %}">{{ category.title }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
+                    <div class="col-7">
+                        <input type="text" class="form-control" placeholder="Wpisz czego szukasz">
                     </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <select class="form-control" id="LanguageSelect">
+                                <option>Wszystkie języki</option>
+                                <option>Angielski</option>
+                                <option>Polski</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary shadow btn-block"><i class="fas fa-search"></i> Szukaj</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="pt-3 pb-3">
+                        <a class="btn btn-success btn-block shadow" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy wpis</a>
+                    </div>
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active dark-link" href="{% url 'category_all' %}">Wszystkie kategorie</a>
+                        </li>
+                        {% for category in categories %}
+                            <li class="nav-item">
+                                <a class="nav-link dark-link" href="{% url 'category_detail' pk=category.pk %}">{{ category.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
-                    <div class="col-lg-9">
-                        {% for post in posts %}
-                            <div class="pt-3 pb-3">
-                            <div class="">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-lg-4">
-                                        <a href="{% url 'blog_detail' pk=post.pk %}"><img src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ post.title }}"></a>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="card shadow">
-                                            <div class="card-body">
-                                                <h5 class="font-special float-right mb-0"><span class="text-success font-special">422</span> - <span class="text-danger font-special">13</span></h5>
-                                                <p class="mb-0">{{ post.category }}</p>
-                                                <a href="{% url 'blog_detail' pk=post.pk %}" class="h5 text-decoration-none stretched-link">{{ post.title }}</a>
-                                                <p class="m-0">{{ post.short_description|safe }}</p>
-                                                <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
-                                            </div>
+                <div class="col-lg-9">
+                    {% for post in posts %}
+                        <div class="pt-3 pb-3">
+                        <div class="">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-lg-4">
+                                    <a href="{% url 'blog_detail' pk=post.pk %}"><img data-blink-src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ post.title }}"></a>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card shadow">
+                                        <div class="card-body">
+                                            <h5 class="font-special float-right mb-0"><span class="text-success font-special">422</span> - <span class="text-danger font-special">13</span></h5>
+                                            <p class="mb-0">{{ post.category }}</p>
+                                            <a href="{% url 'blog_detail' pk=post.pk %}" class="h5 text-decoration-none stretched-link">{{ post.title }}</a>
+                                            <p class="m-0">{{ post.short_description|safe }}</p>
+                                            <p class="mb-0">Opublikowane {{ post.created_date }} przez <a href="" class="text-decoration-none">{{ post.author }}</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        {% endfor %}
+                        </div>
+                    {% endfor %}
 
-                        {% if is_paginated %}
-                            <nav aria-label="Page navigation conatiner">
-                                <ul class="pagination justify-content-center">
-                                    {% if page_obj.has_previous %}
-                                        <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Poprzednia strona</a></li>
-                                    {% endif %}
-                                    {% if page_obj.has_next %}
-                                        <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> Następna strona &raquo;</a></li>
-                                    {% endif %}
-                                </ul>
-                            </nav>
-                            </div>
-                        {% endif %}
-
-                    </div>
                 </div>
             </div>
-        </section>
-    {% endcache %}
+        </div>
+    </section>
 {% endblock content %}

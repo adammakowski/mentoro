@@ -11,15 +11,15 @@
                 <h5 class="">Monetyzuj wiedzę lub przekazuj za darmo. Ucz się od najlepszych mentorów lub zostań mentorem i zarabiaj na własnej wiedzy.</h5>
                 <hr class="my-4">
                 <p class="">Możesz utworzyć konto za darmo, bez ukrytych opłat. Rejestracja zajmuje mniej niż 30 sekund.</p>
-                <a class="btn btn-primary btn-lg" href="{% url 'account_signup' %}" role="button">Utwórz darmowe konto</a>
+                <a class="btn btn-primary btn-lg shadow border-0" href="{% url 'account_signup' %}" role="button">Utwórz darmowe konto</a>
             </div>
         </div>
     </section>
 
-    <section class="">
-        <div class="container pb-5">
+    <section class="pt-5 pb-5">
+        <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col pb-3">
                     <div class="shadow-blue">
                         <div class="card border-0 shadow">
                             <div class="card-body pt-5 bg-courses">
@@ -30,23 +30,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col pb-3">
                     <div class="shadow-blue">
                         <div class="card border-0 rounded-0 shadow">
                             <div class="card-body pt-5 bg-mentors">
                                 <h5 class="font-special text-center text-white">Mentorzy</h5>
-                                <p class="text-white text-center">Wideo kursy to jedna z najpopularniejszych metod nauki.</p>
+                                <p class="text-white text-center">Mentorzy pragną edukować innych. Każdy może zostać uczniem.</p>
                                 <a class="btn btn-neon btn-block shadow stretched-link" href="{% url 'mentors_all' %}" role="button">Poznaj mentora</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col pb-3">
                     <div class="shadow-blue">
                         <div class="card border-0 shadow">
                             <div class="card-body pt-5 bg-experts">
                                 <h5 class="font-special text-center text-white">Eksperci</h5>
-                                <p class="text-white text-center">Wideo kursy to jedna z najpopularniejszych metod nauki.</p>
+                                <p class="text-white text-center">Najlepsi w swoich dziedzinach. Szkolenia grupowe i inwidualne.</p>
                                 <a class="btn btn-neon btn-block shadow stretched-link" href="{% url 'courses_all' %}" role="button">Znajdz eksperta</a>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         <div class="card border-0 shadow">
                             <div class="card-body pt-5 bg-library">
                                 <h5 class="font-special text-center text-white">Biblioteka</h5>
-                                <p class="text-white text-center">Wideo kursy to jedna z najpopularniejszych metod nauki.</p>
+                                <p class="text-white text-center">Ogromna biblioteka edukacyjna. Darmowe i płatne materiały.</p>
                                 <a class="btn btn-neon btn-block shadow stretched-link" href="{% url 'library_all' %}" role="button">Kupuj</a>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <div class="card border-0 shadow">
                             <div class="card-body pt-5 bg-blog">
                                 <h5 class="font-special text-center text-white">Blog</h5>
-                                <p class="text-white text-center">Darmowe zródło wiedzy którą może dzielić się każdy.</p>
+                                <p class="text-white text-center">Darmowe zródło wiedzy bez ograniczeń dostępne dla każdego.</p>
                                 <a class="btn btn-neon btn-block shadow stretched-link" href="{% url 'blog_all' %}" role="button">Czytaj</a>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
 
     <section class="pt-5 pb-5">
         <div class="container">
-            <h3 class="text-center font-special color-blue-primary">Dla kogo jest Mentoro?</h3>
+            <h4 class="text-center font-special color-blue-primary">Dla kogo jest Mentoro?</h4>
             <h5 class="text-center font-special">Dla każdego, kto chce się uczyć lub uczyć innych.</h5>
             <div class="row pt-5 text-center">
                 <div class="col-sm-12 col-lg-4">
@@ -105,39 +105,17 @@
         </div>
     </section>
 
-
     <section class="pt-5 pb-5">
         <div class="container">
-            <h3 class="text-center font-special color-blue-primary">Nasze produkty</h3>
-            <h5 class="text-center font-special">Poznaj nasze produkty i zacznij z nich korzystać.</h5>
-            <div class="row pt-5">
-                <div class="col-4">
-                    <img src="{% static 'img/bg/bg-courses.webp' %}" class="img-fluid rounded" alt="">
-                </div>
-                <div class="col">
-                    <h5 class="font-special">Wideo kursy</h5>
-                    <p></p>
-                    <p>Twórz widea edukacyjne i ucz innych. </p>
-                    <div class="row">
-                        <div class="col">
-                            <a class="btn btn-neon shadow btn-block border-0" href="" role="button">Twórz wideo kursy</a>
-                        </div>
-                        <div class="col-1 m-0 text-center">
-                            <p class="font-special">lub</p>
-                        </div>
-                        <div class="col">
-                            <a class="btn btn-primary btn-block shadow border-0" href="" role="button">Przeglądaj</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h4 class="text-center font-special color-blue-primary">Nasze produkty</h4>
+            <h5 class="text-center font-special">Oferujemy produkty które pomogą każdemu w edukacji lub nauczaniu innych.</h5>
         </div>
     </section>
 
     <section class="pt-5 pb-5">
         <div class="container">
             <div class="pb-5">
-                <h3 class="text-center font-special color-blue-primary">Wszystko na prostych zasadach</h3>
+                <h4 class="text-center font-special color-blue-primary">Wszystko na prostych zasadach</h4>
                 <h5 class="text-center font-special">Nasza działalność opiera się na prostych i niezmiennych zasadach, które są zrozumiałe dla wszystkich.</h5>
             </div>
             <div class="row">
@@ -145,7 +123,7 @@
                     <div class="pb-3">
                         <img src="{% static 'img/icons/one.svg' %}" class="img-fluid" style="height: 6rem;" alt="First rule">
                     </div>
-                    <h3 class="font-special color-neon-green">Pierwsza zasada</h3>
+                    <h4 class="font-special color-blue-primary">Pierwsza zasada</h4>
                     <h5 class="text-uppercase font-special">darmowe konto</h5>
                     <p>Utworzenie konta i korzystanie z niego jest zawsze bezpłatne z dowolnego miejsca na ziemi.</p>
                 </div>
@@ -153,7 +131,7 @@
                     <div class="pb-3">
                         <img src="{% static 'img/icons/two.svg' %}" class="img-fluid" style="height: 6rem;" alt="Second rule">
                     </div>
-                    <h3 class="font-special text-primary">Druga zasada</h3>
+                    <h4 class="font-special color-blue-primary">Druga zasada</h4>
                     <h5 class="text-uppercase font-special">stała prowizja</h5>
                     <p>Prowizje za sprzedaż kursów, szkoleń i materiałów zawsze będą wynosić tylko 10%.</p>
                 </div>
@@ -161,7 +139,7 @@
                     <div class="pb-3">
                         <img src="{% static 'img/icons/three.svg' %}" class="img-fluid" style="height: 6rem;" alt="Third rule">
                     </div>
-                    <h3 class="font-special text-primary">Trzecia zasada</h3>
+                    <h4 class="font-special color-blue-primary">Trzecia zasada</h4>
                     <h5 class="text-uppercase font-special">dzielimy się zyskiem</h5>
                     <p>Oddajemy 5% naszego zysku w programie partnerskim, który jest dostępny dla wszystkich.</p>
                 </div>
@@ -173,12 +151,12 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-6 col-sm-12">
-                    <h3 class="font-special text-white">Ucz się</h3>
+                    <h4 class="font-special text-white">Ucz się</h4>
                     <h5 class="text-uppercase color-neon-green font-special">zawsze za darmo</h5>
                     <p class="text-white">The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <h3 class="font-special text-white">Nauczaj</h3>
+                    <h4 class="font-special text-white">Nauczaj</h4>
                     <h5 class="text-uppercase color-neon-green font-special">zarabiaj na sprzedaży</h5>
                     <p class="text-white">The best instructors from around the world teach millions of participants in Mentoro. We give you access to the tools and skills to do what you love. </p>
                 </div>
@@ -186,12 +164,12 @@
         </div>
     </section>
 
-    <section class="pt-5 pb-5">
+    <div class="pt-5">
         <div class="pt-5 pb-5 container text-center">
-            <h3 class="color-blue-primary font-special">Wiedza to potęga. Zdobywaj ją od najlepszych na świecie bez ograniczeń.</h3>
+            <h4 class="color-blue-primary font-special">Wiedza to potęga. Zdobywaj ją od najlepszych na świecie bez ograniczeń.</h4>
             <h5 class="pb-3">Gdziekolwiek na ziemi i w dowolnym momencie, nigdy nie było łatwiej. Utwórz konto i poznaj produkty Mentoro.</h5>
-            <a class="btn btn-primary btn-lg shadow border-0" href="" role="button">Utwórz darmowe konto</a>
+            <a class="btn btn-primary btn-lg shadow border-0" href="{% url 'account_signup' %}" role="button">Utwórz darmowe konto</a>
         </div>
-    </section>
+    </div>
 
 {% endblock content %}

@@ -50,7 +50,7 @@
                             <div class="">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-lg-4">
-                                        <a href="{% url 'course_detail' pk=course.pk %}"><img src="{{ course.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ course.title }}"></a>
+                                        <a href="{% url 'course_detail' pk=course.pk %}"><img data-blink-src="{{ course.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ course.title }}"></a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="card shadow">
