@@ -5,17 +5,21 @@ from django.views.decorators.cache import cache_page
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Public
 from .forms import PublicForm
+from blog.models import Post, Category
 
 
-def signup(request):
-    if request.method == 'POST':
-        form = UserRegisterForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, f'Twoje konto zostało pomyślnie utworzone. Możesz się teraz zalogować.')
-            return redirect('account_login')
+def account_signup(request):
+    if request.user.is_authenticated:
+        return redirect('account_dashboard')
     else:
-        form = UserRegisterForm()
+        if request.method == 'POST':
+            form = UserRegisterForm(request.POST)
+            if form.is_valid():
+                form.save()
+                messages.success(request, f'Twoje konto zostało pomyślnie utworzone. Możesz się teraz zalogować.')
+                return redirect('account_login')
+        else:
+            form = UserRegisterForm()
     return render(request, 'account_signup.html', {'form': form})
 
 
@@ -24,7 +28,7 @@ def accounts_index(request):
     return render(request, 'account_index.html', {})
 
 
-@cache_page(60 * 5)  # cache 60s * 5 = 5 minutes
+@cache_page(60 * 15)  # cache 60s * 5 = 15 minutes
 def account_locked(request):
     return render(request, 'account_locked.html', {})
 
@@ -52,6 +56,15 @@ def public_profile_edit(request, pk):
     else:
         return redirect('home_index')
 
+
 @login_required
 def account_dashboard(request):
     return render(request, 'account_dashboard.html', {})
+
+
+@login_required
+def account_my_blog(request):
+    posts = Post.objects.order_by('-created_date').filter(author=request.user)
+    categories = Category.objects.all()
+    context = {'posts': posts, 'categories': categories}
+    return render(request, 'account_my_blog.html', context)

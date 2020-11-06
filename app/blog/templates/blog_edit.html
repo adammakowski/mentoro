@@ -4,13 +4,15 @@
 {% block content %}
     <section class="pb-5 bg-theme-milky">
         <div class="container pt-4">
-            <div class="card shadow rounded-0 border-0">
+            <div class="card shadow border-0">
                 <div class="card-body">
                     <form method="post" enctype='multipart/form-data'>
                         {% csrf_token %}
                         {{ form.media }}
                         {{ form|crispy }}
-                        <button type="submit" value="Submit" class="btn btn-success shadow rounded-0 btn-block font-special-bold">Zapisz</button>
+                        <div class="pt-2">
+                            <button type="submit" value="Submit" class="btn btn-primary shadow btn-block">Zapisz</button>
+                        </div>
                     </form>
                 </div>
             </div>

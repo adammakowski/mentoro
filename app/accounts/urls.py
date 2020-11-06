@@ -6,7 +6,7 @@ urlpatterns = [
     # dashboard
     path('dashboard', views.account_dashboard, name='account_dashboard'),
     # user authorizations
-    path('signup', views.signup, name='account_signup'),
+    path('signup', views.account_signup, name='account_signup'),
     path('login', auth_views.LoginView.as_view(template_name='account_login.html'), name='account_login'),
     path('logout', auth_views.LogoutView.as_view(template_name='account_logout.html'), name='account_logout'),
     # user password change
@@ -23,4 +23,6 @@ urlpatterns = [
     # Public user profile
     path('public/<int:pk>/', views.public_detail, name='public_detail'),
     path('public/<int:pk>/edit/', views.public_profile_edit, name='public_profile_edit'),
+    # account my blog
+    path('my_blog/', views.account_my_blog, name='account_my_blog'),
 ]

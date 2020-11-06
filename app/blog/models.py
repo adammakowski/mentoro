@@ -3,8 +3,8 @@ from pyuploadcare.dj.models import ImageField
 from ckeditor.fields import RichTextField
 
 STATUS = (
-    (0, "Draft"),
-    (1, "Publish")
+    (0, "Szkic"),
+    (1, "Opublikowany i publiczny")
 )
 
 
@@ -30,14 +30,15 @@ class Language(models.Model):
 class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=150, unique=True, blank=False, null=False, verbose_name="Tytuł", help_text='Podaj tytuł wpisu który chcesz dodać')
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name="Kategoria", help_text='Wybierz kategorię w której chcesz dodać wpis')
-    language = models.ForeignKey(Language, on_delete=models.CASCADE, verbose_name="Język", help_text='Wybierz język w którym są Twoje treści')
+    category = models.ForeignKey(Category, default=Category, on_delete=models.CASCADE, verbose_name="Kategoria", help_text='Wybierz kategorię w której chcesz dodać wpis')
+    language = models.ForeignKey(Language, default=Language, on_delete=models.CASCADE, verbose_name="Język", help_text='Wybierz język treści')
     short_description = RichTextField(blank=False, null=False, max_length=100, verbose_name="Krótki opis")
     content = RichTextField(blank=False, null=False, verbose_name="Treść wpisu")
     image_preview = ImageField(blank=False, null=False, verbose_name="Obrazek wyróżniający", help_text='Dodaj obrazek wyróżniający Twój wpis')
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    active = models.BooleanField(default=False)
 
     class Meta:
         verbose_name = "Post"

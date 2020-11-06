@@ -19,9 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="add lessons to courses">
+    <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update dependencies">
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_my_blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0010_auto_20201106_1339.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/blog/migrations/0011_auto_20201106_1345.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +261,8 @@
       <workItem from="1604484023955" duration="1416000" />
       <workItem from="1604490217806" duration="4628000" />
       <workItem from="1604497169720" duration="1059000" />
-      <workItem from="1604576697370" duration="7208000" />
+      <workItem from="1604576697370" duration="9584000" />
+      <workItem from="1604652428581" duration="10149000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>
@@ -504,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604580951095</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update dependencies">
+      <created>1604584559476</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584559477</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +562,8 @@
     <MESSAGE value="upadate category blog" />
     <MESSAGE value="upadate public profile" />
     <MESSAGE value="add lessons to courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lessons to courses" />
+    <MESSAGE value="update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dependencies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602694220045">
@@ -576,11 +596,11 @@
     </state>
     <state x="782" y="177" width="916" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602273341292" />
     <state x="1043" y="177" width="998" height="708" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1603029522308" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604580955372">
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604584560649">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="654" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602272409150" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1604580955372" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1604584560649" />
     <state x="1089" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600356022806">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

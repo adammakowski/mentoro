@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="bg-jumbo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 bg-theme-blue-primary">
+                    <ul class="nav flex-column pt-5 pb-5 text-center">
+                        <a href="{% url 'account_dashboard' %}" class="h5 font-special text-white nav-link">Moja tablica</a>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Moje kursy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Strefa mentora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Strefa eksperta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Moja biblioteka</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Mój blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Profil publiczny</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Saldo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Program afilacyjny</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Ustawienia konta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link header-link" href="#">Wsparcie</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col pt-3 pb-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'account_dashboard' %}" class="text-decoration-none">Konto</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Mój blog</li>
+                        </ol>
+                    </nav>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="font-special">Twoje posty na blogu</h5>
+                            <p>Możesz w tym miejscu w łatwy sposob zarządzać swoimi postami.</p>
+                            <hr class="m-0">
+                            {% for post in posts %}
+                                <div class="pt-3">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-4">
+                                        <img data-blink-src="{{ post.image_preview.cdn_url }}" class="img-fluid rounded shadow" alt="{{ post.title }}">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card shadow">
+                                            <div class="card-body">
+                                                <h5 class="font-special float-right mb-0"><span class="text-success font-special">422</span> - <span class="text-danger font-special">13</span></h5>
+                                                <p class="mb-0">{{ post.category }}</p>
+                                                <h5 class="text-primary">{{ post.title }}</h5>
+                                                <p class="m-0">{{ post.short_description|safe }}</p>
+                                                <p class="mb-0">Opublikowane {{ post.created_date }}</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row d-flex align-items-center">
+                                                    <div class="col">
+                                                        {% if post.active %}
+                                                            <p class="m-0 text-success">Zaakceptowany</p>
+                                                        {% else %}
+                                                            <p class="m-0 text-danger">W trakcie moderacji</p>
+                                                        {% endif %}
+                                                        {% if post.status %}
+                                                            <p class="m-0 text-success">Opublikowany i publiczny</p>
+                                                        {% else %}
+                                                            <p class="m-0 text-danger">Szkic</p>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="col">
+                                                        <ul class="nav justify-content-end">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="{% url 'blog_detail' pk=post.pk %}" target="_blank">Podgląd</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="{% url 'blog_edit' pk=post.pk %}">Edytuj</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#">Usuń</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+{% endblock content %}
