@@ -2,12 +2,12 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <section class="pt-5 pb-5 bg-theme-milky">
+    <section class="pt-3 pb-5 bg-theme-milky">
 
-        <div class="container pb-5">
-            <div class="card border-0 bg-theme-gunmetal rounded-0 shadow">
+        <div class="container pb-3">
+            <div class="card border-0 bg-theme-gunmetal shadow">
                 <div class="card-body text-center p-5">
-                    <h3 class="text-white font-special">Kandyduj na mentora</h3>
+                    <h4 class="text-white font-special">Kandyduj na mentora</h4>
                     <h5 class="color-neon-green pb-3">Zacznij monetyzować własną wiedzę.</h5>
                     <p class="text-white mb-0">Pamiętaj że nie oceniamy Twoich zdolności i wiedzy, robią to użytkownicy naszego portalu.</p>
                     <p class="text-white mb-0">Przed dodaniem zgłoszenia zapoznaj się z <a href="{% url 'mentors_instructions_and_regulations' %}" target="_blank" class="text-decoration-none">instrukcją i regulaminem kandydatury na mentora</a>.</p>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="container">
-            <div class="card shadow rounded-0">
+            <div class="card shadow border-0">
                 <div class="card-body">
                     <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}

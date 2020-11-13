@@ -7,7 +7,7 @@ from .models import Public
 from .forms import PublicForm
 from blog.models import Post, Category
 
-
+# Account singup
 def account_signup(request):
     if request.user.is_authenticated:
         return redirect('account_dashboard')
@@ -28,7 +28,7 @@ def accounts_index(request):
     return render(request, 'account_index.html', {})
 
 
-@cache_page(60 * 15)  # cache 60s * 5 = 15 minutes
+@cache_page(60 * 60)  # cache 60s * 60 = 60 minutes
 def account_locked(request):
     return render(request, 'account_locked.html', {})
 
@@ -61,6 +61,17 @@ def public_profile_edit(request, pk):
 def account_dashboard(request):
     return render(request, 'account_dashboard.html', {})
 
+@login_required
+def account_balance(request):
+    return render(request, 'account_balance.html', {})
+
+@login_required
+def account_affiliate(request):
+    return render(request, 'account_affiliate.html', {})
+
+@login_required
+def account_support(request):
+    return render(request, 'account_support.html', {})
 
 @login_required
 def account_my_blog(request):

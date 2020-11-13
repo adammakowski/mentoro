@@ -5,12 +5,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 bg-theme-blue-primary">
-                   {% include 'dashboard_menu.html' %}
+                    {% include 'dashboard_menu.html' %}
                 </div>
                 <div class="col pt-3 pb-3">
+                    <div class="pb-3">
+                        <nav class="nav bg-white shadow rounded-0">
+                            <a class="nav-link" href="{% url 'account_balance' %}">Saldo</a>
+                            <a class="nav-link" href="#">Wypłata</a>
+                            <a class="nav-link" href="#">Historia wypłat</a>
+                        </nav>
+                    </div>
                     <div class="card shadow border-0">
                         <div class="card-body">
-                            <h5>Cześć {{ user.username }}!</h5>
+                            <p>Twoje środki na koncie</p>
                         </div>
                     </div>
                 </div>

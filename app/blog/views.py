@@ -69,6 +69,13 @@ def post_edit(request, pk):
     return render(request, 'blog_edit.html', {'form': form})
 
 
+@login_required
+def post_delete(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('account_my_blog')
+
+
 def category_list(request):
     categories = Category.objects.all()  # this will get all categories, you can do some filtering if you need (e.g. excluding categories without posts in it)
     context = {'categories': categories}

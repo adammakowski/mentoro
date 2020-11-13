@@ -20,19 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceb87014-c74f-4440-a24d-1d8522375ff3" name="Default Changelist" comment="update dependencies">
-      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_my_blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_affiliate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_balance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/accounts/templates/account_support.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/blog/migrations/0010_auto_20201106_1339.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/blog/migrations/0011_auto_20201106_1345.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/dashboard_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_locked.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_locked.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/accounts/templates/account_my_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/templates/account_my_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/templates/blog_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/templates/blog_new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/home/templates/home_pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/home/templates/home_pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentoro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentoro/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mentors/templates/mentors_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mentors/templates/mentors_edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,6 +271,9 @@
       <workItem from="1604497169720" duration="1059000" />
       <workItem from="1604576697370" duration="9584000" />
       <workItem from="1604652428581" duration="10149000" />
+      <workItem from="1605187737626" duration="5471000" />
+      <workItem from="1605257560607" duration="2803000" />
+      <workItem from="1605293067130" duration="3291000" />
     </task>
     <task id="LOCAL-00001" summary="ngnix domain add">
       <created>1591959289518</created>

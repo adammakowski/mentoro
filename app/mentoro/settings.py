@@ -240,7 +240,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 #  Django Defender
 # https://django-defender.readthedocs.io/en/latest/
 DEFENDER_REDIS_URL = os.environ.get("REDIS_LOCATION")
-DEFENDER_LOGIN_FAILURE_LIMIT = 4
+DEFENDER_LOGIN_FAILURE_LIMIT = 3
 DEFENDER_LOCK_OUT_BY_IP_AND_USERNAME = True
 DEFENDER_LOCKOUT_URL = 'account_locked'
 

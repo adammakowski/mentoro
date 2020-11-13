@@ -5,52 +5,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 bg-theme-blue-primary">
-                    <ul class="nav flex-column pt-5 pb-5 text-center">
-                        <a href="{% url 'account_dashboard' %}" class="h5 font-special text-white nav-link">Moja tablica</a>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Moje kursy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Strefa mentora</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Strefa eksperta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Moja biblioteka</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Mój blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Profil publiczny</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Saldo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Program afilacyjny</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Ustawienia konta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link header-link" href="#">Wsparcie</a>
-                        </li>
-                    </ul>
+                    {% include 'dashboard_menu.html' %}
                 </div>
                 <div class="col pt-3 pb-3">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{% url 'account_dashboard' %}" class="text-decoration-none">Konto</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Mój blog</li>
-                        </ol>
-                    </nav>
+                    <div class="pb-3">
+                        <nav class="nav bg-white shadow rounded-0">
+                            <a class="nav-link" href="{% url 'account_my_blog' %}">Wpisy</a>
+                        </nav>
+                    </div>
                     <div class="card shadow">
                         <div class="card-body">
+                            <a class="btn btn-success float-right" href="{% url 'blog_new' %}" role="button"><i class="fas fa-plus"></i> Dodaj nowy</a>
                             <h5 class="font-special">Twoje posty na blogu</h5>
                             <p>Możesz w tym miejscu w łatwy sposob zarządzać swoimi postami.</p>
-                            <hr class="m-0">
                             {% for post in posts %}
                                 <div class="pt-3">
                                 <div class="row d-flex align-items-center">
@@ -89,7 +56,7 @@
                                                                 <a class="nav-link" href="{% url 'blog_edit' pk=post.pk %}">Edytuj</a>
                                                             </li>
                                                             <li class="nav-item">
-                                                                <a class="nav-link" href="#">Usuń</a>
+                                                                <a class="nav-link" href="{% url 'blog_delete' pk=post.pk %}">Usuń</a>
                                                             </li>
                                                         </ul>
                                                     </div>

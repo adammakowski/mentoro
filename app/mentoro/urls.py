@@ -27,7 +27,7 @@ urlpatterns = [
     # sites path
     path('', include('home.urls')),
     # accounts app paths
-    path('accounts/', include('accounts.urls')),
+    path('account/', include('accounts.urls')),
     # dashboard path
     path('dashboard/', include('dashboard.urls')),
     # Mentoro|Courses path
